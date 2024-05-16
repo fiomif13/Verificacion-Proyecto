@@ -69,8 +69,9 @@ const VentaCodigo = () => {
                 </div>
               </div>
             </div>
-            <img class="vector-2" src={imagenes.vector1} /> {/* Usar la imagen desde imagenes.js */}
-          </div>
+            <Link to="/iniciar-sesion">
+            <img className="vector-2" src={imagenes.vector1} alt="" />
+            </Link>          </div>
         </div>
         <div class="frame-14">
           <div class="navbar">

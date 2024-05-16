@@ -141,13 +141,17 @@ const Inicio = () => {
                   <div className="group-7">
                     <div className="overlap-group-3">
                       <div className="text-wrapper-13">3</div>
+                      <Link to="/pago-desplegable">
                       <img  className="shopping-cart" src={imagenes.shoppingCart} alt="" />
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <Link to="/iniciar-sesion">
             <img className="vector-2" src={imagenes.vector1} alt="" />
+            </Link>
           </div>
         </div>
         <div className="frame-28">

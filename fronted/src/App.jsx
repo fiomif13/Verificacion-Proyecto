@@ -17,12 +17,14 @@ import PagoDesplegableCompra from "./pages/PantallaDespegableCompra/PagoDesplega
 import CompraExitosa from "./pages/CompraExitosa/CompraExitosa.js";
 import DetalleProducto from "./pages/DetalleDelProducto/DetalleDelProducto.js";
 import CarritoCompras from "./pages/CarritoDeCompras/CarritoCompras.js";
+import DetalleProductoUsado from "./pages/DetalleDelProductoUsado/DetalleDelProducto.js";
 
 function App(){
   return(
     <BrowserRouter>
           <Routes>
               <Route path="/carrito-compras" element={<CarritoCompras/>}/>
+              <Route path="/detalle-producto-usado" element={<DetalleProductoUsado/>}/>
               <Route path="/detalle-producto" element={<DetalleProducto/>}/>
               <Route path="/compra-exitosa" element={<CompraExitosa/>}/>
               <Route path="/pago-desplegable" element={<PagoDesplegableCompra/>}/>

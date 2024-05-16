@@ -172,13 +172,17 @@ const VentaUsados = () => {
                   <div class="overlap-group-wrapper">
                     <div class="overlap-group-2">
                       <div class="text-wrapper-11">3</div>
-                      <img class="shopping-cart" src={imagenes.shoppingCart} />
+                      <Link to="/pago-desplegable">
+                      <img  className="shopping-cart" src={imagenes.shoppingCart} alt="" />
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <img class="vector-2" src={imagenes.vector1} />
+            <Link to="/iniciar-sesion">
+            <img className="vector-2" src={imagenes.vector1} alt="" />
+            </Link>
           </div>
         </div>
         <div class="frame-22">

@@ -13,7 +13,7 @@ const VentaFinal = () => {
           <div class="div-wrapper"><p class="text-wrapper">¡TU VIDEOJUEGO SE HA PUESTO EN VENTA!</p></div>
           <div class="frame-2">
             <Link to="/inicio" class="frame-3"><div class="text-wrapper-2">Volver al incio</div></Link>
-            <div class="frame-4"><div class="text-wrapper-2">Ver publicación</div></div>
+            <Link to="/detalle-producto-usado" class="frame-4"><div class="text-wrapper-2">Ver publicación</div></Link>
           </div>
         </div>
         <div class="frame-5">
@@ -65,7 +65,9 @@ const VentaFinal = () => {
                 </div>
               </div>
             </div>
-            <img class="vector-2" src={imagenes.vector1} />
+            <Link to="/iniciar-sesion">
+            <img className="vector-2" src={imagenes.vector1} alt="" />
+            </Link>
           </div>
         </div>
         <div class="frame-18">

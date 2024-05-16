@@ -4,7 +4,7 @@ import imagenes from './imagenes'; // Importar el archivo imagenes.js
 import './globals.css';
 import './style.css';
 
-const DetalleProducto = () => {
+const DetalleProductoUsado = () => {
   return (
     <div className="detalle-del-producto">
       <div className="div">
@@ -13,7 +13,7 @@ const DetalleProducto = () => {
           <div className="div-wrapper"><div className="text-wrapper">Aventura</div></div>
           <div className="div-wrapper"><div className="text-wrapper">Mundo Abierto</div></div>
         </div>
-        <Link to="/carrito-compras" className="frame-2"><div className="text-wrapper-2">Añadir al carro</div></Link>
+        <div className="frame-2"><div className="text-wrapper-2">Añadir al carro</div></div>
         <div className="frame-3">
           <img className="img" src={imagenes.frame} alt="frame" />
           <div className="text-wrapper-3">1</div>
@@ -25,7 +25,7 @@ const DetalleProducto = () => {
           <div className="text-wrapper-6">S/100</div>
           <div className="text-wrapper-7">S/110</div>
         </div>
-        <div className="text-wrapper-8">Estado: Nuevo</div>
+        <div className="text-wrapper-8">Estado: Usado</div>
         <p className="p">
           Siente todo el poder de un Spider-Man más experimentado con combate improvisado, acrobacias dinámicas,
           recorrido urbano fluido e interacciones con el entorno.
@@ -152,9 +152,7 @@ const DetalleProducto = () => {
                   <div class="group-5">
                     <div class="overlap-group-3">
                       <div class="text-wrapper-22">3</div>
-                      <Link to="/pago-desplegable">
-                      <img  className="shopping-cart" src={imagenes.shoppingCart} alt="" />
-                      </Link>
+                      <img class="shopping-cart" src={imagenes.shoppingCart} />
                     </div>
                   </div>
                 </div>
@@ -173,10 +171,10 @@ const DetalleProducto = () => {
               </div>
               <div class="text-wrapper-23">Búsqueda por categoría</div>
             </div>
-            <Link to="/inicio" class="text-wrapper-24">Inicio</Link>
-            <Link to="/venta-nuevos" class="text-wrapper-25">Nuevo</Link>
-            <Link to="/venta-usados" class="text-wrapper-26">Usado</Link>
-            <Link to="/venta-codigo" class="text-wrapper-27">Vender</Link>
+            <div class="text-wrapper-24">Inicio</div>
+            <div class="text-wrapper-25">Nuevo</div>
+            <div class="text-wrapper-26">Usado</div>
+            <div class="text-wrapper-27">Vender</div>
           </div>
           <img class="frame-34" src={imagenes.frame1181} />
         </div>
@@ -185,4 +183,4 @@ const DetalleProducto = () => {
   );
 };
 
-export default DetalleProducto;
+export default DetalleProductoUsado;

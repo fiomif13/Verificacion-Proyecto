@@ -106,8 +106,9 @@ const VentaDatos = () => {
               </div>
             </div>
           </div>
-          <img class="vector-2" src={imagenes.vector2} />
-        </div>
+          <Link to="/iniciar-sesion">
+            <img className="vector-2" src={imagenes.vector1} alt="" />
+            </Link>        </div>
       </div>
       <div class="frame-17">
         <div class="navbar">

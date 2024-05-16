@@ -3,61 +3,62 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './globals.css';
 import './style.css';
+import imagenes from './imagenes';
 
 const PagoDesplegableCompra = () => {
   return (
-    <div class="pantalla-despegable">
-      <div class="div">
-        <div class="overlap">
-          <div class="overlap-group">
-            <div class="text-wrapper">Carrito de compras</div>
-            <div class="frame">
-              <div class="group-wrapper">
-                <div class="group">
-                  <div class="overlap-group-2">
-                    <img class="shopping-cart" src="img/shopping-cart.svg" />
-                    <div class="text-wrapper-2">3</div>
+    <div className="pantalla-despegable">
+      <div className="div">
+        <div className="overlap">
+          <div className="overlap-group">
+            <div className="text-wrapper">Carrito de compras</div>
+            <div className="frame">
+              <div className="group-wrapper">
+                <div className="group">
+                  <div className="overlap-group-2">
+                    <img className="shopping-cart" src={imagenes.shoppingCart} />
+                    <div className="text-wrapper-2">3</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="overlap-2">
-            <p class="p">Tienes 3 juegos en la lista</p>
-            <img class="x-square" src="img/x-square.svg" />
+          <div className="overlap-2">
+            <p className="p">Tienes 3 juegos en la lista</p>
+            <img className="x-square" src={imagenes.xSquare} />
           </div>
         </div>
-        <img class="line" src="img/line-13.svg" />
-        <div class="text-wrapper-3">Cosoto Total</div>
-        <div class="text-wrapper-4">S/ 230</div>
-        <div class="div-wrapper"><div class="text-wrapper-5">Más detalle</div></div>
-        <div class="frame-2"><div class="text-wrapper-5">Pagar</div></div>
-        <div class="frame-3">
-          <div class="frame-4">
-            <img class="ljcxangrw-x" src="img/ljc1xangrw-540x-1.png" />
-            <p class="div-2">
-              <span class="span">Marvel Spiderman<br /></span> <span class="text-wrapper-6">Unid: 1<br />S/ 100</span>
+        <img className="line" src={imagenes.line13} />
+        <div className="text-wrapper-3">Costo Total</div>
+        <div className="text-wrapper-4">S/ 230</div>
+        <Link to="/carrito-compras" className="div-wrapper"><div className="text-wrapper-5">Más detalle</div></Link>
+        <Link to="/pago-tarjetas" className="frame-2"><div className="text-wrapper-5">Pagar</div></Link>
+        <div className="frame-3">
+          <div className="frame-4">
+            <img className="ljcxangrw-x" src={imagenes.Ijc1xangrw540x1} />
+            <p className="div-2">
+              <span className="span">Marvel Spiderman<br /></span> <span className="text-wrapper-6">Unid: 1<br />S/ 100</span>
             </p>
-            <img class="trash" src="img/trash-2-2.svg" />
+            <img className="trash" src={imagenes.trash22} />
           </div>
-          <img class="img" src="img/line-18.svg" />
-          <div class="frame-4">
-            <img class="ljcxangrw-x-2" src="img/ljc1xangrw-540x-1-1.png" />
-            <p class="div-2">
-              <span class="span">Assassins Creed Valhalla<br /></span>
-              <span class="text-wrapper-6">Unid: 1<br />S/ 100</span>
+          <img className="img" src={imagenes.line18} />
+          <div className="frame-4">
+            <img className="ljcxangrw-x-2" src={imagenes.Ijc1xangrw540x11} />
+            <p className="div-2">
+              <span className="span">Assassins Creed Valhalla<br /></span>
+              <span className="text-wrapper-6">Unid: 1<br />S/ 100</span>
             </p>
-            <img class="trash" src="img/trash-2-2.svg" />
+            <img className="trash" src={imagenes.trash22} />
           </div>
-          <img class="img" src="img/line-18.svg" />
-          <div class="frame-4">
-            <img class="ljcxangrw-x-2" src="img/ljc1xangrw-540x-1-2.png" />
-            <p class="div-2">
-              <span class="span">Rayman Leyends<br /></span> <span class="text-wrapper-6">Unid: 1<br />S/ 30</span>
+          <img className="img" src={imagenes.line18} />
+          <div className="frame-4">
+            <img className="ljcxangrw-x-2" src={imagenes.Ijc1xangrw540x12} />
+            <p className="div-2">
+              <span className="span">Rayman Legends<br /></span> <span className="text-wrapper-6">Unid: 1<br />S/ 30</span>
             </p>
-            <img class="trash" src="img/trash-2-2.svg" />
+            <img className="trash" src={imagenes.trash22} />
           </div>
-          <img class="img" src="img/line-18.svg" />
+          <img className="img" src={imagenes.line18} />
         </div>
       </div>
     </div>

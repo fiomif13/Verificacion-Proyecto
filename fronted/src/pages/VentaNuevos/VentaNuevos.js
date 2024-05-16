@@ -164,13 +164,17 @@ const VentaNuevos = () => {
                   <div className="overlap-group-wrapper">
                     <div className="overlap-group-2">
                       <div className="text-wrapper-11">3</div>
-                      <img className="shopping-cart" src={imagenes.shoppingCart} />
+                      <Link to="/pago-desplegable">
+                      <img  className="shopping-cart" src={imagenes.shoppingCart} alt="" />
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <img className="vector-2" src={imagenes.vector1} />
+            <Link to="/iniciar-sesion">
+            <img className="vector-2" src={imagenes.vector1} alt="" />
+            </Link>
           </div>
         </div>
         <div className="frame-21">
