@@ -1,0 +1,1167 @@
+.venta-nuevos {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.venta-nuevos .div {
+  background-color: #f6f6f6;
+  width: 1400px;
+  height: 1701px;
+  position: relative;
+}
+
+.venta-nuevos .videojuego {
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  position: absolute;
+  top: 614px;
+  left: 97px;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .frame {
+  display: inline-flex;
+  flex-direction: column;
+  height: 305px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.venta-nuevos .text-wrapper {
+  position: relative;
+  width: 137px;
+  height: 28px;
+  margin-top: -1px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .rectangle {
+  position: relative;
+  flex: 1;
+  width: 167px;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.venta-nuevos .div-wrapper {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.venta-nuevos .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #0aaeb8;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.venta-nuevos .frame-2 {
+  display: flex;
+  width: 158px;
+  height: 35px;
+  justify-content: center;
+  background-color: #14adb6;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.venta-nuevos .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.venta-nuevos .videojuego-2 {
+  gap: 10px;
+  top: 180px;
+  left: 1081px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .frame-3 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 298px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.venta-nuevos .text-wrapper-4 {
+  position: relative;
+  width: 137px;
+  margin-top: -1px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .rectangle-para {
+  position: relative;
+  flex: 1;
+  width: 166px;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-3 {
+  gap: 10px;
+  top: 614px;
+  left: 343px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .frame-4 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 304px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.venta-nuevos .p {
+  position: relative;
+  width: 172px;
+  height: 29px;
+  margin-top: -1px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .img {
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-4 {
+  gap: 15px;
+  top: 180px;
+  left: 343px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .frame-5 {
+  display: inline-flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.venta-nuevos .image {
+  width: 174px;
+  height: 227px;
+  position: relative;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-5 {
+  gap: 15px;
+  top: 180px;
+  left: 589px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .captura-de-pantalla {
+  position: relative;
+  flex: 1;
+  width: 171px;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-6 {
+  gap: 10px;
+  top: 180px;
+  left: 835px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .captura-de-pantalla-2 {
+  position: relative;
+  flex: 1;
+  width: 159px;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-7 {
+  gap: 10px;
+  top: 614px;
+  left: 589px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .frame-6 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 306px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.venta-nuevos .rectangle-para-2 {
+  flex: 1;
+  width: 168px;
+  flex-grow: 1;
+  position: relative;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-8 {
+  gap: 15px;
+  top: 614px;
+  left: 835px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .rectangle-para-3 {
+  width: 166px;
+  height: 224px;
+  position: relative;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-9 {
+  gap: 10px;
+  top: 614px;
+  left: 1081px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .videojuego-10 {
+  gap: 10px;
+  top: 1048px;
+  left: 97px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.venta-nuevos .rectangle-2 {
+  width: 138px;
+  height: 234px;
+  position: relative;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-11 {
+  gap: 10px;
+  top: 1048px;
+  left: 343px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .image-2 {
+  width: 134px;
+  height: 214px;
+  position: relative;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-12 {
+  gap: 10px;
+  top: 1048px;
+  left: 589px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .rectangle-3 {
+  width: 137px;
+  height: 223px;
+  position: relative;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-13 {
+  gap: 10px;
+  top: 1048px;
+  left: 835px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .image-3 {
+  width: 137px;
+  height: 220px;
+  position: relative;
+  object-fit: cover;
+}
+
+.venta-nuevos .videojuego-14 {
+  gap: 10px;
+  top: 1048px;
+  left: 1081px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .image-4 {
+  width: 137px;
+  height: 218px;
+  position: relative;
+  object-fit: cover;
+}
+
+.venta-nuevos .frame-7 {
+  position: absolute;
+  width: 1400px;
+  height: 68px;
+  top: 0;
+  left: 0;
+  background-color: #02474c;
+}
+
+.venta-nuevos .group {
+  position: absolute;
+  width: 195px;
+  height: 36px;
+  top: 14px;
+  left: 17px;
+}
+
+.venta-nuevos .text-wrapper-6 {
+  position: absolute;
+  height: 23px;
+  top: 8px;
+  left: 83px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .vector {
+  position: absolute;
+  width: 66px;
+  height: 36px;
+  top: 0;
+  left: 0;
+}
+
+.venta-nuevos .frame-8 {
+  position: absolute;
+  width: 534px;
+  height: 39px;
+  top: 14px;
+  left: 332px;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.venta-nuevos .buscar-producto {
+  position: absolute;
+  width: 90px;
+  height: 16px;
+  top: 8px;
+  left: 174px;
+  background-color: transparent;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #aba3a3;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: 0;
+  padding: 0;
+}
+
+.venta-nuevos .overlap-group {
+  position: absolute;
+  width: 128px;
+  height: 25px;
+  top: 8px;
+  left: 18px;
+}
+
+.venta-nuevos .text-wrapper-7 {
+  position: absolute;
+  height: 16px;
+  top: 0;
+  left: 0;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #aba3a3;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .chevron-down {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 1px;
+  left: 104px;
+}
+
+.venta-nuevos .line {
+  position: absolute;
+  width: 1px;
+  height: 38px;
+  top: 0;
+  left: 156px;
+  object-fit: cover;
+}
+
+.venta-nuevos .frame-9 {
+  position: absolute;
+  width: 43px;
+  height: 38px;
+  top: 0;
+  left: 490px;
+}
+
+.venta-nuevos .frame-wrapper {
+  position: absolute;
+  width: 134px;
+  height: 29px;
+  top: 12px;
+  left: 907px;
+}
+
+.venta-nuevos .frame-10 {
+  display: flex;
+  width: 134px;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.venta-nuevos .frame-11 {
+  display: flex;
+  flex-direction: column;
+  width: 131.5px;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+}
+
+.venta-nuevos .frame-12 {
+  display: flex;
+  width: 132px;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-right: -0.5px;
+}
+
+.venta-nuevos .group-2 {
+  position: relative;
+  width: 16px;
+  height: 8.08px;
+}
+
+.venta-nuevos .frame-13 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 5px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-right: -1px;
+}
+
+.venta-nuevos .text-wrapper-8 {
+  position: relative;
+  width: 113px;
+  margin-top: -1px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .frame-14 {
+  display: flex;
+  width: 132px;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-right: -0.5px;
+}
+
+.venta-nuevos .group-3 {
+  position: relative;
+  width: 12px;
+  height: 10px;
+  margin-left: -0.5px;
+}
+
+.venta-nuevos .frame-15 {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.venta-nuevos .text-wrapper-9 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.venta-nuevos .frame-16 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 56px;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 3px;
+  position: absolute;
+  top: 6px;
+  left: 1083px;
+}
+
+.venta-nuevos .ll-menos-wrapper {
+  display: flex;
+  width: 70px;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.venta-nuevos .ll-menos {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .frame-17 {
+  display: flex;
+  width: 94px;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.venta-nuevos .headphones-svgrepo {
+  position: relative;
+  width: 19px;
+  height: 19px;
+}
+
+.venta-nuevos .text-wrapper-10 {
+  position: relative;
+  width: 96px;
+  margin-top: -1px;
+  margin-right: -21px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .frame-18 {
+  position: absolute;
+  width: 120px;
+  height: 44px;
+  top: 12px;
+  left: 1224px;
+}
+
+.venta-nuevos .user {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 0;
+}
+
+.venta-nuevos .frame-19 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  position: absolute;
+  top: 0;
+  left: 96px;
+}
+
+.venta-nuevos .frame-20 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 44px;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.venta-nuevos .group-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.venta-nuevos .overlap-group-wrapper {
+  position: relative;
+  width: 26.5px;
+  height: 36.05px;
+  margin-right: -2px;
+}
+
+.venta-nuevos .overlap-group-2 {
+  position: relative;
+  width: 24px;
+  height: 36px;
+}
+
+.venta-nuevos .text-wrapper-11 {
+  position: absolute;
+  width: 21px;
+  height: 18px;
+  top: 0;
+  left: 4px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #fcdd3b;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .shopping-cart {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  left: 0;
+}
+
+.venta-nuevos .vector-2 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 9px;
+  left: 49px;
+}
+
+.venta-nuevos .frame-21 {
+  display: flex;
+  width: 1400px;
+  height: 49px;
+  align-items: center;
+  gap: 396px;
+  padding: 51px;
+  position: absolute;
+  top: 68px;
+  left: 0;
+  background-color: #0e3b3d;
+  box-shadow: 0px 4px 9px #00000063;
+}
+
+.venta-nuevos .navbar {
+  position: relative;
+  width: 720px;
+  height: 41px;
+  margin-top: -47px;
+  margin-bottom: -47px;
+}
+
+.venta-nuevos .frame-22 {
+  position: absolute;
+  width: 179px;
+  height: 31px;
+  top: 5px;
+  left: -42px;
+  border-radius: 8px;
+}
+
+.venta-nuevos .group-4 {
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  top: 8px;
+  left: 11px;
+}
+
+.venta-nuevos .rectangle-4 {
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.venta-nuevos .rectangle-5 {
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  top: 5px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.venta-nuevos .rectangle-6 {
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  top: 11px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.venta-nuevos .text-wrapper-12 {
+  position: absolute;
+  width: 196px;
+  top: 4px;
+  left: 32px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .text-wrapper-13 {
+  left: 220px;
+  position: absolute;
+  height: 16px;
+  top: 9px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .text-wrapper-14 {
+  left: 327px;
+  position: absolute;
+  height: 16px;
+  top: 9px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .text-wrapper-15 {
+  left: 434px;
+  position: absolute;
+  height: 50px;
+  top: 9px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.venta-nuevos .text-wrapper-16 {
+  left: 547px;
+  position: absolute;
+  height: 16px;
+  top: 9px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.venta-nuevos .frame-23 {
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -37.5px;
+  margin-bottom: -37.5px;
+}
+
+.venta-nuevos .videojuego-15 {
+  gap: 10px;
+  top: 180px;
+  left: 97px;
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 384px;
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #00000021;
+  box-shadow: 0px 1px 13px #0000003b;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 46.87%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(255, 255, 255) 46.88%,
+    rgb(247.32, 247.32, 247.32) 48.24%,
+    rgb(243.31, 243.31, 243.31) 100%
+  );
+}
+
+.venta-nuevos .frame-24 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 299px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.venta-nuevos .rectangle-para-4 {
+  width: 166px;
+  height: 207px;
+  position: relative;
+  object-fit: cover;
+}
+
+.venta-nuevos .frame-25 {
+  position: fixed;
+  width: 130px;
+  height: 42px;
+  top: 1534px;
+  left: 629px;
+}
