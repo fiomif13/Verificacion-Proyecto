@@ -1,3 +1,4 @@
+@import url('styleguide.css');
 .pago-con-tarjeta {
   background-color: #ffffff;
   display: flex;
@@ -5,6 +6,7 @@
   justify-content: center;
   width: 100%;
 }
+
 
 .pago-con-tarjeta .div {
   background-color: #ffffff;
@@ -505,23 +507,12 @@
 
 .pago-con-tarjeta .ellipse {
   position: absolute;
-  width: 9px;
-  height: 9px;
-  top: 5px;
-  left: 5px;
-  background-color: var(--click);
-  border-radius: 4.5px;
-}
-
-.pago-con-tarjeta .ellipse-2 {
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  top: 0;
-  left: 0;
-  border-radius: 9.5px;
-  border: 2px solid;
-  border-color: var(--click);
+  width: 18px;
+  height: 18px;
+  top: 0px;
+  left: 0px;
+  background-color: var(--click); /* Aquí se aplicará el color verde */
+  border-radius: 50%; /* Esto hace que el elemento sea circular */
 }
 
 .pago-con-tarjeta .card-2 {
@@ -770,19 +761,17 @@
 
 .pago-con-tarjeta .buscar-producto {
   position: absolute;
-  width: 90px;
   height: 16px;
   top: 8px;
   left: 174px;
-  background-color: transparent;
   font-family: "Actor", Helvetica;
   font-weight: 400;
   color: #aba3a3;
   font-size: 13px;
   letter-spacing: 0;
   line-height: normal;
-  border: 0;
-  padding: 0;
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno del enfoque */
 }
 
 .pago-con-tarjeta .overlap-group-3 {

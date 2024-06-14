@@ -101,7 +101,7 @@ const CarritoCompras = () => {
           <div className="frame-13">
             <div className="frame-14">
               <img className="img" src={imagenes.frame9} />
-              <div className="text-wrapper-12">Código de promoción</div>
+              <input className="text-wrapper-12" placeholder="Codigo de promocion"  ></input>
             </div>
             <div className="div-wrapper"><div className="text-wrapper-13">Aplicar</div></div>
           </div>
@@ -171,75 +171,6 @@ const CarritoCompras = () => {
         </div>
         <div className="overlap-group-wrapper">
           <div className="overlap-group"><div className="element-e">© 2023 Game Cycle</div></div>
-        </div>
-        <div className="frame-26">
-          <div className="group">
-            <div className="text-wrapper-19">GAME CYCLE</div>
-            <img className="vector" src={imagenes.vector} />
-          </div>
-          <div className="frame-27">
-            <input className="buscar-producto" />
-            <div className="overlap-group-2">
-              <div className="text-wrapper-20">Todas las categorías</div>
-              <img className="chevron-down" src={imagenes.chevronDown} />
-            </div>
-            <img className="line-3" src={imagenes.line7} />
-            <img className="frame-28" src={imagenes.frame198} />
-          </div>
-          <div className="group-2">
-            <div className="frame-29">
-              <div className="frame-30">
-                <div className="frame-31">
-                  <img className="group-3" src={imagenes.group} />
-                  <div className="frame-32"><div className="text-wrapper-21">Delivery</div></div>
-                </div>
-                <div className="frame-33">
-                  <img className="group-4" src={imagenes.group95} />
-                  <div className="frame-34"><div className="text-wrapper-22">Retornar</div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="frame-35">
-            <div className="ll-menos-wrapper"><div className="ll-menos">Llámenos</div></div>
-            <div className="frame-36">
-              <img className="headphones-svgrepo" src={imagenes.headphonesSvgrepoCom1} />
-              <div className="text-wrapper-23">+51 964542293</div>
-            </div>
-          </div>
-          <div className="frame-37">
-            <img className="user" src={imagenes.user} />
-            <div className="frame-38">
-              <div className="frame-39">
-                <div className="group-wrapper">
-                  <div className="group-5">
-                    <div className="overlap-group-3">
-                      <div className="text-wrapper-24">3</div>
-                      <img className="shopping-cart" src={imagenes.shoppingCart} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img className="vector-2" src={imagenes.vector1} />
-          </div>
-        </div>
-        <div className="frame-40">
-          <div className="navbar">
-            <div className="frame-41">
-              <div className="group-6">
-                <div className="rectangle-2"></div>
-                <div className="rectangle-3"></div>
-                <div className="rectangle-4"></div>
-              </div>
-              <div className="text-wrapper-25">Búsqueda por categoría</div>
-            </div>
-            <Link to="/inicio" class="text-wrapper-26">Inicio</Link>
-            <Link to="/venta-nuevos" class="text-wrapper-27">Nuevo</Link>
-            <Link to="/venta-usados" class="text-wrapper-28">Usado</Link>
-            <Link to="/venta-codigo" class="text-wrapper-29">Vender</Link>
-          </div>
-          <img className="frame-42" src={imagenes.frame1181} />
         </div>
       </div>
     </div>

@@ -18,19 +18,25 @@ import CompraExitosa from "./pages/CompraExitosa/CompraExitosa.js";
 import DetalleProducto from "./pages/DetalleDelProducto/DetalleDelProducto.js";
 import CarritoCompras from "./pages/CarritoDeCompras/CarritoCompras.js";
 import DetalleProductoUsado from "./pages/DetalleDelProductoUsado/DetalleDelProducto.js";
+import Header from './common/header/header.js';
+import MaybeShowHeader from './common/MaybeShowHeader/MaybeShowHeader.js';
 
 function App(){
+  
   return(
     <BrowserRouter>
-          <Routes>
+          <MaybeShowHeader>
+            <Header />
+          </MaybeShowHeader>
+          <Routes>      
               <Route path="/carrito-compras" element={<CarritoCompras/>}/>
               <Route path="/detalle-producto-usado" element={<DetalleProductoUsado/>}/>
               <Route path="/detalle-producto" element={<DetalleProducto/>}/>
               <Route path="/compra-exitosa" element={<CompraExitosa/>}/>
-              <Route path="/pago-desplegable" element={<PagoDesplegableCompra/>}/>
+              <Route path="/pago-desplegable" element={<PagoDesplegableCompra/>}/> {/*Arreglar*/}
               <Route path="/pago-tarjetas" element={<PagoConTarjetas/>}/>
               <Route path="/venta-codigo" element={<VentaCodigo/>}/>
-              <Route path="/pantalla-venta" element={<PantallaDesplegableVenta/>}/>
+              <Route path="/pantalla-venta" element={<PantallaDesplegableVenta/>}/>       {/*Arreglar*/}
               <Route path="/venta-funcionalidad" element={<VentaFuncionalidadDelCodigo/>}/>
               <Route path="/venta-final" element={<VentaFinal/>}/>
               <Route path="/venta-datos" element={<VentaDatos/>}/>

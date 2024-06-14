@@ -14,6 +14,21 @@
   position: relative;
 }
 
+.carrito-de-compras .buscar-producto{
+  position: absolute;
+  height: 16px;
+  top: 8px;
+  left: 174px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #aba3a3;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno del enfoque */
+}
+
 .carrito-de-compras .line {
   width: 1240px;
   height: 1px;
@@ -348,6 +363,9 @@
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  border: none;
+  background: transparent;
+  outline: none; /* Elimina el contorno del enfoque */
 }
 
 .carrito-de-compras .div-wrapper {

@@ -518,15 +518,15 @@
 
 .inicio .buscar-producto {
   position: absolute;
-  width: 90px;
-  height: 16px;
+  width: 300px;
+  height: 20px;
   top: 8px;
   left: 174px;
   background-color: transparent;
   font-family: "Actor", Helvetica;
   font-weight: 400;
-  color: #aba3a3;
-  font-size: 13px;
+  color: #000000;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: normal;
   border: 0;
@@ -535,15 +535,15 @@
 
 .inicio .overlap-group-2 {
   position: absolute;
-  width: 128px;
-  height: 25px;
+  width: 130px;
+  height: 35px;
   top: 8px;
   left: 18px;
 }
 
 .inicio .text-wrapper-9 {
   position: absolute;
-  height: 16px;
+  height: 23px;
   top: 0;
   left: 0;
   font-family: "Actor", Helvetica;

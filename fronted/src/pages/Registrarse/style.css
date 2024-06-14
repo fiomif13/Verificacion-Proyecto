@@ -100,6 +100,8 @@
   white-space: nowrap;
   border: 0;
   padding: 0;
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno del enfoque */
 }
 
 .registrarse .user {
@@ -125,6 +127,8 @@
   line-height: normal;
   border: 0;
   padding: 0;
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno del enfoque */
 }
 
 .registrarse .mail {
@@ -150,6 +154,8 @@
   line-height: normal;
   border: 0;
   padding: 0;
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno del enfoque */
 }
 
 .registrarse .lock {
@@ -208,6 +214,8 @@
   white-space: nowrap;
   border: 0;
   padding: 0;
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno del enfoque */
 }
 
 .registrarse .overlap-group-wrapper {

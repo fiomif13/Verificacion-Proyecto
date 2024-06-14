@@ -18,7 +18,7 @@ const CompraExitosa = () => {
             <img className="thumbs-up-regular" src={ThumbsUpRegular} alt="Thumbs Up" />
           </div>
           <div className="generate-receipt"><div className="text-wrapper-2">Generar recibo</div></div>
-          <Link to="/inicio" className="track-order"><div className="track-order-2">Ir al inicio</div></Link>
+          <Link to="/inicio" className="track-order"><button className="track-order-2">Ir al inicio</button></Link>
         </div>
       </div>
     </div>

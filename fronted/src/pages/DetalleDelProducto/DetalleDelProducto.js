@@ -109,77 +109,7 @@ const DetalleProducto = () => {
         <div class="overlap-group-wrapper">
           <div class="overlap-group"><div class="element-e">© 2023 Game Cycle</div></div>
         </div>
-        <div class="frame-18">
-          <div class="group">
-            <div class="text-wrapper-17">GAME CYCLE</div>
-            <img class="vector" src={imagenes.vector} />
-          </div>
-          <div class="frame-19">
-            <input class="buscar-producto" />
-            <div class="overlap-group-2">
-              <div class="text-wrapper-18">Todas las categorías</div>
-              <img class="chevron-down" src={imagenes.chevronDown} />
-            </div>
-            <img class="line-4" src={imagenes.line7} />
-            <img class="frame-20" src={imagenes.frame198} />
-          </div>
-          <div class="group-2">
-            <div class="frame-21">
-              <div class="frame-22">
-                <div class="frame-23">
-                  <img class="group-3" src={imagenes.group} />
-                  <div class="frame-24"><div class="text-wrapper-19">Delivery</div></div>
-                </div>
-                <div class="frame-25">
-                  <img class="group-4" src={imagenes.group95} />
-                  <div class="frame-26"><div class="text-wrapper-20">Retornar</div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="frame-27">
-            <div class="ll-menos-wrapper"><div class="ll-menos">Llámenos</div></div>
-            <div class="frame-28">
-              <img class="headphones-svgrepo" src={imagenes.headphonesSvgrepoComL} />
-              <div class="text-wrapper-21">+51 964542293</div>
-            </div>
-          </div>
-          <div class="frame-29">
-            <img class="user" src={imagenes.user} />
-            <div class="frame-30">
-              <div class="frame-31">
-                <div class="group-wrapper">
-                  <div class="group-5">
-                    <div class="overlap-group-3">
-                      <div class="text-wrapper-22">3</div>
-                      <Link to="/pago-desplegable">
-                      <img  className="shopping-cart" src={imagenes.shoppingCart} alt="" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img class="vector-2" src={imagenes.vector1} />
-          </div>
-        </div>
-        <div class="frame-32">
-          <div class="navbar">
-            <div class="frame-33">
-              <div class="group-6">
-                <div class="rectangle"></div>
-                <div class="rectangle-2"></div>
-                <div class="rectangle-3"></div>
-              </div>
-              <div class="text-wrapper-23">Búsqueda por categoría</div>
-            </div>
-            <Link to="/inicio" class="text-wrapper-24">Inicio</Link>
-            <Link to="/venta-nuevos" class="text-wrapper-25">Nuevo</Link>
-            <Link to="/venta-usados" class="text-wrapper-26">Usado</Link>
-            <Link to="/venta-codigo" class="text-wrapper-27">Vender</Link>
-          </div>
-          <img class="frame-34" src={imagenes.frame1181} />
-        </div>
+        
       </div>
     </div>
   );

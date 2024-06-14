@@ -114,9 +114,12 @@
   margin-top: -1px;
   font-family: "Inter", Helvetica;
   font-weight: 700;
-  color: var(--background);
+  color: white;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 12px;
   white-space: nowrap;
+  border: none; /* Elimina el borde */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  background: none; /* Elimina el fondo */
 }

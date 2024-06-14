@@ -76,6 +76,22 @@
   line-height: 22px;
 }
 
+.VENTA-datos .text-wrapper-4 {
+  position: absolute;
+  height: 16px;
+  top: 8px;
+  left: 174px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: #aba3a3;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno del enfoque */
+}
+
+
 .VENTA-datos .container {
   padding: 8px 16px;
   position: relative;
@@ -148,6 +164,13 @@
   font-size: 16px;
   letter-spacing: 0;
   line-height: 24px;
+}
+
+.CONSOLA .text {
+  border: none;
+  background-color: #fff; /* Ajusta según sea necesario */
+  appearance: none; /* Estilo del menú desplegable */
+  outline: none;
 }
 
 .VENTA-datos .ep-arrow-up-bold {
@@ -232,6 +255,7 @@
   top: 26px;
   left: 0;
   background-color: #7a7a7a;
+  border: none;
 }
 
 .VENTA-datos .text-wrapper-2 {
@@ -269,18 +293,6 @@
   position: relative;
   background-color: #14adb6;
   transition: all 0.2s ease;
-}
-
-.VENTA-datos .text-wrapper-4 {
-  position: relative;
-  width: fit-content;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
 }
 
 .VENTA-datos .frame-3 {
@@ -331,7 +343,7 @@
   border-radius: 6px;
 }
 
-.VENTA-datos .buscar-producto {
+.VENTA-datos .text-wrapper-4 {
   position: absolute;
   width: 90px;
   height: 16px;
@@ -344,6 +356,17 @@
   font-size: 13px;
   letter-spacing: 0;
   line-height: normal;
+  
+  padding: 0;
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno del enfoque */
+}
+
+.VENTA-datos .text-wrapper-44{
+  background-color: transparent;
+  font-family: "Actor", Helvetica;
+  color: white;
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
   border: 0;
   padding: 0;
 }

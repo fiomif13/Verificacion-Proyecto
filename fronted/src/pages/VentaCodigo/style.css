@@ -121,6 +121,9 @@
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  border: none;
+  background-color: transparent;
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
 .venta-cdigo .para-qu-sirve-el {
@@ -187,6 +190,8 @@
   font-size: 13px;
   letter-spacing: 0;
   line-height: normal;
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno del enfoque */
 }
 
 .venta-cdigo .overlap-group {
