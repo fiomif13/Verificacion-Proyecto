@@ -377,5 +377,24 @@
     left: 0;
   }
   
+  /* Estilos para el desplegable */
+.pago-desplegable {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px; /* Ancho deseado del desplegable */
+  height: 100%; /* Altura necesaria */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1100; /* Asegúrate de que esté por encima del header */
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out; /* Animación de transición */
+}
+
+/* Estilos cuando el desplegable está visible */
+.pago-desplegable.visible {
+  transform: translateX(0);
+}
+
   
   
