@@ -74,14 +74,6 @@ const Header = () => {
         </div>
         <div className="frame-31">
           <div className="navbar">
-            <div className="frame-29">
-              <div className="group-8">
-                <div className="rectangle-2"></div>
-                <div className="rectangle-3"></div>
-                <div className="rectangle-4"></div>
-              </div>
-              <div className="text-wrapper-14">Búsqueda por categoría</div>
-            </div>
             <Link to="/inicio" class="text-wrapper-15">Inicio</Link>
             <Link to="/venta-nuevos" class="text-wrapper-16">Nuevo</Link>
             <Link to="/venta-usados" class="text-wrapper-17">Usado</Link>

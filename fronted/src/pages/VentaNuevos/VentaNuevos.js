@@ -1,14 +1,19 @@
-// src/pages/IniciarSesion/IniciarSesion.js
-import React from 'react';
+
+// src/pages/VentaNuevos/VentaNuevos.js
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import imagenes from './imagenes.js'; // Importación del archivo de imágenes
+import imagenes from './imagenes'; // Importación del archivo de imágenes
+import PagoDesplegableCompra from '../PantallaDespegableCompra/PagoDesplegableCompra.js'; // Importar el componente desplegable
 import './globals.css';
 import './style.css';
 
 const VentaNuevos = () => {
+ 
+
   return (
     <div className="venta-nuevos">
       <div className="div">
+      
         <div className="videojuego">
           <div className="frame">
             <div className="text-wrapper">Gears 5 Xbox One</div>
@@ -132,6 +137,7 @@ const VentaNuevos = () => {
           <Link to="/carrito-compras" className="frame-2"><div className="text-wrapper-3">Comprar</div></Link>
         </div>
         <img className="frame-25" src={imagenes.frame49} />
+        
       </div>
     </div>
   );

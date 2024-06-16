@@ -1,4 +1,4 @@
-// src/pages/IniciarSesion/IniciarSesion.js
+// src/pages/PantallaDespegableCompra/PagoDesplegableCompra.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './globals.css';
