@@ -13,34 +13,63 @@
 
 .header .inicio {
     background-color: #f6f6f6;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     width: 100%;
   }
+
   
   .inicio .div {
     background-color: #f6f6f6;
     overflow: hidden;
-    width: 1400px;
+    width: 100%;
     height: 1701px;
     position: relative;
+  } 
+  
+  .inicio .frame {
+    background-color: #f6f6f6;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
   }  
+
   .inicio .frame-13 {
     position: fixed;
-    width: 1400px;
+    width: 100%;
     height: 68px;
     top: 0;
     left: 0;
-    background-color: #02474c;
   }
+
+  .inicio .frame-31
+  {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    top:65px;
+    background-color: #0E3B3E;
+  }
+
+  .inicio .navbar{
+    position: fixed;
+    top: 122px;
+    left: 100px;
+  }
+
+  .inicio .frame-30{
+    position: fixed;
+    top: 122px;
+    left: 1300px;
+  }
+
+
   
   .inicio .group-3 {
     position: absolute;
     width: 195px;
     height: 36px;
     top: 14px;
-    left: 17px;
+    left: 50px;
   }
   
   .inicio .text-wrapper-8 {
@@ -69,7 +98,7 @@
     width: 534px;
     height: 39px;
     top: 14px;
-    left: 332px;
+    left: 360px;
     background-color: #ffffff;
     border-radius: 6px;
   }
@@ -103,13 +132,15 @@
     position: absolute;
     height: 23px;
     top: 0;
-    left: 0;
+    left: -10px;
     font-family: "Actor", Helvetica;
     font-weight: 400;
     color: #aba3a3;
     font-size: 13px;
     letter-spacing: 0;
     line-height: normal;
+    border: none;
+    outline: none;
   }
   
   .inicio .chevron-down {
@@ -146,7 +177,6 @@
   }
   
   .inicio .frame-16 {
-    display: flex;
     width: 134px;
     align-items: center;
     gap: 4px;
@@ -154,21 +184,19 @@
   }
   
   .inicio .frame-17 {
-    display: flex;
-    flex-direction: column;
     width: 131.5px;
-    align-items: flex-start;
+
     gap: 4px;
     position: relative;
+    left: 50px;
   }
   
   .inicio .frame-18 {
-    display: flex;
     width: 132px;
     align-items: center;
     gap: 4px;
     position: relative;
-    flex: 0 0 auto;
+
     margin-right: -0.5px;
   }
   
@@ -179,8 +207,6 @@
   }
   
   .inicio .frame-19 {
-    display: inline-flex;
-    align-items: flex-start;
     gap: 5px;
     position: relative;
     flex: 0 0 auto;
@@ -200,12 +226,12 @@
   }
   
   .inicio .frame-20 {
-    display: flex;
+
     width: 132px;
     align-items: center;
     gap: 9px;
     position: relative;
-    flex: 0 0 auto;
+
     margin-right: -0.5px;
   }
   
@@ -217,11 +243,10 @@
   }
   
   .inicio .frame-21 {
-    display: inline-flex;
+   
     align-items: center;
     gap: 16px;
     position: relative;
-    flex: 0 0 auto;
   }
   
   .inicio .text-wrapper-11 {
@@ -238,24 +263,20 @@
   }
   
   .inicio .frame-22 {
-    display: inline-flex;
-    flex-direction: column;
+
     height: 56px;
-    align-items: flex-start;
     gap: 4px;
     padding: 3px;
     position: absolute;
     top: 6px;
-    left: 1083px;
+    left: 1120px;
   }
   
   .inicio .ll-menos-wrapper {
-    display: flex;
+ 
     width: 70px;
-    align-items: flex-start;
     gap: 32px;
     position: relative;
-    flex: 0 0 auto;
   }
   
   .inicio .ll-menos {
@@ -271,11 +292,9 @@
   }
   
   .inicio .frame-23 {
-    display: flex;
+ 
     width: 94px;
-    align-items: flex-start;
     position: relative;
-    flex: 0 0 auto;
   }
   
   .inicio .headphones-svgrepo {
@@ -303,7 +322,7 @@
     width: 120px;
     height: 44px;
     top: 12px;
-    left: 1224px;
+    left: 1300px;
   }
   
   .inicio .user {
@@ -315,7 +334,7 @@
   }
   
   .inicio .frame-25 {
-    display: inline-flex;
+
     align-items: center;
     justify-content: center;
     gap: 2px;
@@ -325,20 +344,14 @@
   }
   
   .inicio .frame-26 {
-    display: inline-flex;
-    flex-direction: column;
     height: 44px;
     align-items: center;
     position: relative;
-    flex: 0 0 auto;
   }
   
   .inicio .frame-27 {
-    display: inline-flex;
-    flex-direction: column;
     align-items: center;
     position: relative;
-    flex: 0 0 auto;
   }
   
   .inicio .group-7 {

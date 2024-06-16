@@ -72,7 +72,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <div className="frame-28">
+        <div className="frame-31">
           <div className="navbar">
             <div className="frame-29">
               <div className="group-8">

@@ -9,7 +9,7 @@ const VentaCodigo = () => {
     <div class="venta-cdigo">
       <div class="div">
         <div class="main">
-          <div class="text-wrapper">¡Vende tu videojuego!</div>
+          <div class="text-wrapper">¡Vende el videojuego!</div>
           <img class="shopify" src={imagenes.shopify1} /> {/* Usar la imagen desde imagenes.js */}
           <div class="TITULO">
             <div class="label"><div class="label-2" >Código </div></div>

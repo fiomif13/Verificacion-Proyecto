@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './globals.css';
 import './style.css';
 import imagenes from "./imagenes";
@@ -8,32 +10,42 @@ const Inicio = () => {
   return (
     <div className="inicio">
       <div className="div">
-        <div className="mask-group"><img className="frame" src={imagenes.frame303} alt="" /></div>
+        <div className="mask-group">
+          <Carousel showThumbs={false} showArrows={false} autoPlay infiniteLoop>
+            <div>
+              <img className="frame" src={imagenes.frame303} alt="" />
+            </div>
+            <div>
+              <img className="frame" src={imagenes.slide2} alt="" />
+            </div>
+            <div>
+              <img className="frame" src={imagenes.slide3} alt="" />
+            </div>
+          </Carousel>
+        </div>
         <div className="overlap">
           <img className="group" src={imagenes.group72} alt="" />
           <Link to={"/venta-nuevos"} >
             <img className="img" src={imagenes.frame282} alt="" />
           </Link>
           <img className="line" src={imagenes.line8} alt="" />
-          <div className="group-wrapper">
-            <div className="group-2">
-              <img className="line-2" src={imagenes.line10} alt="" />
-              <img className="line-3" src={imagenes.line12} alt="" />
-              <img className="line-4" src={imagenes.line12} alt="" />
-            </div>
-          </div>
           <div className="frame-2">
             <div className="frame-3">
-              <p className="mes-de-terror"><span className="text-wrapper">Mes de </span> <span className="span">Terror</span></p>
-              <p className="p">
-                Por el mes de octubre introdúcete en mundos oscuros y horripilantes. Accede a los descuentos por tiempo
-                limitado.
-              </p>
-              <div className="button-md"><div className="btn-text">Ver más</div></div>
+              <Carousel showThumbs={false} showArrows={true} autoPlay infiniteLoop showIndicators={false}>
+                <div>
+                  <img className='frame' src={imagenes.slide4} alt='' />
+                  <div className="button-md"><div className="btn-text">Ver más</div></div>
+                </div>
+                <div>
+                  <img className='frame' src={imagenes.slide5} alt='' />
+                  <div className="button-md"><div className="btn-text">Ver más</div></div>
+                </div>
+                <div>
+                  <img className='frame' src={imagenes.slide6} alt='' />
+                  <div className="button-md"><div className="btn-text">Ver más</div></div>
+                </div>
+              </Carousel>
             </div>
-            <div className="rectangle-wrapper"><img className="rectangle" src={imagenes.rectangleL} alt="" /></div>
-            <div className="rectangle-wrapper"><img className="rectangle" src={imagenes.rectangle2} alt="" /></div>
-            <div className="rectangle-wrapper"><img className="rectangle" src={imagenes.rectangle3} alt="" /></div>
           </div>
         </div>
         <div className="frame-wrapper">
@@ -74,7 +86,7 @@ const Inicio = () => {
                   </div>
                 </div>
                 <div className="frame-11">
-                  <div className="text-wrapper-5">Atención al cliente</div>
+                  <div className="text-wrapper-5">Atencion al cliente</div>
                   <div className="frame-9">
                     <div className="text-wrapper-6">Mi cuenta</div>
                     <div className="text-wrapper-7">Rastrear orden</div>
@@ -97,7 +109,6 @@ const Inicio = () => {
         <div className="overlap-group-wrapper">
           <div className="overlap-group"><div className="element-e">© 2023 Game Cycle</div></div>
         </div>      
-        
       </div>
     </div>
   );

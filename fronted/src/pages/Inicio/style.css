@@ -9,38 +9,76 @@
 .inicio .div {
   background-color: #f6f6f6;
   overflow: hidden;
-  width: 1400px;
+  width: 100%;
   height: 1701px;
   position: relative;
 }
 
-.inicio .mask-group {
+.inicio .control-dots {
   position: absolute;
-  width: 1281px;
-  height: 240px;
-  top: 156px;
-  left: 81px;
+  top: 300px; /* Ajusta según sea necesario */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 346px;
+}
+
+.carousel .control-dots .dot {
+  display: inline-block;
+  position: relative;
+  width: 25px; /* Ancho de la línea */
+  height: 8px; /* Altura de la línea */
+  background-color: #161616; /* Color de la línea */
+  margin: 0 10px; /* Espacio entre cada línea */
+}
+
+.carousel .control-dots .dot.selected {
+  background-color: green; /* Color de la línea cuando activa */
+}
+
+.inicio .mask-group {
+  position: relative;
+  width: 100%;
+  height: 346px;
+  top: 120px;
+  overflow: hidden;
 }
 
 .inicio .frame {
-  position: absolute;
-  width: 1400px;
+  width: 100%;
   height: 346px;
-  top: -40px;
-  left: -81px;
+  object-fit: cover; /* Asegura que la imagen se ajuste sin recortarse */
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .control-arrow {
+  position: absolute;
+  top: 1000px;
+  transform: translateY(350%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2; /* Asegúrate de que las flechas estén sobre las imágenes */
+  font-size: 24px; /* Tamaño de la flecha */
 }
 
 .inicio .overlap {
   position: absolute;
-  width: 1400px;
+  width: 100%;
   height: 818px;
   top: 419px;
-  left: 0;
 }
 
 .inicio .group {
   position: absolute;
-  width: 1400px;
+  width: 100%;
   height: 76px;
   top: 138px;
   left: 0;
@@ -48,7 +86,7 @@
 
 .inicio .img {
   position: absolute;
-  width: 1391px;
+  width: 100%;
   height: 468px;
   top: 350px;
   left: 6px;
@@ -102,24 +140,40 @@
 
 .inicio .frame-2 {
   display: flex;
-  width: 1300px;
+  width: 100%;
   height: 359px;
   align-items: center;
   gap: 46px;
   position: absolute;
   top: 0;
-  left: 85px;
+  left: 180px;
+}
+
+.inicio .slider-container{
+  width: 100%;
+  position: absolute;
+}
+
+.inicio .container-images{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .inicio .frame-3 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 25px;
   position: relative;
-  flex: 0 0 auto;
+  width: 100%;
+  height: 340px;
+  top: 20px;
+  left: -180px;
 }
+
+.inicio .slide4 {
+  width: 100%;
+  height: 346px;
+}
+
+
 
 .inicio .mes-de-terror {
   position: relative;
@@ -132,6 +186,7 @@
   font-size: 33px;
   letter-spacing: 0;
   line-height: 32.6px;
+  left: -55px;
 }
 
 .inicio .text-wrapper {
@@ -154,6 +209,7 @@
   font-size: 12px;
   letter-spacing: 0;
   line-height: normal;
+  left: -50px;
 }
 
 .inicio .button-md {
@@ -169,13 +225,15 @@
   background-color: #f07014;
   border-radius: 5px;
   overflow: hidden;
+  left: 70px;
+  top: -120px;
 }
 
 .inicio .btn-text {
   position: relative;
   width: 116px;
   height: 36px;
-  margin-top: -14px;
+  margin-top: -6px;
   margin-bottom: -12px;
   margin-left: -22px;
   margin-right: -22px;
@@ -208,7 +266,7 @@
 
 .inicio .frame-wrapper {
   display: flex;
-  width: 1403px;
+  width: 100%;
   height: 404px;
   align-items: center;
   justify-content: center;
@@ -960,7 +1018,6 @@
 
 .inicio .frame-30 {
   position: relative;
-  flex: 0 0 auto;
   margin-top: -37.5px;
   margin-bottom: -37.5px;
 }

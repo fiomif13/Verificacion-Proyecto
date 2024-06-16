@@ -5,8 +5,6 @@ import './style.css';
 
 // Importa las imágenes SVG
 import mailSvg from './img/mail.svg';
-import line2Svg from './img/line-2-1.svg';
-import line3Svg from './img/line-3-1.svg';
 import lockSvg from './img/lock.svg';
 import frame444Svg from './img/frame-444.svg';
 import bienvenidoASvg from './img/bienvenido-a-gamecycle-com.png';

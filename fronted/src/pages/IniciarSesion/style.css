@@ -13,6 +13,8 @@
   background-image: url(./img/gmaecycle-1.png);
   background-size: cover;
   background-position: center;
+  opacity: 90%;
+  background-color: black;
 }
 
 .iniciar-sesin .group {
@@ -44,18 +46,20 @@
   position: absolute;
   width: 438px;
   height: 421px;
-  top: 138px;
-  left: 305px;
+  top: 180px;
   background-color: #ffffff;
   border-radius: 28px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .iniciar-sesin .div {
   position: absolute;
   width: 388px;
   height: 371px;
-  top: 169px;
-  left: 337px;
+  top: 215px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .iniciar-sesin .text-wrapper {
@@ -109,7 +113,8 @@
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
-  border: 0;
+  border: none;
+  outline: none;
   padding: 0;
 }
 
@@ -309,8 +314,9 @@
   position: absolute;
   width: 344px;
   height: 45px;
-  top: 398px;
-  left: 356px;
+  top: 448px;
+  left: 50%;
+  transform: translateX(-50%);
   transition: all 0.2s ease;
 }
 
@@ -326,8 +332,7 @@
   top: 0;
   left: 0;
   background-color: #15adb7;
-  box-shadow: 9px -9px 18px #6e4b0a05, -9px 9px 18px #6e4b0a1c, inset -1px -1px 2px #6e4b0a80,
-    inset 1px 1px 2px #ffff244c;
+ 
   transition: all 0.2s ease;
 }
 
@@ -348,16 +353,18 @@
   position: absolute;
   width: 416px;
   height: 31px;
-  top: 60px;
-  left: 25px;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .iniciar-sesin .group-2 {
   position: absolute;
   width: 195px;
   height: 36px;
-  top: 0;
-  left: 113px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .iniciar-sesin .text-wrapper-7 {

@@ -11,6 +11,8 @@
   background-position: 50% 50%;
   width: 100vw; /* Ancho al 100% del viewport */
   height: 100vh; /* Alto al 100% del viewport */
+  opacity: 90%;
+  background-color: black;
 }
 
 .registrarse .frame {
@@ -86,7 +88,7 @@
 
 .registrarse .nombre-completo {
   position: absolute;
-  width: 120px;
+  width: 240px;
   height: 18px;
   top: 14px;
   left: 55px;
@@ -114,7 +116,7 @@
 
 .registrarse .e-mail {
   position: absolute;
-  width: 69px;
+  width: 240px;
   height: 18px;
   top: 13px;
   left: 55px;
@@ -141,7 +143,7 @@
 
 .registrarse .contrasea {
   position: absolute;
-  width: 99px;
+  width: 240px;
   height: 18px;
   top: 16px;
   left: 54px;
@@ -200,7 +202,7 @@
 
 .registrarse .confirmar-contrasea {
   position: absolute;
-  width: 144px;
+  width: 240px;
   height: 18px;
   top: 15px;
   left: 54px;
