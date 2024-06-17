@@ -53,6 +53,7 @@ const IniciarSesion = () => {
                 <div className="frame-2">
                   <input className="correo-electrnico" placeholder={primerCorreo}/>
                   <img className="mail" src={mailSvg} alt="mail" /></div>
+                  
                 <div className="frame-3">
                   <div className="frame-4">
                     <input type="checkbox" id="rememberPassword" name="rememberPassword" />
@@ -63,10 +64,8 @@ const IniciarSesion = () => {
                 <div className="text-wrapper-5">o conectáte con</div>
                 <img className="frame-5" src={frame444Svg} alt="frame" />
                 <div className="frame-6">
-                  <input className="contrasea" />
-                  <input type="password" className="correo-electrnico" placeholder='*********'/>
+                  <input type="password" className="contrasea" placeholder='*********'/>
                   <img className="lock" src={lockSvg} alt="lock" />
-                  
                 </div>
               </div>
               <div className="frame-7">

@@ -1,54 +1,59 @@
-//Dame el código base para configurar la conexión con mi base de datos local
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
 
 const app = express();
 app.use(cors());
+app.use(express.json()); // Asegúrate de que esta línea esté antes de las rutas
 
 const port = 3001;
 
 const DB = mysql.createConnection({
   host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'ux'
+  user: 'root',
+  password: '',
+  database: 'ux',
+  debug: true // Habilitar el registro de consultas
 });
-//Conectar la base de datos
+
 DB.connect((err) => {
   if (err) {
-    throw err;
+    console.error('Error connecting to database:', err);
+    return;
   }
   console.log('Connected to database');
 });
 
-//Declarar una ruta que sirve al fronted 
 app.get('/iniciar-sesion', (req, res) => {
-    const SQL = 'SELECT * FROM usuarios';
-    DB.query(SQL, (err, result) => {
-        if (err) {
-            throw err;
-        }
-        res.json(result);
-    });
+  const SQL = 'SELECT * FROM usuarios';
+  DB.query(SQL, (err, result) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      res.status(500).json({ error: 'Error executing query' });
+      return;
+    }
+    res.json(result);
+  });
 });
 
-//Declarar una ruta que sirve al fronted que registre los datos de un usuario
 app.post('/registrarse', (req, res) => {
-    const { nombre, correo, contrasena } = req.body;
-    const SQL = 'INSERT INTO usuarios (nombre, correo, contrasena) VALUES (?, ?, ?)';
-    DB.query(SQL, [nombre, correo, contrasena], (err, result) => {
-        if (err) {
-            throw err;
-        }
-        res.json(result);
-    });
+  const { nombre_usuario, correo, contrasena, apellido } = req.body;
+  console.log('Datos recibidos:', req.body); // Verificar los datos recibidos
+
+  const SQL = 'INSERT INTO usuarios (nombre_usuario, contrasena, correo, apellido) VALUES (?, ?, ?, ?)';
+  const values = [nombre_usuario, contrasena, correo, apellido]; // Usar los datos recibidos
+
+  DB.query(SQL, values, (err, result) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      res.status(500).json({ error: 'Error executing query' });
+      return;
+    }
+    console.log('Usuario registrado correctamente:', result); // Verificar el resultado
+    res.json({ message: 'Usuario registrado correctamente' });
+  });
 });
-
-
 
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-    });
-
-
+  console.log(`Server running on port ${port}`);
+});
