@@ -33,6 +33,20 @@ app.get('/iniciar-sesion', (req, res) => {
     });
 });
 
+//Declarar una ruta que sirve al fronted que registre los datos de un usuario
+app.post('/registrarse', (req, res) => {
+    const { nombre, correo, contrasena } = req.body;
+    const SQL = 'INSERT INTO usuarios (nombre, correo, contrasena) VALUES (?, ?, ?)';
+    DB.query(SQL, [nombre, correo, contrasena], (err, result) => {
+        if (err) {
+            throw err;
+        }
+        res.json(result);
+    });
+});
+
+
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
     });
