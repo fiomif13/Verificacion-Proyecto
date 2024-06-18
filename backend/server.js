@@ -16,8 +16,11 @@ const DB = mysql.createConnection({
   debug: true
 });
 
+
 DB.connect((err) => {
   if (err) {
+    console.error('Error connecting to database:', err);
+    return;
     console.error('Error connecting to database:', err);
     return;
   }
@@ -66,3 +69,4 @@ app.post('/iniciar-sesion', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+

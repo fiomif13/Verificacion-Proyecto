@@ -71,9 +71,13 @@ const Registrarse = () => {
             <img className="img" src={imagenes.lock} alt="lock" />
           </div>
           <div className="frame-3">
+<<<<<<< HEAD
             <button type="submit">Registrarse
             <Link to="/iniciar-sesion"></Link>
             </button>
+=======
+            <button type="submit">Registrarse</button>
+>>>>>>> df058dc24c3bcbbc9c13df40bc511ed91fb45138
           </div>
         </form>
       </div>
