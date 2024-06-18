@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
-app.use(express.json()); // Asegúrate de que esta línea esté antes de las rutas
+app.use(express.json());
 
 const port = 3001;
 
@@ -13,7 +13,7 @@ const DB = mysql.createConnection({
   user: 'root',
   password: '',
   database: 'ux',
-  debug: true // Habilitar el registro de consultas
+  debug: true
 });
 
 DB.connect((err) => {
@@ -24,24 +24,12 @@ DB.connect((err) => {
   console.log('Connected to database');
 });
 
-app.get('/iniciar-sesion', (req, res) => {
-  const SQL = 'SELECT * FROM usuarios';
-  DB.query(SQL, (err, result) => {
-    if (err) {
-      console.error('Error executing query:', err);
-      res.status(500).json({ error: 'Error executing query' });
-      return;
-    }
-    res.json(result);
-  });
-});
-
 app.post('/registrarse', (req, res) => {
   const { nombre_usuario, correo, contrasena, apellido } = req.body;
-  console.log('Datos recibidos:', req.body); // Verificar los datos recibidos
+  console.log('Datos recibidos:', req.body);
 
   const SQL = 'INSERT INTO usuarios (nombre_usuario, contrasena, correo, apellido) VALUES (?, ?, ?, ?)';
-  const values = [nombre_usuario, contrasena, correo, apellido]; // Usar los datos recibidos
+  const values = [nombre_usuario, contrasena, correo, apellido];
 
   DB.query(SQL, values, (err, result) => {
     if (err) {
@@ -49,8 +37,29 @@ app.post('/registrarse', (req, res) => {
       res.status(500).json({ error: 'Error executing query' });
       return;
     }
-    console.log('Usuario registrado correctamente:', result); // Verificar el resultado
+    console.log('Usuario registrado correctamente:', result);
     res.json({ message: 'Usuario registrado correctamente' });
+  });
+});
+
+app.post('/iniciar-sesion', (req, res) => {
+  const { nombre_usuario, contrasena } = req.body;
+  console.log('Datos recibidos:', req.body);
+
+  const SQL = 'SELECT nombre_usuario, contrasena FROM usuarios WHERE nombre_usuario = ? AND contrasena = ?';
+  const values = [nombre_usuario, contrasena];
+
+  DB.query(SQL, values, (err, result) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      res.status(500).json({ error: 'Error executing query' });
+      return;
+    }
+    if (result.length > 0) {
+      res.json({ message: 'Inicio de sesión exitoso' });
+    } else {
+      res.json({ message: 'Nombre de usuario o contraseña incorrectos' });
+    }
   });
 });
 
