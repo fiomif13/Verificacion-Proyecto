@@ -1,6 +1,9 @@
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
+const multer = require('multer');
+const path = require('path');
+const fs = require('fs');
 
 const app = express();
 app.use(cors());
@@ -65,6 +68,55 @@ app.post('/iniciar-sesion', (req, res) => {
     }
   });
 });
+
+// Configuración de Multer
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, 'uploads/'); // Directorio donde se guardarán las imágenes
+  },
+  filename: (req, file, cb) => {
+    const filename = `${Date.now()}-${file.originalname}`;
+    cb(null, filename);
+  }
+});
+
+const upload = multer({ storage });
+
+// Ruta para guardar los datos del formulario y la imagen
+app.post('/configuraciones', upload.single('image'), (req, res) => {
+  const { title, description, price, release_date, category_id, stock } = req.body;
+  const image = req.file.filename;
+  const currentDate = new Date().toISOString().slice(0, 10);
+  const newTitle = `${title}-${currentDate}`;
+
+  const SQL = 'INSERT INTO juegos (titulo, descripcion, precio, fecha_lanzamiento, categoria_id, stock, fecha_creacion) VALUES (?, ?, ?, ?, ?, ?, NOW())';
+  const values = [newTitle, description, price, release_date, category_id, stock];
+
+  DB.query(SQL, values, (err, result) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      res.status(500).json({ error: 'Error executing query' });
+      return;
+    }
+    res.json({ message: 'Product successfully added', image });
+  });
+});
+
+// Ruta para obtener las categorías
+app.get('/categorias', (req, res) => {
+  const SQL = 'SELECT categoria_id, nombre FROM categorias';
+  DB.query(SQL, (err, results) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      res.status(500).json({ error: 'Error executing query' });
+      return;
+    }
+    res.json(results);
+  });
+});
+
+
+// Recibe los datos desde el formulario de configuraciones y guarda el nombre de la imagen y sus datos en la
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
