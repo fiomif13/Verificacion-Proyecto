@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import './globals.css';
 import './style.css';
 import imagenes from "./imagenes";

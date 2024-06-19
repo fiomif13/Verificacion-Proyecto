@@ -48,67 +48,6 @@ const DetalleProducto = () => {
         <img className="line" src={imagenes.line3} alt="line-3" />
         <img className="line-2" src={imagenes.line7} alt="line-3" />
         <img className="line-3" src={imagenes.line7} alt="line-3" />
-        <div className="frame-wrapper">
-          <div className="frame-8">
-            <div className="frame-9">
-              <div className="frame-10">
-                <div className="frame-11">
-                  <p className="RESEARCH">
-                    <span className="text-wrapper-11">¿Alguna pregunta? Llámenos 24/7!</span>
-                    <span className="text-wrapper-12">&nbsp;</span>
-                  </p>
-                  <p className="stratus-RESEARCH">967 673 169<br />963 542 293</p>
-                  <p className="cont-ctenos">
-                    <span className="text-wrapper-11">Contáctenos<br /></span>
-                    <span className="text-wrapper-13">gamecycle@gmail.com</span>
-                  </p>
-                  <img className="frame-12" src={imagenes.frame118} alt="frame-118" />
-                </div>
-                <div className="frame-13">
-                  <div className="text-wrapper-14">Tendencias</div>
-                  <div className="frame-14">
-                    <div className="text-wrapper-15">PS4</div>
-                    <div className="text-wrapper-16">PS3</div>
-                    <div className="text-wrapper-16">XBOX ONE</div>
-                    <div className="text-wrapper-16">XBOX 360</div>
-                    <div className="text-wrapper-16">NINTENDO SWITCH</div>
-                  </div>
-                </div>
-                <div className="frame-15">
-                  <div className="text-wrapper-14">Información</div>
-                  <div className="frame-14">
-                    <div className="text-wrapper-15">Sobre nosotros</div>
-                    <div className="text-wrapper-16">Contactenos</div>
-                    <div className="text-wrapper-16">FAQs</div>
-                    <div className="text-wrapper-16">Devoluciones</div>
-                    <div className="text-wrapper-16">Políticas</div>
-                    <div className="text-wrapper-16">Terminos y condiciones</div>
-                  </div>
-                </div>
-                <div className="frame-16">
-                  <div className="text-wrapper-14">Atención al cliente</div>
-                  <div className="frame-14">
-                    <div className="text-wrapper-15">Mi cuenta</div>
-                    <div className="text-wrapper-16">Rastrear orden</div>
-                    <div className="text-wrapper-16">Visto recientemente</div>
-                    <div className="text-wrapper-16">Lista de deseos</div>
-                    <div className="text-wrapper-16">Comparar</div>
-                    <div className="text-wrapper-16">Ser un vendedor</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="frame-17">
-              <div class="img-wrapper"><img class="VISA" src={imagenes.visa} /></div>
-              <div class="img-wrapper"><img class="MASTER" src={imagenes.master} /></div>
-              <div class="img-wrapper"><img class="image-5" src={imagenes.image128} /></div>
-              <div class="img-wrapper"><img class="INSLALLMENTS" src={imagenes.installments} /></div>
-            </div>
-          </div>
-        </div>
-        <div class="overlap-group-wrapper">
-          <div class="overlap-group"><div class="element-e">© 2023 Game Cycle</div></div>
-        </div>
         
       </div>
     </div>

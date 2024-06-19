@@ -1,4 +1,4 @@
-.carrito-de-compras {
+.mis-videojuegos-en {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -6,30 +6,15 @@
   width: 100%;
 }
 
-.carrito-de-compras .div {
+.mis-videojuegos-en .div {
   background-color: #ffffff;
   overflow: hidden;
   width: 1395px;
-  height: 800px;
+  height: 1290px;
   position: relative;
 }
 
-.carrito-de-compras .buscar-producto{
-  position: absolute;
-  height: 16px;
-  top: 8px;
-  left: 174px;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #aba3a3;
-  font-size: 13px;
-  letter-spacing: 0;
-  line-height: normal;
-  border: none; /* Elimina el borde */
-  outline: none; /* Elimina el contorno del enfoque */
-}
-
-.carrito-de-compras .line {
+.mis-videojuegos-en .line {
   width: 1240px;
   height: 1px;
   top: 158px;
@@ -38,393 +23,45 @@
   object-fit: cover;
 }
 
-.carrito-de-compras .text-wrapper {
+.mis-videojuegos-en .img {
+  width: 1240px;
+  height: 1px;
+  top: 230px;
+  left: 62px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.mis-videojuegos-en .text-wrapper {
   position: absolute;
   height: 48px;
   top: 168px;
-  left: 51px;
+  left: 482px;
   font-family: "Actor", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 40px;
+  text-align: center;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
-.carrito-de-compras .frame {
-  display: flex;
-  flex-direction: column;
-  width: 715px;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 20px 24px;
-  position: absolute;
-  top: 241px;
-  left: 51px;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid;
-  border-color: #0000001a;
-}
-
-.carrito-de-compras .frame-2 {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.carrito-de-compras .rectangle {
-  position: relative;
-  width: 88px;
-  height: 127px;
-  object-fit: cover;
-}
-
-.carrito-de-compras .frame-3 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-}
-
-.carrito-de-compras .frame-4 {
-  display: inline-flex;
-  flex-direction: column;
-  height: 118px;
-  align-items: flex-start;
-  justify-content: space-between;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.carrito-de-compras .frame-5 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.carrito-de-compras .text-wrapper-2 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.carrito-de-compras .frame-6 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.carrito-de-compras .text-wrapper-3 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.carrito-de-compras .text-wrapper-4 {
-  position: relative;
-  width: fit-content;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.carrito-de-compras .frame-7 {
-  display: flex;
-  flex-direction: column;
-  width: 225px;
-  height: 124px;
-  align-items: flex-end;
-  justify-content: space-between;
-  position: relative;
-}
-
-.carrito-de-compras .img {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-.carrito-de-compras .frame-8 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 12px 20px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: #efefef;
-  border-radius: 62px;
-  overflow: hidden;
-}
-
-.carrito-de-compras .frame-9 {
-  position: relative;
-  width: 20px;
-  height: 20px;
-}
-
-.carrito-de-compras .text-wrapper-5 {
-  position: relative;
-  width: fit-content;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.carrito-de-compras .line-2 {
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  height: 1px;
-  object-fit: cover;
-}
-
-.carrito-de-compras .frame-10 {
-  display: flex;
-  flex-direction: column;
-  width: 505px;
-  height: 458px;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 20px 24px;
-  position: absolute;
-  top: 276px;
-  left: 835px;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid;
-  border-color: #0000001a;
-}
-
-.carrito-de-compras .text-wrapper-6 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.carrito-de-compras .frame-11 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.carrito-de-compras .frame-12 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-self: stretch;
-  width: 100%;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.carrito-de-compras .text-wrapper-7 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #00000099;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.carrito-de-compras .text-wrapper-8 {
-  font-size: 20px;
-  white-space: nowrap;
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  text-align: right;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.carrito-de-compras .text-wrapper-9 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #ff3333;
-  font-size: 20px;
-  text-align: right;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.carrito-de-compras .text-wrapper-10 {
-  position: relative;
-  width: fit-content;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.carrito-de-compras .text-wrapper-11 {
-  font-size: 24px;
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  text-align: right;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.carrito-de-compras .frame-13 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.carrito-de-compras .frame-14 {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 12px 16px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  background-color: #efefef;
-  border-radius: 62px;
-  overflow: hidden;
-}
-
-.carrito-de-compras .text-wrapper-12 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #00000066;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-  border: none;
-  background: transparent;
-  outline: none; /* Elimina el contorno del enfoque */
-}
-
-.carrito-de-compras .div-wrapper {
-  display: flex;
-  width: 119px;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 12px 16px;
-  position: relative;
-  align-self: stretch;
-  background-color: #000000;
-  border-radius: 62px;
-  overflow: hidden;
-}
-
-.carrito-de-compras .text-wrapper-13 {
-  position: relative;
-  width: fit-content;
-  font-family: "Actor", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.carrito-de-compras .frame-15 {
-  display: flex;
-  height: 60px;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 16px 54px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  background-color: #000000;
-  border-radius: 62px;
-  overflow: hidden;
-  transition: all 0.2s ease;
-}
-
-.carrito-de-compras .frame-wrapper {
+.mis-videojuegos-en .frame {
   display: flex;
   width: 1403px;
-  height: 404px;
+  height: 317px;
   align-items: center;
   justify-content: center;
   gap: 172px;
   padding: 97px 106px;
   position: absolute;
-  top: 826px;
+  top: 913px;
   left: -8px;
   background-color: #393939;
 }
 
-.carrito-de-compras .frame-16 {
+.mis-videojuegos-en .frame-2 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-end;
@@ -432,11 +69,11 @@
   gap: 10px;
   position: relative;
   flex: 0 0 auto;
-  margin-top: -41px;
-  margin-bottom: -41px;
+  margin-top: -84.5px;
+  margin-bottom: -84.5px;
 }
 
-.carrito-de-compras .frame-17 {
+.mis-videojuegos-en .frame-wrapper {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -445,13 +82,13 @@
   flex: 0 0 auto;
 }
 
-.carrito-de-compras .frame-18 {
+.mis-videojuegos-en .frame-3 {
   position: relative;
   width: 1105px;
   height: 227px;
 }
 
-.carrito-de-compras .frame-19 {
+.mis-videojuegos-en .frame-4 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -461,7 +98,7 @@
   left: 0;
 }
 
-.carrito-de-compras .RESEARCH {
+.mis-videojuegos-en .RESEARCH {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -474,17 +111,17 @@
   white-space: nowrap;
 }
 
-.carrito-de-compras .span {
+.mis-videojuegos-en .span {
   color: #00c9d6;
   letter-spacing: 0.04px;
 }
 
-.carrito-de-compras .text-wrapper-14 {
+.mis-videojuegos-en .text-wrapper-2 {
   color: #ffffff;
   letter-spacing: 0.04px;
 }
 
-.carrito-de-compras .stratus-RESEARCH {
+.mis-videojuegos-en .stratus-RESEARCH {
   position: relative;
   width: fit-content;
   font-family: "Actor", Helvetica;
@@ -495,7 +132,7 @@
   line-height: 17px;
 }
 
-.carrito-de-compras .cont-ctenos {
+.mis-videojuegos-en .cont-ctenos {
   position: relative;
   width: fit-content;
   font-family: "Actor", Helvetica;
@@ -506,18 +143,18 @@
   line-height: 17px;
 }
 
-.carrito-de-compras .text-wrapper-15 {
+.mis-videojuegos-en .text-wrapper-3 {
   color: #ffffff;
   font-size: 15px;
   letter-spacing: 0.03px;
 }
 
-.carrito-de-compras .frame-20 {
+.mis-videojuegos-en .frame-5 {
   position: relative;
   flex: 0 0 auto;
 }
 
-.carrito-de-compras .frame-21 {
+.mis-videojuegos-en .frame-6 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -527,7 +164,7 @@
   left: 406px;
 }
 
-.carrito-de-compras .text-wrapper-16 {
+.mis-videojuegos-en .text-wrapper-4 {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -540,7 +177,7 @@
   white-space: nowrap;
 }
 
-.carrito-de-compras .frame-22 {
+.mis-videojuegos-en .frame-7 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -549,7 +186,7 @@
   flex: 0 0 auto;
 }
 
-.carrito-de-compras .text-wrapper-17 {
+.mis-videojuegos-en .text-wrapper-5 {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -561,7 +198,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .text-wrapper-18 {
+.mis-videojuegos-en .text-wrapper-6 {
   position: relative;
   width: fit-content;
   font-family: "Actor", Helvetica;
@@ -572,7 +209,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .frame-23 {
+.mis-videojuegos-en .frame-8 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -582,7 +219,7 @@
   left: 688px;
 }
 
-.carrito-de-compras .frame-24 {
+.mis-videojuegos-en .frame-9 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -592,7 +229,7 @@
   left: 973px;
 }
 
-.carrito-de-compras .frame-25 {
+.mis-videojuegos-en .frame-10 {
   display: inline-flex;
   align-items: flex-start;
   gap: 11px;
@@ -600,7 +237,7 @@
   flex: 0 0 auto;
 }
 
-.carrito-de-compras .img-wrapper {
+.mis-videojuegos-en .img-wrapper {
   position: relative;
   width: 97px;
   height: 55px;
@@ -608,7 +245,7 @@
   border-radius: 5px;
 }
 
-.carrito-de-compras .VISA {
+.mis-videojuegos-en .VISA {
   position: absolute;
   width: 90px;
   height: 27px;
@@ -617,7 +254,7 @@
   object-fit: cover;
 }
 
-.carrito-de-compras .MASTER {
+.mis-videojuegos-en .MASTER {
   position: absolute;
   width: 85px;
   height: 49px;
@@ -626,7 +263,7 @@
   object-fit: cover;
 }
 
-.carrito-de-compras .image {
+.mis-videojuegos-en .image {
   position: absolute;
   width: 93px;
   height: 47px;
@@ -634,7 +271,7 @@
   left: 0;
 }
 
-.carrito-de-compras .INSLALLMENTS {
+.mis-videojuegos-en .INSLALLMENTS {
   position: absolute;
   width: 84px;
   height: 59px;
@@ -643,7 +280,7 @@
   object-fit: cover;
 }
 
-.carrito-de-compras .overlap-group-wrapper {
+.mis-videojuegos-en .overlap-group-wrapper {
   position: absolute;
   width: 1404px;
   height: 60px;
@@ -651,14 +288,14 @@
   left: -12px;
 }
 
-.carrito-de-compras .overlap-group {
+.mis-videojuegos-en .overlap-group {
   position: relative;
   width: 1581px;
   height: 59px;
   background-color: #161616;
 }
 
-.carrito-de-compras .element-e {
+.mis-videojuegos-en .element-e {
   position: absolute;
   top: 20px;
   left: 209px;
@@ -672,7 +309,7 @@
   white-space: nowrap;
 }
 
-.carrito-de-compras .frame-26 {
+.mis-videojuegos-en .frame-11 {
   position: absolute;
   width: 1400px;
   height: 68px;
@@ -681,7 +318,7 @@
   background-color: #02474c;
 }
 
-.carrito-de-compras .group {
+.mis-videojuegos-en .group {
   position: absolute;
   width: 195px;
   height: 36px;
@@ -689,7 +326,7 @@
   left: 17px;
 }
 
-.carrito-de-compras .text-wrapper-19 {
+.mis-videojuegos-en .text-wrapper-7 {
   position: absolute;
   height: 23px;
   top: 8px;
@@ -702,7 +339,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .vector {
+.mis-videojuegos-en .vector {
   position: absolute;
   width: 66px;
   height: 36px;
@@ -710,7 +347,7 @@
   left: 0;
 }
 
-.carrito-de-compras .frame-27 {
+.mis-videojuegos-en .frame-12 {
   position: absolute;
   width: 534px;
   height: 39px;
@@ -720,7 +357,7 @@
   border-radius: 6px;
 }
 
-.carrito-de-compras .buscar-producto {
+.mis-videojuegos-en .buscar-producto {
   position: absolute;
   width: 90px;
   height: 16px;
@@ -737,7 +374,7 @@
   padding: 0;
 }
 
-.carrito-de-compras .overlap-group-2 {
+.mis-videojuegos-en .overlap-group-2 {
   position: absolute;
   width: 128px;
   height: 25px;
@@ -745,7 +382,7 @@
   left: 18px;
 }
 
-.carrito-de-compras .text-wrapper-20 {
+.mis-videojuegos-en .text-wrapper-8 {
   position: absolute;
   height: 16px;
   top: 0;
@@ -758,7 +395,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .chevron-down {
+.mis-videojuegos-en .chevron-down {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -766,7 +403,7 @@
   left: 104px;
 }
 
-.carrito-de-compras .line-3 {
+.mis-videojuegos-en .line-2 {
   width: 1px;
   height: 38px;
   top: 0;
@@ -775,7 +412,7 @@
   object-fit: cover;
 }
 
-.carrito-de-compras .frame-28 {
+.mis-videojuegos-en .frame-13 {
   position: absolute;
   width: 43px;
   height: 38px;
@@ -783,7 +420,7 @@
   left: 490px;
 }
 
-.carrito-de-compras .group-2 {
+.mis-videojuegos-en .div-wrapper {
   position: absolute;
   width: 134px;
   height: 29px;
@@ -791,7 +428,7 @@
   left: 907px;
 }
 
-.carrito-de-compras .frame-29 {
+.mis-videojuegos-en .frame-14 {
   display: flex;
   width: 134px;
   align-items: center;
@@ -799,7 +436,7 @@
   position: relative;
 }
 
-.carrito-de-compras .frame-30 {
+.mis-videojuegos-en .frame-15 {
   display: flex;
   flex-direction: column;
   width: 131.5px;
@@ -808,7 +445,7 @@
   position: relative;
 }
 
-.carrito-de-compras .frame-31 {
+.mis-videojuegos-en .frame-16 {
   display: flex;
   width: 132px;
   align-items: center;
@@ -818,13 +455,13 @@
   margin-right: -0.5px;
 }
 
-.carrito-de-compras .group-3 {
+.mis-videojuegos-en .group-2 {
   position: relative;
   width: 16px;
   height: 8.08px;
 }
 
-.carrito-de-compras .frame-32 {
+.mis-videojuegos-en .frame-17 {
   display: inline-flex;
   align-items: flex-start;
   gap: 5px;
@@ -833,7 +470,7 @@
   margin-right: -1px;
 }
 
-.carrito-de-compras .text-wrapper-21 {
+.mis-videojuegos-en .text-wrapper-9 {
   position: relative;
   width: 113px;
   margin-top: -1px;
@@ -845,7 +482,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .frame-33 {
+.mis-videojuegos-en .frame-18 {
   display: flex;
   width: 132px;
   align-items: center;
@@ -855,14 +492,14 @@
   margin-right: -0.5px;
 }
 
-.carrito-de-compras .group-4 {
+.mis-videojuegos-en .group-3 {
   position: relative;
   width: 12px;
   height: 10px;
   margin-left: -0.5px;
 }
 
-.carrito-de-compras .frame-34 {
+.mis-videojuegos-en .frame-19 {
   display: inline-flex;
   align-items: center;
   gap: 16px;
@@ -870,7 +507,7 @@
   flex: 0 0 auto;
 }
 
-.carrito-de-compras .text-wrapper-22 {
+.mis-videojuegos-en .text-wrapper-10 {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -883,7 +520,7 @@
   white-space: nowrap;
 }
 
-.carrito-de-compras .frame-35 {
+.mis-videojuegos-en .frame-20 {
   display: inline-flex;
   flex-direction: column;
   height: 56px;
@@ -895,7 +532,7 @@
   left: 1083px;
 }
 
-.carrito-de-compras .ll-menos-wrapper {
+.mis-videojuegos-en .ll-menos-wrapper {
   display: flex;
   width: 70px;
   align-items: flex-start;
@@ -904,7 +541,7 @@
   flex: 0 0 auto;
 }
 
-.carrito-de-compras .ll-menos {
+.mis-videojuegos-en .ll-menos {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -916,7 +553,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .frame-36 {
+.mis-videojuegos-en .frame-21 {
   display: flex;
   width: 94px;
   align-items: flex-start;
@@ -924,13 +561,13 @@
   flex: 0 0 auto;
 }
 
-.carrito-de-compras .headphones-svgrepo {
+.mis-videojuegos-en .headphones-svgrepo {
   position: relative;
   width: 19px;
   height: 19px;
 }
 
-.carrito-de-compras .text-wrapper-23 {
+.mis-videojuegos-en .text-wrapper-11 {
   position: relative;
   width: 96px;
   margin-top: -1px;
@@ -944,7 +581,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .frame-37 {
+.mis-videojuegos-en .frame-22 {
   position: absolute;
   width: 120px;
   height: 44px;
@@ -952,7 +589,7 @@
   left: 1224px;
 }
 
-.carrito-de-compras .user {
+.mis-videojuegos-en .user {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -960,7 +597,7 @@
   left: 0;
 }
 
-.carrito-de-compras .frame-38 {
+.mis-videojuegos-en .frame-23 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -970,7 +607,7 @@
   left: 96px;
 }
 
-.carrito-de-compras .frame-39 {
+.mis-videojuegos-en .frame-24 {
   display: inline-flex;
   flex-direction: column;
   height: 44px;
@@ -979,7 +616,7 @@
   flex: 0 0 auto;
 }
 
-.carrito-de-compras .group-wrapper {
+.mis-videojuegos-en .group-wrapper {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -987,20 +624,20 @@
   flex: 0 0 auto;
 }
 
-.carrito-de-compras .group-5 {
+.mis-videojuegos-en .group-4 {
   position: relative;
   width: 26.5px;
   height: 36.05px;
   margin-right: -2px;
 }
 
-.carrito-de-compras .overlap-group-3 {
+.mis-videojuegos-en .overlap-group-3 {
   position: relative;
   width: 24px;
   height: 36px;
 }
 
-.carrito-de-compras .text-wrapper-24 {
+.mis-videojuegos-en .text-wrapper-12 {
   position: absolute;
   width: 21px;
   height: 18px;
@@ -1015,7 +652,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .shopping-cart {
+.mis-videojuegos-en .shopping-cart {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -1023,7 +660,7 @@
   left: 0;
 }
 
-.carrito-de-compras .vector-2 {
+.mis-videojuegos-en .vector-2 {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -1031,7 +668,7 @@
   left: 49px;
 }
 
-.carrito-de-compras .frame-40 {
+.mis-videojuegos-en .frame-25 {
   display: flex;
   width: 1400px;
   height: 49px;
@@ -1045,7 +682,7 @@
   box-shadow: 0px 4px 9px #00000063;
 }
 
-.carrito-de-compras .navbar {
+.mis-videojuegos-en .navbar {
   position: relative;
   width: 720px;
   height: 41px;
@@ -1053,7 +690,7 @@
   margin-bottom: -47px;
 }
 
-.carrito-de-compras .frame-41 {
+.mis-videojuegos-en .frame-26 {
   position: absolute;
   width: 179px;
   height: 31px;
@@ -1062,7 +699,7 @@
   border-radius: 8px;
 }
 
-.carrito-de-compras .group-6 {
+.mis-videojuegos-en .group-5 {
   position: absolute;
   width: 13px;
   height: 12px;
@@ -1070,7 +707,7 @@
   left: 11px;
 }
 
-.carrito-de-compras .rectangle-2 {
+.mis-videojuegos-en .rectangle {
   position: absolute;
   width: 13px;
   height: 2px;
@@ -1079,7 +716,7 @@
   background-color: #ffffff;
 }
 
-.carrito-de-compras .rectangle-3 {
+.mis-videojuegos-en .rectangle-2 {
   position: absolute;
   width: 13px;
   height: 2px;
@@ -1088,7 +725,7 @@
   background-color: #ffffff;
 }
 
-.carrito-de-compras .rectangle-4 {
+.mis-videojuegos-en .rectangle-3 {
   position: absolute;
   width: 13px;
   height: 2px;
@@ -1097,7 +734,7 @@
   background-color: #ffffff;
 }
 
-.carrito-de-compras .text-wrapper-25 {
+.mis-videojuegos-en .text-wrapper-13 {
   position: absolute;
   width: 196px;
   top: 4px;
@@ -1110,7 +747,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .text-wrapper-26 {
+.mis-videojuegos-en .text-wrapper-14 {
   left: 220px;
   position: absolute;
   height: 16px;
@@ -1123,7 +760,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .text-wrapper-27 {
+.mis-videojuegos-en .text-wrapper-15 {
   left: 327px;
   position: absolute;
   height: 16px;
@@ -1136,7 +773,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .text-wrapper-28 {
+.mis-videojuegos-en .text-wrapper-16 {
   left: 434px;
   position: absolute;
   height: 16px;
@@ -1149,7 +786,7 @@
   line-height: normal;
 }
 
-.carrito-de-compras .text-wrapper-29 {
+.mis-videojuegos-en .text-wrapper-17 {
   left: 547px;
   position: absolute;
   height: 16px;
@@ -1162,9 +799,243 @@
   line-height: normal;
 }
 
-.carrito-de-compras .frame-42 {
+.mis-videojuegos-en .frame-27 {
   position: relative;
   flex: 0 0 auto;
   margin-top: -37.5px;
   margin-bottom: -37.5px;
+}
+
+.mis-videojuegos-en .videojuegos-en-venta {
+  display: flex;
+  flex-direction: column;
+  width: 1156px;
+  align-items: flex-start;
+  position: absolute;
+  top: 293px;
+  left: 130px;
+  background-color: var(--gray-00);
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: var(--gray-100);
+}
+
+.mis-videojuegos-en .sub-heading {
+  display: flex;
+  width: 1156px;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--gray-50);
+  border: 1px solid;
+  border-color: var(--gray-100);
+}
+
+.mis-videojuegos-en .videojuegos {
+  position: relative;
+  width: 579px;
+  margin-top: -1px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: var(--gray-700);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.mis-videojuegos-en .precio {
+  position: relative;
+  width: 200px;
+  margin-top: -1px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: var(--gray-700);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.mis-videojuegos-en .acciones {
+  position: relative;
+  width: 292px;
+  margin-top: -1px;
+  margin-right: -11px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: var(--gray-700);
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.mis-videojuegos-en .products {
+  display: flex;
+  flex-direction: column;
+  width: 1156px;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.mis-videojuegos-en .product {
+  margin-right: -10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.mis-videojuegos-en .product-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0px 72px 0px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.mis-videojuegos-en .rectangle-4 {
+  position: relative;
+  width: 88px;
+  height: 127px;
+  object-fit: cover;
+}
+
+.mis-videojuegos-en .text-wrapper-18 {
+  position: relative;
+  width: 419px;
+  font-family: "Actor", Helvetica;
+  font-weight: 400;
+  color: var(--gray-700);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.mis-videojuegos-en .frame-28 {
+  position: relative;
+  width: 200px;
+  height: 20px;
+}
+
+.mis-videojuegos-en .text-wrapper-19 {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  font-family: var(--body-small-500-font-family);
+  font-weight: var(--body-small-500-font-weight);
+  color: var(--gray-900);
+  font-size: var(--body-small-500-font-size);
+  letter-spacing: var(--body-small-500-letter-spacing);
+  line-height: var(--body-small-500-line-height);
+  white-space: nowrap;
+  font-style: var(--body-small-500-font-style);
+}
+
+.mis-videojuegos-en .button-wrapper {
+  display: flex;
+  width: 131px;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+
+.mis-videojuegos-en .button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0px 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #008000;
+  border-radius: 2px;
+}
+
+.mis-videojuegos-en .label {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Public Sans", Helvetica;
+  font-weight: 700;
+  color: var(--gray-00);
+  font-size: 14px;
+  letter-spacing: 0.17px;
+  line-height: 48px;
+  white-space: nowrap;
+}
+
+.mis-videojuegos-en .frame-29 {
+  display: flex;
+  width: 120px;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+
+.mis-videojuegos-en .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0px 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #ff0000;
+  border-radius: 2px;
+}
+
+.mis-videojuegos-en .label-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--heading-07-font-family);
+  font-weight: var(--heading-07-font-weight);
+  color: var(--gray-00);
+  font-size: var(--heading-07-font-size);
+  letter-spacing: var(--heading-07-letter-spacing);
+  line-height: var(--heading-07-line-height);
+  white-space: nowrap;
+  font-style: var(--heading-07-font-style);
+}
+
+.mis-videojuegos-en .product-3 {
+  margin-right: -8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.mis-videojuegos-en .text-wrapper-20 {
+  position: relative;
+  width: 200px;
+  font-family: var(--body-small-500-font-family);
+  font-weight: var(--body-small-500-font-weight);
+  color: var(--gray-900);
+  font-size: var(--body-small-500-font-size);
+  letter-spacing: var(--body-small-500-letter-spacing);
+  line-height: var(--body-small-500-line-height);
+  font-style: var(--body-small-500-font-style);
+}
+
+.mis-videojuegos-en .frame-30 {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
 }
