@@ -20,6 +20,8 @@ import CarritoCompras from "./pages/CarritoDeCompras/CarritoCompras.js";
 import DetalleProductoUsado from "./pages/DetalleDelProductoUsado/DetalleDelProducto.js";
 import Header from './common/header/header.js';
 import MaybeShowHeader from './common/MaybeShowHeader/MaybeShowHeader.js';
+import SaveImage from "./pages/Configuraciones/ImagenConfig.js"; 
+
 
 function App(){
   
@@ -29,6 +31,7 @@ function App(){
             <Header />
           </MaybeShowHeader>
           <Routes>      
+              <Route path="/configuraciones" element={<SaveImage/>}/>
               <Route path="/carrito-compras" element={<CarritoCompras/>}/>
               <Route path="/detalle-producto-usado" element={<DetalleProductoUsado/>}/>
               <Route path="/detalle-producto" element={<DetalleProducto/>}/>
