@@ -1,5 +1,4 @@
-// src/App.js
-import {BrowserRouter, Route, Routes} from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 
 import IniciarSesion from './pages/IniciarSesion/IniciarSesion.js';
@@ -21,37 +20,42 @@ import DetalleProductoUsado from "./pages/DetalleDelProductoUsado/DetalleDelProd
 import Header from './common/header/header.js';
 import MaybeShowHeader from './common/MaybeShowHeader/MaybeShowHeader.js';
 import SaveImage from "./pages/Configuraciones/ImagenConfig.js"; 
+import MaybeShowFooter from "./common/MaybeShowFooter/MaybeShowFooter.js";
+import Footer from "./common/footer/footer.js";
+import HistorialDeCompras from './pages/HistorialDeCompras/HistorialDeCompras.js';
 
-
-function App(){
-  
-  return(
-    <BrowserRouter>
-          <MaybeShowHeader>
-            <Header />
-          </MaybeShowHeader>
-          <Routes>      
-              <Route path="/configuraciones" element={<SaveImage/>}/>
-              <Route path="/carrito-compras" element={<CarritoCompras/>}/>
-              <Route path="/detalle-producto-usado" element={<DetalleProductoUsado/>}/>
-              <Route path="/detalle-producto" element={<DetalleProducto/>}/>
-              <Route path="/compra-exitosa" element={<CompraExitosa/>}/>
-              <Route path="/pago-desplegable" element={<PagoDesplegableCompra/>}/> {/*Arreglar*/}
-              <Route path="/pago-tarjetas" element={<PagoConTarjetas/>}/>
-              <Route path="/venta-codigo" element={<VentaCodigo/>}/>
-              <Route path="/pantalla-venta" element={<PantallaDesplegableVenta/>}/>       {/*Arreglar*/}
-              <Route path="/venta-funcionalidad" element={<VentaFuncionalidadDelCodigo/>}/>
-              <Route path="/venta-final" element={<VentaFinal/>}/>
-              <Route path="/venta-datos" element={<VentaDatos/>}/>
-              <Route path="/venta-usados" element={<VentaUsados/>}/>
-              <Route path="/venta-nuevos" element={<VentaNuevos/>}/>
-              <Route path="/registrarse" element={<Registrarse/>}/>
-              <Route path="/iniciar-sesion" element={<IniciarSesion/>}/>
-              <Route path="/inicio" element={<Inicio/>}/>
-              <Route path="/" element={<IniciarSesion/>}/>
-          </Routes>
-    </BrowserRouter>
-  )
+function App() {
+  return (
+    <Router>
+      <MaybeShowHeader>
+        <Header />
+      </MaybeShowHeader>
+      <Routes>
+        <Route path="/configuraciones" element={<SaveImage />} />
+        <Route path="/carrito-compras" element={<CarritoCompras />} />
+        <Route path="/detalle-producto-usado" element={<DetalleProductoUsado />} />
+        <Route path="/detalle-producto" element={<DetalleProducto />} />
+        <Route path="/compra-exitosa" element={<CompraExitosa />} />
+        <Route path="/pago-desplegable" element={<PagoDesplegableCompra />} />
+        <Route path="/pago-tarjetas" element={<PagoConTarjetas />} />
+        <Route path="/venta-codigo" element={<VentaCodigo />} />
+        <Route path="/pantalla-venta" element={<PantallaDesplegableVenta />} />
+        <Route path="/venta-funcionalidad" element={<VentaFuncionalidadDelCodigo />} />
+        <Route path="/venta-final" element={<VentaFinal />} />
+        <Route path="/venta-datos" element={<VentaDatos />} />
+        <Route path="/venta-usados" element={<VentaUsados />} />
+        <Route path="/venta-nuevos" element={<VentaNuevos />} />
+        <Route path="/registrarse" element={<Registrarse />} />
+        <Route path="/historial" element={<HistorialDeCompras />} />
+        <Route path="/iniciar-sesion" element={<IniciarSesion />} />
+        <Route path="/inicio" element={<Inicio />} />
+        <Route path="/" element={<IniciarSesion />} />
+      </Routes>
+      <MaybeShowFooter>
+        <Footer />
+      </MaybeShowFooter>
+    </Router>
+  );
 }
 
 export default App;
