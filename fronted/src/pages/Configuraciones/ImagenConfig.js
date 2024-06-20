@@ -41,7 +41,7 @@ const ImagenConfig = () => {
     const formData = new FormData();
     formData.append('image', values.image);
     const currentDate = new Date().toISOString().slice(0, 10);
-    const newTitle = `${values.image.name}-${currentDate}`;
+    const newTitle = `${values.image.name}`;
     formData.append('title', newTitle);
     formData.append('description', values.description);
     formData.append('price', values.price);
@@ -63,6 +63,11 @@ const ImagenConfig = () => {
 
     console.log('Form data:', values);
   };
+
+  // const para mostrar los datos de la imágen 
+  const [image, setImage] = useState(null);
+
+
 
   return (
     <div className="container mt-5">

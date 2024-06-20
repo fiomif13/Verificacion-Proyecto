@@ -16,7 +16,6 @@ const DB = mysql.createConnection({
   user: 'root',
   password: '',
   database: 'ux',
-  debug: true
 });
 
 
@@ -75,7 +74,7 @@ const storage = multer.diskStorage({
     cb(null, 'uploads/'); // Directorio donde se guardarán las imágenes
   },
   filename: (req, file, cb) => {
-    const filename = `${Date.now()}-${file.originalname}`;
+    const filename = `${file.originalname}`;
     cb(null, filename);
   }
 });
@@ -87,7 +86,7 @@ app.post('/configuraciones', upload.single('image'), (req, res) => {
   const { title, description, price, release_date, category_id, stock } = req.body;
   const image = req.file.filename;
   const currentDate = new Date().toISOString().slice(0, 10);
-  const newTitle = `${title}-${currentDate}`;
+  const newTitle = `${title}`;
 
   const SQL = 'INSERT INTO juegos (titulo, descripcion, precio, fecha_lanzamiento, categoria_id, stock, fecha_creacion) VALUES (?, ?, ?, ?, ?, ?, NOW())';
   const values = [newTitle, description, price, release_date, category_id, stock];
@@ -116,7 +115,22 @@ app.get('/categorias', (req, res) => {
 });
 
 
-// Recibe los datos desde el formulario de configuraciones y guarda el nombre de la imagen y sus datos en la
+// Ruta para obtener los datos de los juegos y enviarlos a la ruta /venta-nuevos 
+app.get('/venta-nuevos', (req, res) => {
+  const SQL = 'SELECT * FROM juegos';
+  DB.query(SQL, (err, rows) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      res.status(500).json({ error: 'Error executing query' });
+      return;
+    }
+    res.json(rows);
+  });
+});
+
+// Servir imágenes desde el directorio de imágenes
+app.use('/venta-nuevos', express.static('../uploads'));
+
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
