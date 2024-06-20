@@ -1,35 +1,61 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 import './globals.css';
 import './style.css';
 import imagenes from "./imagenes";
 
 const Header = () => {
+  const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/categorias')
+      .then(response => {
+        setCategories(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching categories:', error);
+      });
+  }, []);
+
+  const handleCategoryChange = (e) => {
+    const categoryId = e.target.value;
+    setSelectedCategory(categoryId);
+  };
+
+  const handleImageClick = () => {
+    if (selectedCategory) {
+      navigate(`/juegos-por-categoria/${selectedCategory}`);
+    } else {
+      alert('Por favor, selecciona una categoría primero');
+    }
+  };
+
   return (
     <div className="header">
-     <div className="inicio">
-      
+      <div className="inicio">
         <div className="frame-13">
           <div className="group-3">
             <div className="text-wrapper-8">GAME CYCLE</div>
             <img className="vector" src={imagenes.vector} alt="" />
           </div>
           <div className="frame-14">
-            <input className="buscar-producto" placeholder='Buscar producto'/>
+            <input className="buscar-producto" placeholder='Buscar producto' />
             <div className="overlap-group-2">
-              <select className="text-wrapper-9">
-                    <option value="" disabled selected>Selecciona un género</option>
-                    <option value="accion">Acción</option>
-                    <option value="aventura">Aventura</option>
-                    <option value="estrategia">Estrategia</option>
-                    <option value="deportes">Deportes</option>
-                    <option value="rpg">RPG</option>
-                    <option value="simulacion">Simulación</option>
-                  </select>
+              <select id="category_id" name='category_id' className="text-wrapper-9" value={selectedCategory} onChange={handleCategoryChange}>
+                <option value="" disabled>Selecciona un género</option>
+                {categories.map(category => (
+                  <option key={category.categoria_id} value={category.categoria_id}>
+                    {category.nombre}
+                  </option>
+                ))}
+              </select>
             </div>
             <img className="line-5" src={imagenes.line7} alt="" />
-            <img className="frame-15" src={imagenes.frame198} alt="" />
+            <img className="frame-15" src={imagenes.frame198} alt="" onClick={handleImageClick} />
           </div>
           <div className="group-4">
             <div className="frame-16">
@@ -61,7 +87,7 @@ const Header = () => {
                     <div className="overlap-group-3">
                       <div className="text-wrapper-13">3</div>
                       <Link to="/pago-desplegable">
-                      <img  className="shopping-cart" src={imagenes.shoppingCart} alt="" />
+                        <img className="shopping-cart" src={imagenes.shoppingCart} alt="" />
                       </Link>
                     </div>
                   </div>
@@ -69,21 +95,21 @@ const Header = () => {
               </div>
             </div>
             <Link to="/iniciar-sesion">
-            <img className="vector-2" src={imagenes.vector1} alt="" />
+              <img className="vector-2" src={imagenes.vector1} alt="" />
             </Link>
           </div>
         </div>
         <div className="frame-31">
           <div className="navbar">
-            <Link to="/inicio" class="text-wrapper-15">Inicio</Link>
-            <Link to="/venta-nuevos" class="text-wrapper-16">Nuevo</Link>
-            <Link to="/venta-usados" class="text-wrapper-17">Usado</Link>
-            <Link to="/venta-codigo" class="text-wrapper-18">Vender</Link>
+            <Link to="/inicio" className="text-wrapper-15">Inicio</Link>
+            <Link to="/venta-nuevos" className="text-wrapper-16">Nuevo</Link>
+            <Link to="/venta-usados" className="text-wrapper-17">Usado</Link>
+            <Link to="/venta-codigo" className="text-wrapper-18">Vender</Link>
           </div>
           <img className="frame-30" src={imagenes.frame118_1} alt="" />
         </div>
       </div>
-  </div>
+    </div>
   );
 };
 

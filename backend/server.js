@@ -156,7 +156,25 @@ app.get('/venta-usados', (req, res) => {
     res.json(rows);
   });
 });
-// Servir imágenes desde el directorio de imágenes
+ 
+app.get('/juegos-por-categoria', (req, res) => {
+  const categoriaId = req.query.categoria_id;
+
+  if (!categoriaId) {
+    res.status(400).json({ error: 'Falta categoria_id en la consulta' });
+    return;
+  }
+
+  const SQL = 'SELECT * FROM juegos WHERE categoria_id = ?';
+  DB.query(SQL, [categoriaId], (err, rows) => {
+    if (err) {
+      console.error('Error ejecutando la consulta:', err);
+      res.status(500).json({ error: 'Error ejecutando la consulta' });
+      return;
+    }
+    res.json(rows);
+  });
+});
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
