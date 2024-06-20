@@ -12,8 +12,9 @@ const MaybeShowHeader = ({ children }) => {
             location.pathname === "/iniciar-sesion" || 
             location.pathname === "/registrarse" || 
             location.pathname === "/" ||
-            location.pathname === "/configuraciones"
-        ) {
+            location.pathname === "/configuraciones" ||
+            location.pathname === "/imagenes/get"
+                ) {
             setShowHeader(false);
         } else {
             setShowHeader(true);
