@@ -1,3 +1,4 @@
+// C:\Users\PROGRESA HUACHIPA\OneDrive\Escritorio\ProyectoUXFinal\ProjectUX\backend\server.js
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
@@ -8,6 +9,9 @@ const fs = require('fs');
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
 
 const port = 3001;
 
@@ -129,7 +133,6 @@ app.get('/venta-nuevos', (req, res) => {
 });
 
 // Servir imágenes desde el directorio de imágenes
-app.use('/venta-nuevos', express.static('../uploads'));
 
 
 app.listen(port, () => {

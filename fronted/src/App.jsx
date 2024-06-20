@@ -1,3 +1,4 @@
+//C:\Users\PROGRESA HUACHIPA\OneDrive\Escritorio\ProyectoUXFinal\ProjectUX\fronted\src\App.jsx
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 
