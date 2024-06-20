@@ -12,6 +12,8 @@ const MaybeShowHeader = ({ children }) => {
             location.pathname === "/iniciar-sesion" || 
             location.pathname === "/registrarse" || 
             location.pathname === "/" ||
+            location.pathname === "/pago-desplegable" ||
+            location.pathname === "/pantalla-venta" ||
             location.pathname === "/configuraciones" ||
             location.pathname === "/imagenes/get" 
                 ) {

@@ -9,13 +9,11 @@
   .footer .frame-wrapper {
     display: flex;
     width: 100%;
-    height: 404px;
+    height: 550px;
     align-items: center;
     justify-content: center;
-    gap: 172px;
-    padding: 97px 106px;
-
     left: 0;
+    margin: 0;
     background-color: #393939;
     }
     
