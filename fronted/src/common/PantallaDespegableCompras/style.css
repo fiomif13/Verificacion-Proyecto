@@ -4,16 +4,29 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 3000;
 }
 
-.pantalla-despegable .div {
+.dropdown-container {
+  position: absolute;
+  top: 100%;
+  left: -325px; /* Ajusta este valor según sea necesario */
+  z-index: 2000 !important;
+  display: block;
+  /* Otros estilos de tu elección */
+}
+
+
+.pantalla-despegable .div2 {
   background-color: #ffffff;
   width: 358px;
-  height: 518px;
+  height: 495px;
   position: relative;
 }
 
-.pantalla-despegable .overlap {
+.pantalla-despegable .overlap2 {
   position: absolute;
   width: 358px;
   height: 88px;
@@ -22,7 +35,7 @@
   background-color: #0e3b3e;
 }
 
-.pantalla-despegable .overlap-group {
+.pantalla-despegable .overlap-group2 {
   position: absolute;
   width: 214px;
   height: 75px;
@@ -30,7 +43,7 @@
   left: 36px;
 }
 
-.pantalla-despegable .text-wrapper {
+.pantalla-despegable .text-wrapper2 {
   position: absolute;
   top: 43px;
   left: 4px;
@@ -43,17 +56,19 @@
   white-space: nowrap;
 }
 
-.pantalla-despegable .frame {
+.pantalla-despegable .frame2 {
   display: inline-flex;
   flex-direction: column;
   height: 44px;
+  width: 40px;
   align-items: center;
   position: absolute;
+  background-color: transparent;
   top: 0;
   left: 0;
 }
 
-.pantalla-despegable .group-wrapper {
+.pantalla-despegable .group-wrapper2 {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -61,20 +76,20 @@
   flex: 0 0 auto;
 }
 
-.pantalla-despegable .group {
+.pantalla-despegable .group2 {
   position: relative;
   width: 26.5px;
   height: 36.05px;
   margin-right: -2px;
 }
 
-.pantalla-despegable .overlap-group-2 {
+.pantalla-despegable .overlap-group-2-2 {
   position: relative;
   width: 24px;
   height: 36px;
 }
 
-.pantalla-despegable .shopping-cart {
+.pantalla-despegable .shopping-cart2 {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -82,7 +97,7 @@
   left: 0;
 }
 
-.pantalla-despegable .text-wrapper-2 {
+.pantalla-despegable .text-wrapper-2-2 {
   position: absolute;
   width: 21px;
   height: 18px;
@@ -97,7 +112,7 @@
   line-height: normal;
 }
 
-.pantalla-despegable .overlap-2 {
+.pantalla-despegable .overlap-2-2 {
   position: absolute;
   width: 248px;
   height: 29px;
@@ -105,7 +120,7 @@
   left: 105px;
 }
 
-.pantalla-despegable .p {
+.pantalla-despegable .p2 {
   position: absolute;
   width: 233px;
   top: 4px;
@@ -119,7 +134,7 @@
   white-space: nowrap;
 }
 
-.pantalla-despegable .x-square {
+.pantalla-despegable .x-square2 {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -127,7 +142,7 @@
   left: 224px;
 }
 
-.pantalla-despegable .line {
+.pantalla-despegable .line2 {
   position: absolute;
   width: 358px;
   top: 396px;
@@ -136,9 +151,9 @@
   object-fit: cover;
 }
 
-.pantalla-despegable .text-wrapper-3 {
+.pantalla-despegable .text-wrapper-3-2 {
   position: absolute;
-  top: 404px;
+  top: 400px;
   left: 20px;
   font-family: "Actor", Helvetica;
   font-weight: 400;
@@ -149,9 +164,9 @@
   white-space: nowrap;
 }
 
-.pantalla-despegable .text-wrapper-4 {
+.pantalla-despegable .text-wrapper-4-2 {
   position: absolute;
-  top: 404px;
+  top: 400px;
   left: 208px;
   font-family: "Actor", Helvetica;
   font-weight: 400;
@@ -162,7 +177,7 @@
   white-space: nowrap;
 }
 
-.pantalla-despegable .div-wrapper {
+.pantalla-despegable .div-wrapper-2 {
   display: flex;
   width: 158px;
   height: 35px;
@@ -170,13 +185,13 @@
   justify-content: center;
   gap: 10px;
   position: absolute;
-  top: 466px;
+  top: 440px;
   left: 19px;
   background-color: #14adb6;
   transition: all 0.2s ease-in;
 }
 
-.pantalla-despegable .text-wrapper-5 {
+.pantalla-despegable .text-wrapper-5-2 {
   position: relative;
   width: fit-content;
   font-family: "Actor", Helvetica;
@@ -188,7 +203,7 @@
   white-space: nowrap;
 }
 
-.pantalla-despegable .frame-2 {
+.pantalla-despegable .frame-2-2 {
   display: flex;
   width: 158px;
   height: 35px;
@@ -196,22 +211,22 @@
   justify-content: center;
   gap: 10px;
   position: absolute;
-  top: 466px;
+  top: 440px;
   left: 183px;
   background-color: #c0a414;
 }
 
-.pantalla-despegable .frame-3 {
+.pantalla-despegable .frame-3-2 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 11px;
   position: absolute;
-  top: 119px;
+  top: 100px;
   left: 18px;
 }
 
-.pantalla-despegable .frame-4 {
+.pantalla-despegable .frame-4-2 {
   display: inline-flex;
   align-items: flex-start;
   gap: 9px;
@@ -219,13 +234,13 @@
   flex: 0 0 auto;
 }
 
-.pantalla-despegable .ljcxangrw-x {
+.pantalla-despegable .ljcxangrw-x2 {
   position: relative;
   width: 77px;
   height: 72px;
 }
 
-.pantalla-despegable .div-2 {
+.pantalla-despegable .div-2-2 {
   position: relative;
   width: 198px;
   margin-top: -1px;
@@ -237,28 +252,28 @@
   line-height: 24px;
 }
 
-.pantalla-despegable .span {
+.pantalla-despegable .span2 {
   color: #000000;
 }
 
-.pantalla-despegable .text-wrapper-6 {
+.pantalla-despegable .text-wrapper-6-2 {
   color: #4d575b;
 }
 
-.pantalla-despegable .trash {
+.pantalla-despegable .trash2 {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
-.pantalla-despegable .img {
+.pantalla-despegable .img2 {
   position: relative;
   width: 318px;
   height: 1px;
   object-fit: cover;
 }
 
-.pantalla-despegable .ljcxangrw-x-2 {
+.pantalla-despegable .ljcxangrw-x-2-2 {
   position: relative;
   width: 81px;
   height: 68px;

@@ -13,7 +13,6 @@ import VentaFuncionalidadDelCodigo from "./pages/VentaFuncionalidadDelCodigo/Ven
 import PantallaDesplegableVenta from "./pages/PantallaDespegableVenta/PantallaDesplegableVenta.js";
 import VentaCodigo from "./pages/VentaCodigo/VentaCodigo.js";
 import PagoConTarjetas from "./pages/PagoConTarjetas/PagoConTarjetas.js";
-import PagoDesplegableCompra from "./pages/PantallaDespegableCompra/PagoDesplegableCompra.js";
 import CompraExitosa from "./pages/CompraExitosa/CompraExitosa.js";
 import DetalleProducto from "./pages/DetalleDelProducto/DetalleDelProducto.js";
 import CarritoCompras from "./pages/CarritoDeCompras/CarritoCompras.js";
@@ -37,7 +36,6 @@ function App() {
         <Route path="/detalle-producto-usado" element={<DetalleProductoUsado />} />
         <Route path="/detalle-producto" element={<DetalleProducto />} />
         <Route path="/compra-exitosa" element={<CompraExitosa />} />
-        <Route path="/pago-desplegable" element={<PagoDesplegableCompra />} />
         <Route path="/pago-tarjetas" element={<PagoConTarjetas />} />
         <Route path="/venta-codigo" element={<VentaCodigo />} />
         <Route path="/pantalla-venta" element={<PantallaDesplegableVenta />} />
