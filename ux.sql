@@ -26,7 +26,7 @@ CREATE TABLE `categorias` (
   `categoria_id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(200) NOT NULL,
   PRIMARY KEY (`categoria_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,8 +35,32 @@ CREATE TABLE `categorias` (
 
 LOCK TABLES `categorias` WRITE;
 /*!40000 ALTER TABLE `categorias` DISABLE KEYS */;
-INSERT INTO `categorias` VALUES (1,'accion'),(2,'aventura'),(3,'estrategia'),(4,'deportes'),(5,'rpg'),(6,'simulacion');
+INSERT INTO `categorias` VALUES (1,'accion'),(2,'aventura'),(3,'estrategia'),(4,'deportes'),(5,'rpg'),(6,'simulacion'),(7,'3D');
 /*!40000 ALTER TABLE `categorias` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `estado`
+--
+
+DROP TABLE IF EXISTS `estado`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `estado` (
+  `estado_id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(200) NOT NULL,
+  PRIMARY KEY (`estado_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `estado`
+--
+
+LOCK TABLES `estado` WRITE;
+/*!40000 ALTER TABLE `estado` DISABLE KEYS */;
+INSERT INTO `estado` VALUES (1,'NUEVO'),(3,'USADO');
+/*!40000 ALTER TABLE `estado` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -54,11 +78,14 @@ CREATE TABLE `juegos` (
   `fecha_lanzamiento` date NOT NULL,
   `categoria_id` int(11) NOT NULL,
   `stock` int(11) NOT NULL,
+  `estado_id` int(11) NOT NULL,
   `fecha_creacion` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`juego_id`),
   KEY `categoria_id` (`categoria_id`),
-  CONSTRAINT `juegos_ibfk_1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`categoria_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+  KEY `estado_id` (`estado_id`),
+  CONSTRAINT `juegos_ibfk_1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`categoria_id`),
+  CONSTRAINT `juegos_ibfk_2` FOREIGN KEY (`estado_id`) REFERENCES `estado` (`estado_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +94,7 @@ CREATE TABLE `juegos` (
 
 LOCK TABLES `juegos` WRITE;
 /*!40000 ALTER TABLE `juegos` DISABLE KEYS */;
-INSERT INTO `juegos` VALUES (8,'IMAGEN.png-2024-06-20','DESCRIPCION IMAGEN',999.00,'2222-02-12',3,10,'2024-06-20 00:32:46'),(9,'PRUEBA.png','123',111.00,'2001-02-12',2,12,'2024-06-20 00:36:07'),(10,'Captura de pantalla 2024-03-01 113047.png','ASDASD',123.00,'3000-02-12',3,540,'2024-06-20 02:31:36'),(11,'Captura de pantalla 2024-03-01 113047.png','ASDASD',123.00,'3000-02-12',3,540,'2024-06-20 02:31:38'),(12,'Captura de pantalla 2024-03-01 113047.png','ASDASD',123.00,'3000-02-12',3,540,'2024-06-20 02:31:40');
+INSERT INTO `juegos` VALUES (2,'Juego2.png','asd',12.00,'1212-12-12',1,12,1,'2024-06-20 07:10:02'),(3,'Juego1.png','USADO',12.00,'1221-12-12',4,12,3,'2024-06-20 07:11:34'),(4,'Juego1.png','asd',12.00,'1321-03-12',1,12,3,'2024-06-20 07:30:11'),(5,'Juego1.png','asd',12.00,'1321-03-12',1,12,3,'2024-06-20 07:30:48'),(6,'Juego1.png','ASDASD',12.00,'1212-12-12',4,122,1,'2024-06-20 14:37:13');
 /*!40000 ALTER TABLE `juegos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -108,4 +135,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-19 23:35:24
+-- Dump completed on 2024-06-20 14:25:01

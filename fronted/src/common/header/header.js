@@ -1,17 +1,45 @@
-import React, { useState } from 'react'; // Asegúrate de importar useState correctamente
-import { Link } from 'react-router-dom';
+
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import PagoDesplegableCompras from '../../common/PantallaDespegableCompras/PagoDesplegableCompras.js';
+import axios from 'axios';
 
 import './globals.css';
 import './style.css';
 import imagenes from "./imagenes";
 
 const Header = () => {
-  
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setIsDropdownVisible(!isDropdownVisible);
+  };
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/categorias')
+      .then(response => {
+        setCategories(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching categories:', error);
+      });
+  }, []);
+
+  const handleCategoryChange = (e) => {
+    const categoryId = e.target.value;
+    setSelectedCategory(categoryId);
+  };
+
+  const handleImageClick = () => {
+    if (selectedCategory) {
+      navigate(`/juegos-por-categoria/${selectedCategory}`);
+    } else {
+      alert('Por favor, selecciona una categoría primero');
+    }
   };
 
   return (
@@ -25,18 +53,17 @@ const Header = () => {
           <div className="frame-14">
             <input className="buscar-producto" placeholder='Buscar producto' />
             <div className="overlap-group-2">
-              <select className="text-wrapper-9" defaultValue="">
+              <select id="category_id" name='category_id' className="text-wrapper-9" value={selectedCategory} onChange={handleCategoryChange}>
                 <option value="" disabled>Selecciona un género</option>
-                <option value="accion">Acción</option>
-                <option value="aventura">Aventura</option>
-                <option value="estrategia">Estrategia</option>
-                <option value="deportes">Deportes</option>
-                <option value="rpg">RPG</option>
-                <option value="simulacion">Simulación</option>
+                {categories.map(category => (
+                  <option key={category.categoria_id} value={category.categoria_id}>
+                    {category.nombre}
+                  </option>
+                ))}
               </select>
             </div>
             <img className="line-5" src={imagenes.line7} alt="" />
-            <img className="frame-15" src={imagenes.frame198} alt="" />
+            <img className="frame-15" src={imagenes.frame198} alt="" onClick={handleImageClick} />
           </div>
           <div className="group-4">
             <div className="frame-16">

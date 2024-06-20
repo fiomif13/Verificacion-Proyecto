@@ -23,6 +23,7 @@ import SaveImage from "./pages/Configuraciones/ImagenConfig.js";
 import MaybeShowFooter from "./common/MaybeShowFooter/MaybeShowFooter.js";
 import Footer from "./common/footer/footer.js";
 import HistorialDeCompras from './pages/HistorialDeCompras/HistorialDeCompras.js';
+import JuegosPorCategoria from "./pages/JuegosVenta/JuegosVenta.js";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
         <Header />
       </MaybeShowHeader>
       <Routes>
-        <Route path="/configuraciones" element={<SaveImage />} />
+      <Route path="/juegos-por-categoria/:categoria_id" element={<JuegosPorCategoria />} />
+      <Route path="/configuraciones" element={<SaveImage />} />
         <Route path="/carrito-compras" element={<CarritoCompras />} />
         <Route path="/detalle-producto-usado" element={<DetalleProductoUsado />} />
         <Route path="/detalle-producto" element={<DetalleProducto />} />
