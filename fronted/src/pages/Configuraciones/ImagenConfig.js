@@ -64,11 +64,6 @@ const ImagenConfig = () => {
     console.log('Form data:', values);
   };
 
-  // const para mostrar los datos de la imágen 
-  const [image, setImage] = useState(null);
-
-
-
   return (
     <div className="container mt-5">
       <h2>Add New Product</h2>

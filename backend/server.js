@@ -1,4 +1,3 @@
-// C:\Users\PROGRESA HUACHIPA\OneDrive\Escritorio\ProyectoUXFinal\ProjectUX\backend\server.js
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
@@ -138,4 +137,3 @@ app.get('/venta-nuevos', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
-
