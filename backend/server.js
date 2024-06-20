@@ -86,13 +86,13 @@ const upload = multer({ storage });
 
 // Ruta para guardar los datos del formulario y la imagen
 app.post('/configuraciones', upload.single('image'), (req, res) => {
-  const { title, description, price, release_date, category_id, stock } = req.body;
+  const { title, description, price, release_date, category_id, stock, estado_id } = req.body;
   const image = req.file.filename;
   const currentDate = new Date().toISOString().slice(0, 10);
   const newTitle = `${title}`;
 
-  const SQL = 'INSERT INTO juegos (titulo, descripcion, precio, fecha_lanzamiento, categoria_id, stock, fecha_creacion) VALUES (?, ?, ?, ?, ?, ?, NOW())';
-  const values = [newTitle, description, price, release_date, category_id, stock];
+  const SQL = 'INSERT INTO juegos (titulo, descripcion, precio, fecha_lanzamiento, categoria_id, stock, fecha_creacion, estado_id) VALUES (?, ?, ?, ?, ?, ?, NOW(), ?)';
+  const values = [newTitle, description, price, release_date, category_id, stock, estado_id];
 
   DB.query(SQL, values, (err, result) => {
     if (err) {
@@ -103,6 +103,7 @@ app.post('/configuraciones', upload.single('image'), (req, res) => {
     res.json({ message: 'Product successfully added', image });
   });
 });
+
 
 // Ruta para obtener las categorías
 app.get('/categorias', (req, res) => {
@@ -117,10 +118,22 @@ app.get('/categorias', (req, res) => {
   });
 });
 
+app.get('/estados', (req, res) => {
+  const SQL = 'SELECT estado_id, nombre FROM estado';
+  DB.query(SQL, (err, results) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      res.status(500).json({ error: 'Error executing query' });
+      return;
+    }
+    res.json(results);
+  });
+});
+
 
 // Ruta para obtener los datos de los juegos y enviarlos a la ruta /venta-nuevos 
 app.get('/venta-nuevos', (req, res) => {
-  const SQL = 'SELECT * FROM juegos';
+  const SQL = 'SELECT * FROM juegos WHERE estado_id = 1';
   DB.query(SQL, (err, rows) => {
     if (err) {
       console.error('Error executing query:', err);
@@ -131,8 +144,19 @@ app.get('/venta-nuevos', (req, res) => {
   });
 });
 
+app.get('/venta-usados', (req, res) => {
+  const SQL = 'SELECT * FROM juegos WHERE estado_id = 3';
+  DB.query(SQL, (err, rows) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      res.status(500).json({ error: 'Error executing query' });
+      return;
+    }
+    console.log("Hola")
+    res.json(rows);
+  });
+});
 // Servir imágenes desde el directorio de imágenes
-
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
