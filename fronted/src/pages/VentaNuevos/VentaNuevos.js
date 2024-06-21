@@ -27,7 +27,9 @@ const NuevosJuegos = () => {
               <li key={juego.juego_id} className="juego-item">
                 <div className="videojuego">
                   <div className="text-wrapper">{juego.titulo}</div>
-                  <img className="rectangle" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
+                  <Link to={`/detalle-producto/${juego.juego_id}`} >
+                    <img className="rectangle" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
+                  </Link>
                   <div className="div-wrapper">Precio: {juego.precio}</div>
                   <Link to="/carrito-compras" className="frame-2">
                     <div className="text-wrapper-3">Comprar</div>
