@@ -30,8 +30,8 @@ const JuegosPorCategoria = () => {
   }, [categoria_id]);
 
   
-  console.log(juego);
   console.log(juegos);
+  console.log(juego); // Dont work
   return (
     <div className="venta-usados">
       <div className="div">
