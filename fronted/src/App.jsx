@@ -32,8 +32,9 @@ function App() {
         <Header />
       </MaybeShowHeader>
       <Routes>
-      <Route path="/juegos-por-categoria/:categoria_id" element={<JuegosPorCategoria />} />
-      <Route path="/configuraciones" element={<SaveImage />} />
+        <Route path="/detalle-producto/:juego_id" element={<DetalleProducto />} />
+        <Route path="/juegos-por-categoria/:categoria_id" element={<JuegosPorCategoria />} />
+        <Route path="/configuraciones" element={<SaveImage />} />
         <Route path="/carrito-compras" element={<CarritoCompras />} />
         <Route path="/detalle-producto-usado" element={<DetalleProductoUsado />} />
         <Route path="/detalle-producto" element={<DetalleProducto />} />
