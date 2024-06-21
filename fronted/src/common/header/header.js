@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import PagoDesplegableCompras from '../../common/PantallaDespegableCompras/PagoDesplegableCompras.js';
+import PagoDesplegableVentas from '../../common/PantallaDespegableVentas/PantallaDesplegableVentas.js';
 import axios from 'axios';
 
 import './globals.css';
@@ -9,15 +10,26 @@ import './style.css';
 import imagenes from "./imagenes";
 
 const Header = () => {
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const [isComprasDropdownVisible, setIsComprasDropdownVisible] = useState(false);
+  const [isVentasDropdownVisible, setIsVentasDropdownVisible] = useState(false);
+
+  const toggleComprasDropdown = () => {
+    setIsComprasDropdownVisible(!isComprasDropdownVisible);
+    if (isVentasDropdownVisible) {
+      setIsVentasDropdownVisible(false);
+    }
+  };
+
+  const toggleVentasDropdown = () => {
+    setIsVentasDropdownVisible(!isVentasDropdownVisible);
+    if (isComprasDropdownVisible) {
+      setIsComprasDropdownVisible(false);
+    }
+  };
 
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
   const navigate = useNavigate();
-
-  const toggleDropdown = () => {
-    setIsDropdownVisible(!isDropdownVisible);
-  };
 
   useEffect(() => {
     axios.get('http://localhost:3001/categorias')
@@ -95,7 +107,7 @@ const Header = () => {
           <div className="frame-24">
             <img className="user" src={imagenes.user} alt="" />
             <div className="frame-25">
-              <div className="frame-26" onClick={toggleDropdown}>
+              <div className="frame-26" onClick={toggleComprasDropdown}>
                 <div className="frame-27">
                   <div className="group-7">
                     <div className="overlap-group-3">
@@ -106,16 +118,23 @@ const Header = () => {
                 </div>
               </div>
 
-              {isDropdownVisible && (
+              {isComprasDropdownVisible && (
                 <div className="dropdown-container">
                   <PagoDesplegableCompras />
                 </div>
               )}
 
             </div>
-            <Link to="/iniciar-sesion">
+            <div onClick={toggleVentasDropdown}>
               <img className="vector-2" src={imagenes.vector1} alt="" />
-            </Link>
+            </div>
+
+            {isVentasDropdownVisible && (
+              <div className="dropdown-container2">
+                <PagoDesplegableVentas />
+              </div>
+            )}
+
           </div>
         </div>
         <div className="frame-31">
