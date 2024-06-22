@@ -1,29 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import axios from 'axios';
-import Header from '../../common/header/header';
+//C:\Users\PROGRESA HUACHIPA\OneDrive\Escritorio\ProyectoUXFinal\ProjectUX\fronted\src\pages\CarritoCompras.js
+import React, { useState } from 'react';
+import Header from '../common/header/header.js';
 
-const JuegosPorCategoria = () => {
-  const { categoria_id } = useParams();
-  const [juegos, setJuegos] = useState([]);
-  const [error, setError] = useState(null);
+const CarritoCompras = ({ juegos, tipo }) => {
   const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
-  const [isComprasDropdownVisible, setIsComprasDropdownVisible] = useState(false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-
-
-  useEffect(() => {
-    const fetchJuegos = async () => {
-      try {
-        const response = await axios.get(`http://localhost:3001/juegos-por-categoria?categoria_id=${categoria_id}`);
-        setJuegos(response.data);
-      } catch (error) {
-        setError('Error fetching games: ' + error.message);
-      }
-    };
-
-    fetchJuegos();
-  }, [categoria_id]);
 
   const handleComprarClick = (juegoId) => {
     const juegoSeleccionado = juegos.find(juego => juego.juego_id === juegoId);
@@ -54,7 +35,7 @@ const JuegosPorCategoria = () => {
   };
 
   return (
-    <div className="venta-usados">
+    <div className={`venta-${tipo}`}>
       <Header
         juegosSeleccionados={juegosSeleccionados}
         onRemoverJuego={handleRemoverJuego}
@@ -63,16 +44,13 @@ const JuegosPorCategoria = () => {
       />
       <div className="div">
         <div className="frame">
-          <h1>Juegos Usados</h1>
-          {error && <p>{error}</p>}
+          <h1>{tipo === 'nuevos' ? 'Nuevos Juegos' : 'Juegos Usados'}</h1>
           <ul className="juegos-grid">
             {juegos.map(juego => (
               <li key={juego.juego_id} className="juego-item">
                 <div className="videojuego">
                   <div className="text-wrapper">{juego.titulo}</div>
-                  <Link to={`/detalle-producto/${juego.juego_id}`} className="frame-3">
-                    <img className="rectangle" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
-                  </Link>
+                  <img className="rectangle" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
                   <div className="div-wrapper">Precio: {juego.precio}</div>
                   <button className="text-wrapper-3" onClick={() => handleComprarClick(juego.juego_id)}>Comprar</button>
                 </div>
@@ -85,4 +63,4 @@ const JuegosPorCategoria = () => {
   );
 };
 
-export default JuegosPorCategoria;
+export default CarritoCompras;

@@ -1,48 +1,56 @@
-// src/pages/IniciarSesion/IniciarSesion.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import imagenes from './imagenes'; // Importar el archivo imagenes.js
 import './globals.css';
 import './style.css';
+import imagenes from './imagenes';
 
-const PantallaDesplegableVentas = () => {
+const PagoDesplegableCompras = ({ juegosSeleccionados, onRemoverJuego }) => {
   return (
-    <div class="pantalla-despegable">
-      <div class="div3">
-        <div class="overlap-group3">
-          <div class="text-wrapper3">Ventas</div>
-          <div class="overlap3">
-            <div class="text-wrapper-2-3">Estas vendiendo 2 juegos</div>
-            <img class="x-square3" src={imagenes.xSquare2} /> {/* Reemplazar la imagen */}
+    <div className="pantalla-despegable">
+      <div className="div2">
+        <div className="overlap2">
+          <div className="overlap-group2">
+            <div className="text-wrapper2">Carrito de compras</div>
+            <div className="frame2">
+              <div className="group-wrapper2">
+                <div className="group2">
+                  <div className="overlap-group-2-2">
+                    <img className="shopping-cart2" src={imagenes.shoppingCart} />
+                    <div className="text-wrapper-2-2">{juegosSeleccionados.reduce((total, juego) => total + juego.cantidad, 0)}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <img class="vector3" src={imagenes.vector2} /> {/* Reemplazar la imagen */}
+          <div className="overlap-2-2">
+            <p className="p2">Tienes {juegosSeleccionados.length} juegos en la lista</p>
+            <img className="x-square2" src={imagenes.xSquare} />
+          </div>
         </div>
-        <img class="line3" src={imagenes.line132} /> {/* Reemplazar la imagen */}
-        <div class="text-wrapper-3-3">Posible ingreso</div>
-        <div class="text-wrapper-4-3">S/ 200</div>
-        <div class="frame3"><div class="text-wrapper-5-3">Vender más</div></div>
-        <div class="frame-2-3">
-          <div class="frame-3-3">
-            <img class="ljcxangrw-x3" src={imagenes.Ijc5xangrw540x12} /> {/* Reemplazar la imagen */}
-            <p class="p3">
-              <span class="span3">Sackboy: Una gran aventura<br /></span>
-              <span class="text-wrapper-6-3">Unid: 1<br />S/ 100</span>
-            </p>
-            <img class="trash3" src={imagenes.trash212} /> {/* Reemplazar la imagen */}
-          </div>
-          <img class="img3" src={imagenes.line172} /> {/* Reemplazar la imagen */}
-          <div class="frame-3-3">
-            <img class="ljcxangrw-x3" src={imagenes.Ijc5xangrw540x112} /> {/* Reemplazar la imagen */}
-            <p class="p3">
-              <span class="span3">The Last of Us 2<br /></span> <span class="text-wrapper-6-3">Unid: 1<br />S/ 100</span>
-            </p>
-            <img class="trash3" src={imagenes.trash212} /> {/* Reemplazar la imagen */}
-          </div>
-          <img class="img3" src={imagenes.line172} /> {/* Reemplazar la imagen */}
+        
+        <div className="text-wrapper-3-2">Costo Total</div>
+        <div className="text-wrapper-4-2">S/ {juegosSeleccionados.reduce((total, juego) => total + juego.precio * juego.cantidad, 0)}</div>
+        <Link to="/carrito-compras" className="div-wrapper-2"><div className="text-wrapper-5-2">Más detalle</div></Link>
+        <Link to="/pago-tarjetas" className="frame-2-2"><div className="text-wrapper-5-2">Pagar</div></Link>
+
+        {/* Lista de juegos seleccionados */}
+        <div className="frame-3-2">
+          {juegosSeleccionados.map(juego => (
+            <div key={juego.juego_id} className="frame-4-2">
+              <img className="ljcxangrw-x2" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
+              <p className="div-2-2">
+                <span className="span2">{juego.titulo}<br /></span>
+                <span className="text-wrapper-6-2">Unid: {juego.cantidad}<br />S/ {juego.precio * juego.cantidad}</span>
+              </p>
+              <button onClick={() => onRemoverJuego(juego.juego_id)}>
+                <img className="trash2" src={imagenes.trash22} alt="Eliminar" />
+              </button>
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default PantallaDesplegableVentas;
+export default PagoDesplegableCompras;
