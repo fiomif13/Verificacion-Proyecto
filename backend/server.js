@@ -210,6 +210,26 @@ app.get('/detalle-producto/:juego_id', (req, res) => {
   });
 });
 
+// Ruta para obtener el título y el precio de un juego específico por su ID
+app.get('/juego-detalle/:juego_id', (req, res) => {
+  const { juego_id } = req.params;
+
+  const SQL = 'SELECT titulo, precio FROM juegos WHERE juego_id = ?';
+  DB.query(SQL, [juego_id], (err, result) => {
+    if (err) {
+      console.error('Error executing query:', err);
+      res.status(500).json({ error: 'Error executing query' });
+      return;
+    }
+    if (result.length === 0) {
+      res.status(404).json({ error: 'Juego no encontrado' });
+      return;
+    }
+    const juegoDetalle = result[0];
+    res.json(juegoDetalle);
+  });
+});
+
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
