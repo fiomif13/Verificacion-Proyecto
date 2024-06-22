@@ -91,6 +91,21 @@ app.post('/configuraciones', upload.single('image'), (req, res) => {
   const currentDate = new Date().toISOString().slice(0, 10);
   const newTitle = `${title}`;
 
+
+  const getStockQuery = 'SELECT stock FROM juegos WHERE titulo = ?';
+  DB.query(getStockQuery, [newTitle], (err, result) => {
+    if (err) {
+      console.error('Error fetching stock:', err);
+      res.status(500).json({ error: 'Error fetching stock' });
+      return;
+    }
+
+    let currentStock = 0;
+    if (result.length > 0) {
+      currentStock = result[0].stock;
+    }
+    const updatedStock = currentStock + 1;
+
   const SQL = 'INSERT INTO juegos (titulo, descripcion, precio, fecha_lanzamiento, categoria_id, stock, fecha_creacion, estado_id) VALUES (?, ?, ?, ?, ?, ?, NOW(), ?)';
   const values = [newTitle, description, price, release_date, category_id, stock, estado_id];
 
@@ -102,6 +117,7 @@ app.post('/configuraciones', upload.single('image'), (req, res) => {
     }
     res.json({ message: 'Product successfully added', image });
   });
+});
 });
 
 
