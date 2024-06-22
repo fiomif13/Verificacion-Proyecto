@@ -1,16 +1,13 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import PagoDesplegableCompras from '../../common/PantallaDespegableCompras/PagoDesplegableCompras.js';
-import PagoDesplegableVentas from '../../common/PantallaDespegableVentas/PantallaDesplegableVentas.js';
 import axios from 'axios';
 
 import './globals.css';
 import './style.css';
 import imagenes from "./imagenes";
 
-const Header = () => {
-  const [isComprasDropdownVisible, setIsComprasDropdownVisible] = useState(false);
+const Header = ({ juegosSeleccionados = [], onRemoverJuego, isComprasDropdownVisible, setIsComprasDropdownVisible }) => {
   const [isVentasDropdownVisible, setIsVentasDropdownVisible] = useState(false);
 
   const toggleComprasDropdown = () => {
@@ -111,7 +108,7 @@ const Header = () => {
                 <div className="frame-27">
                   <div className="group-7">
                     <div className="overlap-group-3">
-                      <div className="text-wrapper-13">3</div>
+                      <div className="text-wrapper-13">{juegosSeleccionados.length}</div>
                       <img className="shopping-cart" src={imagenes.shoppingCart} alt="" />
                     </div>
                   </div>
@@ -120,7 +117,7 @@ const Header = () => {
 
               {isComprasDropdownVisible && (
                 <div className="dropdown-container">
-                  <PagoDesplegableCompras />
+                  <PagoDesplegableCompras juegosSeleccionados={juegosSeleccionados} onRemoverJuego={onRemoverJuego} />
                 </div>
               )}
 
@@ -129,12 +126,11 @@ const Header = () => {
               <img className="vector-2" src={imagenes.vector1} alt="" />
             </div>
 
-            {isVentasDropdownVisible && (
+            {/*isVentasDropdownVisible && (
               <div className="dropdown-container2">
                 <PagoDesplegableVentas />
               </div>
-            )}
-
+            )*/}
           </div>
         </div>
         <div className="frame-31">
