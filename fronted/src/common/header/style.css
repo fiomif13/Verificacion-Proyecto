@@ -44,7 +44,7 @@
   .inicio .frame-31
   {
     z-index: 1000; /* Asegúrate de que el z-index sea lo suficientemente alto */
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 55px;
     top:65px;
