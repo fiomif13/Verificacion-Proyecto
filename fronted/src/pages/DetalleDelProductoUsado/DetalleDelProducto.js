@@ -1,12 +1,43 @@
-import React from 'react';
+import React, {useState} from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import imagenes from './imagenes'; // Importar el archivo imagenes.js
 import './globals.css';
 import './style.css';
+import Header from '../../common/header/header.js';
+
 
 const DetalleProducto = () => {
+  const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  
+  const handleRemoverJuego = (juegoId) => {
+    const juegoExistente = juegosSeleccionados.find(juego => juego.juego_id === juegoId);
+    let nuevosJuegosSeleccionados;
+    if (juegoExistente.cantidad > 1) {
+      nuevosJuegosSeleccionados = juegosSeleccionados.map(juego =>
+        juego.juego_id === juegoId ? { ...juego, cantidad: juego.cantidad - 1 } : juego
+      );
+    } else {
+      nuevosJuegosSeleccionados = juegosSeleccionados.filter(juego => juego.juego_id !== juegoId);
+      setIsDropdownVisible(nuevosJuegosSeleccionados.length > 0);
+    }
+    setJuegosSeleccionados(nuevosJuegosSeleccionados);
+    actualizarJuegosSeleccionados(nuevosJuegosSeleccionados);
+  }
+  const actualizarJuegosSeleccionados = (juegosSeleccionados) => {
+    axios.post('http://localhost:3001/juegos-seleccionados', juegosSeleccionados)
+      .then(response => console.log('Selected games updated successfully:', response))
+      .catch(error => console.error('Error updating selected games:', error));
+  };
   return (
     <div className="detalle-del-producto">
+      <Header
+        juegosSeleccionados={juegosSeleccionados}
+        onRemoverJuego={handleRemoverJuego}
+        isComprasDropdownVisible={isDropdownVisible}
+        setIsComprasDropdownVisible={setIsDropdownVisible}
+      />
       <div className="div">
         <div className="frame">
           <div className="div-wrapper"><div className="text-wrapper">Acción</div></div>

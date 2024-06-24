@@ -4,10 +4,13 @@ const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+const bodyParser = require('body-parser');
+
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser.json());
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
@@ -227,6 +230,57 @@ app.get('/juego-detalle/:juego_id', (req, res) => {
     }
     const juegoDetalle = result[0];
     res.json(juegoDetalle);
+  });
+});
+
+const filePath = path.join(__dirname, 'juegos-seleccionados.json');
+
+app.get('/juegos-seleccionados', (req, res) => {
+  fs.readFile(filePath, 'utf8', (err, data) => {
+      if (err) {
+          return res.status(500).send('Error reading file');
+      }
+      try {
+          const juegosExistentes = data ? JSON.parse(data) : [];
+          res.json(juegosExistentes);
+      } catch (err) {
+          res.status(500).send('Error parsing JSON data');
+      }
+  });
+});
+
+// Endpoint para actualizar los juegos seleccionados
+app.post('/juegos-seleccionados', (req, res) => {
+
+  const nuevosJuegosSeleccionados = req.body;
+
+  fs.readFile(filePath, 'utf8', (err, data) => {
+      if (err) {
+          return res.status(500).send('Error reading file');
+      }
+      try {
+          const juegosExistentes = data ? JSON.parse(data) : [];
+          const juegosActualizados = [...juegosExistentes, ...nuevosJuegosSeleccionados];
+
+          fs.writeFile(filePath, JSON.stringify(juegosActualizados, null, 2), (err) => {
+              if (err) {
+                  return res.status(500).send('Error writing file');
+              }
+              res.send('Juegos seleccionados actualizados');
+          });
+      } catch (err) {
+          res.status(500).send('Error parsing JSON data');
+      }
+  });
+});
+
+// Endpoint para eliminar todos los datos del archivo JSON
+app.delete('/juegos-seleccionados', (req, res) => {
+  fs.writeFile(filePath, '[]', (err) => {
+      if (err) {
+          return res.status(500).send('Error writing file');
+      }
+      res.send('Juegos seleccionados eliminados');
   });
 });
 
