@@ -1,4 +1,4 @@
-//C:\Users\PROGRESA HUACHIPA\OneDrive\Escritorio\ProyectoUXFinal\ProjectUX\fronted\src\common\PantallaDespegableVentas\PantallaDesplegableVentas.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './globals.css';

@@ -26,6 +26,7 @@ import HistorialDeCompras from './pages/HistorialDeCompras/HistorialDeCompras.js
 import JuegosPorCategoria from "./pages/JuegosVenta/JuegosVenta.js";
 
 function App() {
+  
   return (
     <Router>
       <Routes>

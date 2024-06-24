@@ -9,15 +9,17 @@ const MaybeShowFooter = ({ children }) => {
     useEffect(() => {
         console.log(location.pathname);
         if (
-            location.pathname === "/inicio" || 
-            location.pathname === "/detalle-producto" || 
-            location.pathname === "/detalle-producto-usado" ||
-            location.pathname === "/historial" ||
-            location.pathname === "/carrito-compras" 
+            location.pathname === "/iniciar-sesion" || 
+            location.pathname === "/registrarse" || 
+            location.pathname === "/" ||
+            location.pathname === "/pago-desplegable" ||
+            location.pathname === "/pantalla-venta" ||
+            location.pathname === "/configuraciones" ||
+            location.pathname === "/imagenes/get" 
         ) {
-            setShowFooter(true);
-        } else {
             setShowFooter(false);
+        } else {
+            setShowFooter(true);
         }
     }, [location]);
 
