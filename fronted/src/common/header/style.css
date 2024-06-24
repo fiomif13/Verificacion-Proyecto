@@ -17,6 +17,24 @@
     height: 105PX;
   }
 
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+  
+  
+  .navbar .nav-link:hover ~ .overlay {
+    display: block;
+  }
+  .navbar .nav-link:hover {
+    z-index: 1001;
+  }
   
   .inicio .div {
     background-color: #f6f6f6;
@@ -54,8 +72,10 @@
 
   .inicio .navbar{
     position: fixed;
-    top: 122px;
+    /*top: 122px;*/
     left: 100px;
+    margin:0;
+    padding: 0;
   }
 
   .inicio .frame-30{
@@ -304,6 +324,70 @@
     width: 19px;
     height: 19px;
   }
+
+  .inicio .text-wrapper-15 {
+    left: 220px;
+    position: absolute;
+    height: 58px;
+    top:-0.08px;
+    width: 80px;
+    font-family: "Actor", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inicio .text-wrapper-16 {
+    left: 327px;
+    position: absolute;
+    height: 58px;
+    top:-0.08px;
+    width: 80px;
+    font-family: "Actor", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inicio .text-wrapper-17 {
+    left: 434px;
+    position: absolute;
+    height: 58px;
+    top:-0.08px;
+    width: 80px;
+    font-family: "Actor", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inicio .text-wrapper-18 {
+    left: 547px;
+    position: absolute;
+    height: 58px;
+    top:-0.08px;
+    width: 80px;
+    font-family: "Actor", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   
   .inicio .text-wrapper-12 {
     position: relative;

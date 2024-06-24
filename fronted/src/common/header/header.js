@@ -135,10 +135,11 @@ const Header = ({ juegosSeleccionados = [], onRemoverJuego, isComprasDropdownVis
         </div>
         <div className="frame-31">
           <div className="navbar">
-            <Link to="/inicio" className="text-wrapper-15">Inicio</Link>
-            <Link to="/venta-nuevos" className="text-wrapper-16">Nuevo</Link>
-            <Link to="/venta-usados" className="text-wrapper-17">Usado</Link>
-            <Link to="/venta-codigo" className="text-wrapper-18">Vender</Link>
+            <Link to="/inicio" className="text-wrapper-15 nav-link">Inicio</Link>
+            <Link to="/venta-nuevos" className="text-wrapper-16 nav-link">Nuevo</Link>
+            <Link to="/venta-usados" className="text-wrapper-17 nav-link">Usado</Link>
+            <Link to="/venta-codigo" className="text-wrapper-18 nav-link">Vender</Link>
+            <div className="overlay"></div>
           </div>
           <img className="frame-30" src={imagenes.frame118_1} alt="" />
         </div>
