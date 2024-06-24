@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './globals.css';
 import './style.css';
-import CarritoCompras from '../CarritoCompras.js';
 import { Link } from 'react-router-dom';
 import Header from '../../common/header/header.js';
 import axios from 'axios';

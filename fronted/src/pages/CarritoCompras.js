@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../common/header/header.js';
 import { Link } from 'react-router-dom';
 
+
 const CarritoCompras = ({ juegos, tipo }) => {
   const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -19,6 +20,7 @@ const CarritoCompras = ({ juegos, tipo }) => {
 
   const handleComprarClick = (juegoId) => {
     const juegoSeleccionado = juegos.find(juego => juego.juego_id === juegoId); 
+
     if (juegoSeleccionado) {
       const juegoExistente = juegosSeleccionados.find(juego => juego.juego_id === juegoId);
       if (juegoExistente) {

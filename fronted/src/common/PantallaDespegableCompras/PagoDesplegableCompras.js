@@ -16,8 +16,6 @@ const PagoDesplegableCompras = ({ juegosSeleccionados, onRemoverJuego }) => {
       .catch(error => console.error('Error fetching selected games:', error));
     
   }, []);
-
-
   return (
     <div className="pantalla-despegable">
       <div className="div2">
@@ -43,12 +41,14 @@ const PagoDesplegableCompras = ({ juegosSeleccionados, onRemoverJuego }) => {
         
         <div className="text-wrapper-3-2">Costo Total</div>
         <div className="text-wrapper-4-2">S/ {PreJuegosSeleccionados.reduce((total, juego) => total + juego.precio * juego.cantidad, 0)}</div>
+
         <Link to="/carrito-compras" className="div-wrapper-2"><div className="text-wrapper-5-2">Más detalle</div></Link>
         <Link to="/pago-tarjetas" className="frame-2-2"><div className="text-wrapper-5-2">Pagar</div></Link>
 
         {/* Lista de juegos seleccionados */}
         <div className="frame-3-2">
           {PreJuegosSeleccionados.map(juego => (
+
             <div key={juego.juego_id} className="frame-4-2">
               <img className="ljcxangrw-x2" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
               <p className="div-2-2">

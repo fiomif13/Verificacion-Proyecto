@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import './globals.css';
 import './style.css';
 import Header from '../../common/header/header.js';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 
 const NuevosJuegos = () => {
   const [juegos, setJuegos] = useState([]);
@@ -105,7 +106,6 @@ const NuevosJuegos = () => {
     </div>
   </div>
   </div>
-
   );
 };
 

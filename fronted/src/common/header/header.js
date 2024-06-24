@@ -6,8 +6,10 @@ import './globals.css';
 import './style.css';
 import imagenes from "./imagenes";
 
-const Header = ({ juegosPreSeleccionados = [], onRemoverJuego, isComprasDropdownVisible, setIsComprasDropdownVisible }) => {
+
+const Header = ({ juegosSeleccionados = [], onRemoverJuego, isComprasDropdownVisible, setIsComprasDropdownVisible }) => {
   const [isVentasDropdownVisible, setIsVentasDropdownVisible] = useState(false);
+  const [hoveredLink, setHoveredLink] = useState(null);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
   const navigate = useNavigate();
@@ -78,6 +80,14 @@ const Header = ({ juegosPreSeleccionados = [], onRemoverJuego, isComprasDropdown
     const juegosActualizados = juegosSeleccionados.filter(juego => juego.juego_id !== juegoId);
     actualizarJuegosSeleccionados(juegosActualizados);
     onRemoverJuego(juegosActualizados);
+
+  const handleMouseEnter = (link) => {
+    setHoveredLink(link);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredLink(null);
+
   };
 
   return (
@@ -163,14 +173,49 @@ const Header = ({ juegosPreSeleccionados = [], onRemoverJuego, isComprasDropdown
                 <PagoDesplegableVentas />
               </div>
             )} */}
+
+            {/*isVentasDropdownVisible && (
+              <div className="dropdown-container2">
+                <PagoDesplegableVentas />
+              </div>
+            )*/}
           </div>
         </div>
         <div className="frame-31">
           <div className="navbar">
-            <Link to="/inicio" className="text-wrapper-15">Inicio</Link>
-            <Link to="/venta-nuevos" className="text-wrapper-16" onClick={handleNuevoClick}>Nuevo</Link>
-            <Link to="/venta-usados" className="text-wrapper-17" onClick={handleUsadoClick}>Usado</Link>
-            <Link to="/venta-codigo" className="text-wrapper-18">Vender</Link>
+            <Link
+              to="/inicio"
+              className={`text-wrapper-15 nav-link ${hoveredLink === 'inicio' ? 'header-hover' : ''}`}
+              onMouseEnter={() => handleMouseEnter('inicio')}
+              onMouseLeave={handleMouseLeave}
+            >
+              Inicio
+            </Link>
+            <Link
+              to="/venta-nuevos"
+              className={`text-wrapper-16 nav-link ${hoveredLink === 'nuevo' ? 'header-hover' : ''}`}
+              onMouseEnter={() => handleMouseEnter('nuevo')}
+              onMouseLeave={handleMouseLeave}
+            >
+              Nuevo
+            </Link>
+            <Link
+              to="/venta-usados"
+              className={`text-wrapper-17 nav-link ${hoveredLink === 'usado' ? 'header-hover' : ''}`}
+              onMouseEnter={() => handleMouseEnter('usado')}
+              onMouseLeave={handleMouseLeave}
+            >
+              Usado
+            </Link>
+            <Link
+              to="/venta-codigo"
+              className={`text-wrapper-18 nav-link ${hoveredLink === 'vender' ? 'header-hover' : ''}`}
+              onMouseEnter={() => handleMouseEnter('vender')}
+              onMouseLeave={handleMouseLeave}
+            >
+              Vender
+            </Link>
+            <div className="header-overlay" style={{ display: hoveredLink ? 'block' : 'none' }}></div>
           </div>
           <img className="frame-30" src={imagenes.frame118_1} alt="Banner" />
         </div>
