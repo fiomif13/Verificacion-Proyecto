@@ -4,15 +4,28 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  height: 600px;
 }
 
 .detalle-del-producto .div {
   background-color: #ffffff;
   overflow: hidden;
   width: 1400px;
-  height: 1241px;
+  height: 600px;
   position: relative;
 }
+
+
+
+.detalle-del-producto .img2 {
+  position: absolute;
+  width: 422px;
+  height: 530px;
+  top: 20px;
+  left: 246px;
+  border-radius: 20px;
+}
+
 
 .detalle-del-producto .frame {
   display: inline-flex;
@@ -23,7 +36,7 @@
   left: 720px;
 }
 
-.detalle-del-producto .div-wrapper {
+.detalle-del-producto .div-wrapper2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -34,6 +47,7 @@
   background-color: #efefef;
   border-radius: 62px;
   overflow: hidden;
+  top: -170px;
 }
 
 .detalle-del-producto .text-wrapper {
@@ -49,7 +63,7 @@
   white-space: nowrap;
 }
 
-.detalle-del-producto .frame-2 {
+.detalle-del-producto .frame-222 {
   display: flex;
   width: 400px;
   height: 52px;
@@ -58,15 +72,15 @@
   gap: 12px;
   padding: 16px 54px;
   position: absolute;
-  top: 651px;
-  left: 910px;
+  top: 485px;
+  left: 850px;
   background-color: #000000;
   border-radius: 62px;
   overflow: hidden;
   transition: all 0.2s ease;
 }
 
-.detalle-del-producto .text-wrapper-2 {
+.detalle-del-producto .text-wrapper-222 {
   position: relative;
   width: fit-content;
   margin-top: -0.5px;
@@ -142,10 +156,10 @@
   white-space: nowrap;
 }
 
-.detalle-del-producto .text-wrapper-5 {
+.detalle-del-producto .text-wrapper-52 {
   position: absolute;
   height: 48px;
-  top: 172px;
+  top: 30px;
   left: 720px;
   font-family: "Actor", Helvetica;
   font-weight: 400;
@@ -156,12 +170,12 @@
   white-space: nowrap;
 }
 
-.detalle-del-producto .frame-5 {
+.detalle-del-producto .frame-52 {
   display: inline-flex;
   align-items: flex-start;
   gap: 12px;
   position: absolute;
-  top: 274px;
+  top: 150px;
   left: 720px;
 }
 
@@ -192,9 +206,9 @@
   white-space: nowrap;
 }
 
-.detalle-del-producto .text-wrapper-8 {
+.detalle-del-producto .text-wrapper-82 {
   position: absolute;
-  top: 417px;
+  top: 250px;
   left: 720px;
   font-family: "Actor", Helvetica;
   font-weight: 400;
@@ -205,10 +219,10 @@
   white-space: nowrap;
 }
 
-.detalle-del-producto .p {
+.detalle-del-producto .p2 {
   position: absolute;
-  width: 590px;
-  top: 336px;
+  width: 200px;
+  top: 200px;
   left: 720px;
   font-family: "Actor", Helvetica;
   font-weight: 400;
@@ -218,9 +232,9 @@
   line-height: 22px;
 }
 
-.detalle-del-producto .text-wrapper-9 {
+.detalle-del-producto .text-wrapper-92 {
   position: absolute;
-  top: 529px;
+  top: 350px;
   left: 720px;
   font-family: "Actor", Helvetica;
   font-weight: 400;
@@ -314,29 +328,29 @@
   color: #00000099;
 }
 
-.detalle-del-producto .line {
+.detalle-del-producto .line22 {
   width: 590px;
   height: 1px;
-  top: 393px;
-  left: 720px;
+  top: 355px;
+  left: 870px;
   position: absolute;
   object-fit: cover;
 }
 
-.detalle-del-producto .line-2 {
+.detalle-del-producto .line-22 {
   width: 590px;
   height: 1px;
-  top: 505px;
-  left: 720px;
+  top: 460px;
+  left: 870px;
   position: absolute;
   object-fit: cover;
 }
 
-.detalle-del-producto .line-3 {
+.detalle-del-producto .line-32 {
   width: 590px;
   height: 1px;
-  top: 626px;
-  left: 720px;
+  top: 580px;
+  left: 870px;
   position: absolute;
   object-fit: cover;
 }
