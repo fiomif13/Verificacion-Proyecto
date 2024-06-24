@@ -279,12 +279,12 @@
   object-fit: cover;
 }
 
-.detalle-del-producto .frame-6 {
+.detalle-del-producto .frame-62 {
   display: inline-flex;
   align-items: center;
   gap: 16px;
   position: absolute;
-  top: 235px;
+  top: 100px;
   left: 720px;
 }
 

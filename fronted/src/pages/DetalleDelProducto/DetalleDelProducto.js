@@ -74,6 +74,16 @@ const DetalleProducto = () => {
         <p className="p2">
           {juego.descripcion}
         </p>
+        <div className="frame-62">
+          <div className="frame-7">
+            <img className="star" src={imagenes.starL} alt="star-1" />
+            <img className="star" src={imagenes.star2} alt="star-2" />
+            <img className="star" src={imagenes.star3} alt="star-3" />
+            <img className="star" src={imagenes.star4} alt="star-4" />
+            <img className="star-2" src={imagenes.star5} alt="star-5" />
+          </div>
+          <p className="element"><span className="span">4.5/</span> <span className="text-wrapper-10">5</span></p>
+        </div>
         <div className="text-wrapper-92">Géneros</div>
         <img className="img2" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
         <div className="frame-6">
