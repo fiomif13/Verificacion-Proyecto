@@ -14,26 +14,28 @@
     background-color: #f6f6f6;
     justify-content: center;
     width: 100%;
-    height: 105PX;
+    height: 104PX;
   }
 
-  .overlay {
+  .header-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    z-index: 998;
     display: none;
   }
   
-  
-  .navbar .nav-link:hover ~ .overlay {
-    display: block;
+  .header-hover {
+    position: relative;
+    z-index: 999;
   }
-  .navbar .nav-link:hover {
-    z-index: 1001;
+
+  
+  .navbar .nav-link:hover ~ .header-overlay {
+    display: block;
   }
   
   .inicio .div {
@@ -328,8 +330,8 @@
   .inicio .text-wrapper-15 {
     left: 220px;
     position: absolute;
-    height: 58px;
-    top:-0.08px;
+    height: 55px;
+    top:0px;
     width: 80px;
     font-family: "Actor", Helvetica;
     font-weight: 400;
@@ -339,12 +341,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0E3B3E;
+    border-radius: 20px 20px 0 0; 
   }
   .inicio .text-wrapper-16 {
     left: 327px;
     position: absolute;
-    height: 58px;
-    top:-0.08px;
+    height: 55px;
+    top:0px;
     width: 80px;
     font-family: "Actor", Helvetica;
     font-weight: 400;
@@ -354,13 +358,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0E3B3E;
+    border-radius: 20px 20px 0 0; 
   }
   
   .inicio .text-wrapper-17 {
     left: 434px;
     position: absolute;
-    height: 58px;
-    top:-0.08px;
+    height: 55px;
+    top:0px;
     width: 80px;
     font-family: "Actor", Helvetica;
     font-weight: 400;
@@ -370,13 +376,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0E3B3E;
+    border-radius: 20px 20px 0 0; 
   }
   
   .inicio .text-wrapper-18 {
     left: 547px;
     position: absolute;
-    height: 58px;
-    top:-0.08px;
+    height: 55px;
+    top:0px;
     width: 80px;
     font-family: "Actor", Helvetica;
     font-weight: 400;
@@ -386,6 +394,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0E3B3E;
+    border-radius: 20px 20px 0 0; 
   }
 
   
