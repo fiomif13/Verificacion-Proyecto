@@ -63,25 +63,37 @@ const DetalleProducto = () => {
     <div className="detalle-del-producto">
       <div className="div">
         <div className="frame">
-          <div className="div-wrapper"><div className="text-wrapper">{categoriaNombre}</div></div>
+          <div className="div-wrapper2"><div className="text-wrapper">{categoriaNombre}</div></div>
         </div>
-        <Link to="/carrito-compras" className="frame-2"><div className="text-wrapper-2">Añadir al carro</div></Link>
-        <div className="text-wrapper-5">{juego.titulo}</div>
-        <div className="frame-5">
+        <Link to="/carrito-compras" className="frame-222"><div className="text-wrapper-222">Añadir al carro</div></Link>
+        <div className="text-wrapper-52">{juego.titulo}</div>
+        <div className="frame-52">
           <div className="text-wrapper-6">S/{juego.precio}</div>
         </div>
-        <div className="text-wrapper-8">{estadoNombre}</div>
-        <p className="p">
+        <div className="text-wrapper-82">Estado: {estadoNombre}</div>
+        <p className="p2">
           {juego.descripcion}
         </p>
-        <div className="text-wrapper-9">Géneros</div>
-        <img src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
+        <div className="frame-62">
+          <div className="frame-7">
+            <img className="star" src={imagenes.starL} alt="star-1" />
+            <img className="star" src={imagenes.star2} alt="star-2" />
+            <img className="star" src={imagenes.star3} alt="star-3" />
+            <img className="star" src={imagenes.star4} alt="star-4" />
+            <img className="star-2" src={imagenes.star5} alt="star-5" />
+          </div>
+          <p className="element"><span className="span">4.5/</span> <span className="text-wrapper-10">5</span></p>
+        </div>
+        <div className="text-wrapper-92">Géneros</div>
+        <img className="img2" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
         <div className="frame-6">
           <div className="frame-7">
           </div>
         </div>
-        
       </div>
+      <img className="line22" src={imagenes.line3} alt="line-3" />
+      <img className="line-22" src={imagenes.line3} alt="line-3" />
+      <img className="line-32" src={imagenes.line3} alt="line-3" />
     </div>
     
   );
