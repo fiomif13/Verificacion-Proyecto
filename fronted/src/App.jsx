@@ -26,10 +26,11 @@ import HistorialDeCompras from './pages/HistorialDeCompras/HistorialDeCompras.js
 import JuegosPorCategoria from "./pages/JuegosVenta/JuegosVenta.js";
 
 function App() {
+  
   return (
     <Router>
       <MaybeShowHeader>
-        <Header />
+      <Header />
       </MaybeShowHeader>
       <Routes>
         <Route path="/detalle-producto/:juego_id" element={<DetalleProducto />} />

@@ -4,6 +4,9 @@
     align-items: center;
     background-color: #393939;
     color: #ffffff;
+    position: relative;
+      left: 0;
+  right: 0;
   }
   
   .footer .frame-wrapper {
@@ -243,7 +246,7 @@
     
     .footer .overlap-group {
     position: relative;
-    width: 1581px;
+    width: 100%;
     height: 80px;
     background-color: #161616;
     }
