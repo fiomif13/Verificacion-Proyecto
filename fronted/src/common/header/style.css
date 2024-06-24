@@ -14,8 +14,29 @@
     background-color: #f6f6f6;
     justify-content: center;
     width: 100%;
+    height: 104PX;
   }
 
+  .header-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+  }
+  
+  .header-hover {
+    position: relative;
+    z-index: 999;
+  }
+
+  
+  .navbar .nav-link:hover ~ .header-overlay {
+    display: block;
+  }
   
   .inicio .div {
     background-color: #f6f6f6;
@@ -44,7 +65,7 @@
   .inicio .frame-31
   {
     z-index: 1000; /* Asegúrate de que el z-index sea lo suficientemente alto */
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 55px;
     top:65px;
@@ -53,8 +74,10 @@
 
   .inicio .navbar{
     position: fixed;
-    top: 122px;
+    /*top: 122px;*/
     left: 100px;
+    margin:0;
+    padding: 0;
   }
 
   .inicio .frame-30{
@@ -303,6 +326,78 @@
     width: 19px;
     height: 19px;
   }
+
+  .inicio .text-wrapper-15 {
+    left: 220px;
+    position: absolute;
+    height: 55px;
+    top:0px;
+    width: 80px;
+    font-family: "Actor", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E3B3E;
+    border-radius: 20px 20px 0 0; 
+  }
+  .inicio .text-wrapper-16 {
+    left: 327px;
+    position: absolute;
+    height: 55px;
+    top:0px;
+    width: 80px;
+    font-family: "Actor", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E3B3E;
+    border-radius: 20px 20px 0 0; 
+  }
+  
+  .inicio .text-wrapper-17 {
+    left: 434px;
+    position: absolute;
+    height: 55px;
+    top:0px;
+    width: 80px;
+    font-family: "Actor", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E3B3E;
+    border-radius: 20px 20px 0 0; 
+  }
+  
+  .inicio .text-wrapper-18 {
+    left: 547px;
+    position: absolute;
+    height: 55px;
+    top:0px;
+    width: 80px;
+    font-family: "Actor", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E3B3E;
+    border-radius: 20px 20px 0 0; 
+  }
+
   
   .inicio .text-wrapper-12 {
     position: relative;
