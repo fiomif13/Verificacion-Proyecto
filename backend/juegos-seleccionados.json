@@ -1,17 +1,5 @@
 [
   {
-    "juego_id": 2,
-    "titulo": "Juego2.png",
-    "descripcion": "asd",
-    "precio": 12,
-    "fecha_lanzamiento": "1212-12-12T05:08:12.000Z",
-    "categoria_id": 1,
-    "stock": 12,
-    "estado_id": 1,
-    "fecha_creacion": "2024-06-20T07:10:02.000Z",
-    "cantidad": 1
-  },
-  {
     "juego_id": 6,
     "titulo": "Juego1.png",
     "descripcion": "ASDASD",
@@ -33,18 +21,18 @@
     "stock": 12,
     "estado_id": 1,
     "fecha_creacion": "2024-06-20T07:10:02.000Z",
-    "cantidad": 0
+    "cantidad": 1
   },
   {
-    "juego_id": 6,
-    "titulo": "Juego1.png",
-    "descripcion": "ASDASD",
-    "precio": 12,
+    "juego_id": 9,
+    "titulo": "Captura de pantalla 2024-04-19 165922.png",
+    "descripcion": "asd",
+    "precio": 123,
     "fecha_lanzamiento": "1212-12-12T05:08:12.000Z",
-    "categoria_id": 4,
-    "stock": 122,
+    "categoria_id": 2,
+    "stock": 21,
     "estado_id": 1,
-    "fecha_creacion": "2024-06-20T14:37:13.000Z",
+    "fecha_creacion": "2024-06-22T04:51:26.000Z",
     "cantidad": 1
   }
 ]
