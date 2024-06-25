@@ -4,6 +4,7 @@ import axios from 'axios';
 import imagenes from './imagenes';
 import './globals.css';
 import './style.css';
+import Header from '../../common/header/header.js';
 
 const DetalleProducto = () => {
   const { juego_id } = useParams();
@@ -11,6 +12,29 @@ const DetalleProducto = () => {
   const [categorias, setCategorias] = useState([]);
   const [estados, setEstados] = useState([]);
   const [error, setError] = useState(null);
+
+  const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  
+  const handleRemoverJuego = (juegoId) => {
+    const juegoExistente = juegosSeleccionados.find(juego => juego.juego_id === juegoId);
+    let nuevosJuegosSeleccionados;
+    if (juegoExistente.cantidad > 1) {
+      nuevosJuegosSeleccionados = juegosSeleccionados.map(juego =>
+        juego.juego_id === juegoId ? { ...juego, cantidad: juego.cantidad - 1 } : juego
+      );
+    } else {
+      nuevosJuegosSeleccionados = juegosSeleccionados.filter(juego => juego.juego_id !== juegoId);
+      setIsDropdownVisible(nuevosJuegosSeleccionados.length > 0);
+    }
+    setJuegosSeleccionados(nuevosJuegosSeleccionados);
+    actualizarJuegosSeleccionados(nuevosJuegosSeleccionados);
+  }
+  const actualizarJuegosSeleccionados = (juegosSeleccionados) => {
+    axios.post('http://localhost:3001/juegos-seleccionados', juegosSeleccionados)
+      .then(response => console.log('Selected games updated successfully:', response))
+      .catch(error => console.error('Error updating selected games:', error));
+  };
 
   useEffect(() => {
     const fetchJuego = async () => {
@@ -60,7 +84,15 @@ const DetalleProducto = () => {
 
   console.log(juego);
   return (
+    <div>
+      <Header
+        juegosSeleccionados={juegosSeleccionados}
+        onRemoverJuego={handleRemoverJuego}
+        isComprasDropdownVisible={isDropdownVisible}
+        setIsComprasDropdownVisible={setIsDropdownVisible}
+      />
     <div className="detalle-del-producto">
+
       <div className="div">
         <div className="frame">
           <div className="div-wrapper2"><div className="text-wrapper">{categoriaNombre}</div></div>
@@ -95,7 +127,8 @@ const DetalleProducto = () => {
       <img className="line-22" src={imagenes.line3} alt="line-3" />
       <img className="line-32" src={imagenes.line3} alt="line-3" />
     </div>
-    
+    </div>
+
   );
 };
 

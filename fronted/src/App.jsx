@@ -29,9 +29,6 @@ function App() {
   
   return (
     <Router>
-      <MaybeShowHeader>
-      <Header />
-      </MaybeShowHeader>
       <Routes>
         <Route path="/detalle-producto/:juego_id" element={<DetalleProducto />} />
         <Route path="/juegos-por-categoria/:categoria_id" element={<JuegosPorCategoria />} />
