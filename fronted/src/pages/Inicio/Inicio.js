@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -11,10 +11,17 @@ import axios from 'axios';
 const Inicio = () => {
   const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/juegos-seleccionados')
+      .then(response => setJuegosSeleccionados(response.data))
+      .catch(error => console.error('Error fetching selected games:', error));
+  }, []);
   
   const handleRemoverJuego = (juegoId) => {
     const juegoExistente = juegosSeleccionados.find(juego => juego.juego_id === juegoId);
     let nuevosJuegosSeleccionados;
+    eliminarJuegos();
     if (juegoExistente.cantidad > 1) {
       nuevosJuegosSeleccionados = juegosSeleccionados.map(juego =>
         juego.juego_id === juegoId ? { ...juego, cantidad: juego.cantidad - 1 } : juego
@@ -32,7 +39,12 @@ const Inicio = () => {
       .catch(error => console.error('Error updating selected games:', error));
   };
 
-
+  const eliminarJuegos = () => {
+    axios.delete('http://localhost:3001/juegos-seleccionados')
+      .then(response => console.log(response.data))
+      .catch(error => console.error('Error deleting selected games:', error));
+    setJuegosSeleccionados([]);
+  };
 
   return (
     <div>

@@ -7,7 +7,7 @@ import './style.css';
 import imagenes from "./imagenes";
 
 
-const Header = ({ juegosSeleccionados = [], onRemoverJuego, isComprasDropdownVisible, setIsComprasDropdownVisible }) => {
+const Header = ({ juegosPreSeleccionados = [], onRemoverJuego, isComprasDropdownVisible, setIsComprasDropdownVisible }) => {
   const [isVentasDropdownVisible, setIsVentasDropdownVisible] = useState(false);
   const [hoveredLink, setHoveredLink] = useState(null);
   const [categories, setCategories] = useState([]);
@@ -44,14 +44,6 @@ const Header = ({ juegosSeleccionados = [], onRemoverJuego, isComprasDropdownVis
     }
   };
 
-  const handleNuevoClick = () => {
-    navigate("/venta-nuevos", { state: { juegosSeleccionados } });
-  };
-
-  const handleUsadoClick = () => {
-    navigate("/venta-usados", { state: { juegosSeleccionados } });
-  };
-
   const toggleComprasDropdown = () => {
     setIsComprasDropdownVisible(!isComprasDropdownVisible);
     if (isVentasDropdownVisible) {
@@ -80,6 +72,7 @@ const Header = ({ juegosSeleccionados = [], onRemoverJuego, isComprasDropdownVis
     const juegosActualizados = juegosSeleccionados.filter(juego => juego.juego_id !== juegoId);
     actualizarJuegosSeleccionados(juegosActualizados);
     onRemoverJuego(juegosActualizados);
+  }
 
   const handleMouseEnter = (link) => {
     setHoveredLink(link);
@@ -89,6 +82,7 @@ const Header = ({ juegosSeleccionados = [], onRemoverJuego, isComprasDropdownVis
     setHoveredLink(null);
 
   };
+
 
   return (
     <div className="header">
@@ -223,5 +217,6 @@ const Header = ({ juegosSeleccionados = [], onRemoverJuego, isComprasDropdownVis
     </div>
   );
 };
+
 
 export default Header;
