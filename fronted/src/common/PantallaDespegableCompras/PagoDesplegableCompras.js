@@ -10,12 +10,11 @@ const PagoDesplegableCompras = ({ juegosSeleccionados, onRemoverJuego }) => {
   const [PreJuegosSeleccionados, setPreJuegosSeleccionados] = useState([juegosSeleccionados]);
 
   useEffect(() => {
-    
     axios.get('http://localhost:3001/juegos-seleccionados')
       .then(response => setPreJuegosSeleccionados(response.data))
       .catch(error => console.error('Error fetching selected games:', error));
-    
   }, []);
+
   return (
     <div className="pantalla-despegable">
       <div className="div2">
@@ -38,7 +37,7 @@ const PagoDesplegableCompras = ({ juegosSeleccionados, onRemoverJuego }) => {
             <img className="x-square2" src={imagenes.xSquare} />
           </div>
         </div>
-        
+
         <div className="text-wrapper-3-2">Costo Total</div>
         <div className="text-wrapper-4-2">S/ {PreJuegosSeleccionados.reduce((total, juego) => total + juego.precio * juego.cantidad, 0)}</div>
 
@@ -46,16 +45,15 @@ const PagoDesplegableCompras = ({ juegosSeleccionados, onRemoverJuego }) => {
         <Link to="/pago-tarjetas" className="frame-2-2"><div className="text-wrapper-5-2">Pagar</div></Link>
 
         {/* Lista de juegos seleccionados */}
-        <div className="frame-3-2">
+        <div className="frame-3-2 scroll-container">
           {PreJuegosSeleccionados.map(juego => (
-
             <div key={juego.juego_id} className="frame-4-2">
               <img className="ljcxangrw-x2" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
               <p className="div-2-2">
                 <span className="span2">{juego.titulo}<br /></span>
                 <span className="text-wrapper-6-2">Unid: {juego.cantidad}<br />S/ {juego.precio * juego.cantidad}</span>
               </p>
-              <button onClick={() => onRemoverJuego(juego.juego_id)}>
+              <button className='button-remover' onClick={() => onRemoverJuego(juego.juego_id)}>
                 <img className="trash2" src={imagenes.trash22} alt="Eliminar" />
               </button>
             </div>
