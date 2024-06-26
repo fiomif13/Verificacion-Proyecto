@@ -123,9 +123,8 @@ const DetalleProducto = () => {
             isDropdownVisible={isDropdownVisible}
             setIsComprasDropdownVisible={setIsDropdownVisible}
           />
-        )}
+      )}
     </div>
-
   );
 };
 

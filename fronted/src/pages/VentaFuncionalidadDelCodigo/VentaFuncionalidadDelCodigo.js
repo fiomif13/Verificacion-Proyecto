@@ -6,30 +6,18 @@ import './style.css';
 import imagenes from './imagenes'; // Importa el archivo imagenes.js
 import axios from 'axios';
 import Header from '../../common/header/header';
+import useCarrito from '../auxiliar';
+import CarritoCompras from '../CarritoCompras';
 
 const VentaFuncionalidadDelCodigo = () => {
-  const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-  
-  const handleRemoverJuego = (juegoId) => {
-    const juegoExistente = juegosSeleccionados.find(juego => juego.juego_id === juegoId);
-    let nuevosJuegosSeleccionados;
-    if (juegoExistente.cantidad > 1) {
-      nuevosJuegosSeleccionados = juegosSeleccionados.map(juego =>
-        juego.juego_id === juegoId ? { ...juego, cantidad: juego.cantidad - 1 } : juego
-      );
-    } else {
-      nuevosJuegosSeleccionados = juegosSeleccionados.filter(juego => juego.juego_id !== juegoId);
-      setIsDropdownVisible(nuevosJuegosSeleccionados.length > 0);
-    }
-    setJuegosSeleccionados(nuevosJuegosSeleccionados);
-    actualizarJuegosSeleccionados(nuevosJuegosSeleccionados);
-  }
-  const actualizarJuegosSeleccionados = (juegosSeleccionados) => {
-    axios.post('http://localhost:3001/juegos-seleccionados', juegosSeleccionados)
-      .then(response => console.log('Selected games updated successfully:', response))
-      .catch(error => console.error('Error updating selected games:', error));
-  };
+
+  const {
+    juegosSeleccionados,
+    isDropdownVisible,
+    setIsDropdownVisible,
+    handleRemoverJuego,
+    mostrarCarrito,
+  } = useCarrito();
 
   return (
     <div>

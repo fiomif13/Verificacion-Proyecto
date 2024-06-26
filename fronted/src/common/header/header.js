@@ -44,6 +44,14 @@ const Header = ({ juegosPreSeleccionados = [], onRemoverJuego, isComprasDropdown
     }
   };
 
+  const handleNuevoClick = () => {
+    navigate("/venta-nuevos", { state: { juegosSeleccionados } });
+  };
+
+  const handleUsadoClick = () => {
+    navigate("/venta-usados", { state: { juegosSeleccionados } });
+  };
+
   const toggleComprasDropdown = () => {
     setIsComprasDropdownVisible(!isComprasDropdownVisible);
     if (isVentasDropdownVisible) {
