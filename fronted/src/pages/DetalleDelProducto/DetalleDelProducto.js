@@ -5,6 +5,8 @@ import imagenes from './imagenes';
 import './globals.css';
 import './style.css';
 import Header from '../../common/header/header.js';
+import useCarrito from '../auxiliar.js';
+import CarritoCompras from '../CarritoCompras.js';
 
 const DetalleProducto = () => {
   const { juego_id } = useParams();
@@ -13,29 +15,15 @@ const DetalleProducto = () => {
   const [estados, setEstados] = useState([]);
   const [error, setError] = useState(null);
 
-  const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const {
+    juegosSeleccionados,
+    isDropdownVisible,
+    setIsDropdownVisible,
+    handleRemoverJuego,
+    mostrarCarrito,
+    carritoKey
+  } = useCarrito();
   
-  const handleRemoverJuego = (juegoId) => {
-    const juegoExistente = juegosSeleccionados.find(juego => juego.juego_id === juegoId);
-    let nuevosJuegosSeleccionados;
-    if (juegoExistente.cantidad > 1) {
-      nuevosJuegosSeleccionados = juegosSeleccionados.map(juego =>
-        juego.juego_id === juegoId ? { ...juego, cantidad: juego.cantidad - 1 } : juego
-      );
-    } else {
-      nuevosJuegosSeleccionados = juegosSeleccionados.filter(juego => juego.juego_id !== juegoId);
-      setIsDropdownVisible(nuevosJuegosSeleccionados.length > 0);
-    }
-    setJuegosSeleccionados(nuevosJuegosSeleccionados);
-    actualizarJuegosSeleccionados(nuevosJuegosSeleccionados);
-  }
-  const actualizarJuegosSeleccionados = (juegosSeleccionados) => {
-    axios.post('http://localhost:3001/juegos-seleccionados', juegosSeleccionados)
-      .then(response => console.log('Selected games updated successfully:', response))
-      .catch(error => console.error('Error updating selected games:', error));
-  };
-
   useEffect(() => {
     const fetchJuego = async () => {
       try {
@@ -127,6 +115,15 @@ const DetalleProducto = () => {
       <img className="line-22" src={imagenes.line3} alt="line-3" />
       <img className="line-32" src={imagenes.line3} alt="line-3" />
     </div>
+    {mostrarCarrito && (
+          <CarritoCompras
+            key={carritoKey}
+            juegosSeleccionados={juegosSeleccionados}
+            handleRemoverJuego={handleRemoverJuego}
+            isDropdownVisible={isDropdownVisible}
+            setIsComprasDropdownVisible={setIsDropdownVisible}
+          />
+        )}
     </div>
 
   );

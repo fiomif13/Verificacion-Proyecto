@@ -4,13 +4,15 @@ import './style.css';
 import Header from '../../common/header/header.js';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-
+import CarritoCompras from '../CarritoCompras';
 
 const NuevosJuegos = () => {
   const [juegos, setJuegos] = useState([]);
   const [error, setError] = useState(null);
   const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const [mostrarCarrito, setMostrarCarrito] = useState(false);
+  const [carritoKey, setCarritoKey] = useState(0); 
 
   useEffect(() => {
     fetch('http://localhost:3001/venta-nuevos')
@@ -39,8 +41,10 @@ const NuevosJuegos = () => {
         nuevosJuegosSeleccionados = [...juegosSeleccionados, { ...juegoSeleccionado, cantidad: 1 }];
       }
       setJuegosSeleccionados(nuevosJuegosSeleccionados);
-      setIsDropdownVisible(false);
+      setIsDropdownVisible(true);
       actualizarJuegosSeleccionados(nuevosJuegosSeleccionados);
+      setMostrarCarrito(true);  // Actualiza el estado para mostrar el carrito
+      setCarritoKey(prevKey => prevKey + 1); // Incrementa la clave del carrito para forzar re-render
     }
   };
 
@@ -58,6 +62,9 @@ const NuevosJuegos = () => {
     }
     setJuegosSeleccionados(nuevosJuegosSeleccionados);
     actualizarJuegosSeleccionados(nuevosJuegosSeleccionados);
+    setIsDropdownVisible(true);
+    setMostrarCarrito(true);  // Actualiza el estado para mostrar el carrito
+    setCarritoKey(prevKey => prevKey + 1); // Incrementa la clave del carrito para forzar re-render
   };
 
   const eliminarJuegos = () => {
@@ -75,37 +82,46 @@ const NuevosJuegos = () => {
 
   return (
     <div>
-    <Header
-            juegosSeleccionados={juegosSeleccionados}
-            onRemoverJuego={handleRemoverJuego}
-            isComprasDropdownVisible={isDropdownVisible}
-            setIsComprasDropdownVisible={setIsDropdownVisible}
+      <Header
+        juegosSeleccionados={juegosSeleccionados}
+        onRemoverJuego={handleRemoverJuego}
+        isComprasDropdownVisible={isDropdownVisible}
+        setIsComprasDropdownVisible={setIsDropdownVisible}
       />
-    <div className='venta-nuevos'>
-
-      <div className='div'>
-        <div className='frame'>
-          <h1>Nuevos Juegos</h1>
-          {error && <p>{error}</p>}
-          <ul className="juegos-grid">
-            {juegos.map(juego => (
-              <li key={juego.juego_id} className="juego-item">
-                <div className="videojuego">
-                  <div className="text-wrapper">{juego.titulo}</div>
-                  <Link to={`/detalle-producto/${juego.juego_id}`} className="frame-3">
-                  <img className="rectangle" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
-                  </Link>
-                  <div className="div-wrapper">Precio: {juego.precio}</div>
-                  <button className="text-wrapper-3" onClick={() => handleComprarClick(juego.juego_id)}>Comprar</button>
+      <div className='venta-usados'>
+        <div className='div'>
+          <div className='frame'>
+            <h1>Nuevos Juegos</h1>
+            {error && <p>{error}</p>}
+            <ul className="juegos-grid">
+              {juegos.map(juego => (
+                <li key={juego.juego_id} className="juego-item">
+                  <div className="videojuego">
+                    <div className="text-wrapper">{juego.titulo}</div>
+                    <Link to={`/detalle-producto/${juego.juego_id}`} className="frame-3">
+                      <img className="rectangle" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
+                    </Link>
+                    <div className="div-wrapper">Precio: {juego.precio}</div>
+                    <div> 
+                      <button className="text-wrapper-3" onClick={() => handleComprarClick(juego.juego_id)}>Comprar</button>
+                    </div>
                   </div>
-              </li>
-            ))}
-          </ul>
-
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
+      {mostrarCarrito && (
+        <CarritoCompras
+          key={carritoKey} // Clave dinámica para forzar re-render
+          juegosSeleccionados={juegosSeleccionados}
+          handleRemoverJuego={handleRemoverJuego}
+          isDropdownVisible={isDropdownVisible}
+          setIsComprasDropdownVisible={setIsDropdownVisible}
+        />
+      )}
     </div>
-  </div>
-  </div>
   );
 };
 
