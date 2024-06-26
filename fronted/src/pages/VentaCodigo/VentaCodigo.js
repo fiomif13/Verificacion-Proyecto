@@ -21,7 +21,6 @@ const VentaCodigo = () => {
     carritoKey
   } = useCarrito();
 
-  console.log(carritoKey);
 
   return (
     <div>

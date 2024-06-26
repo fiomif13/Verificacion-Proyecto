@@ -15,7 +15,7 @@ import VentaCodigo from "./pages/VentaCodigo/VentaCodigo.js";
 import PagoConTarjetas from "./pages/PagoConTarjetas/PagoConTarjetas.js";
 import CompraExitosa from "./pages/CompraExitosa/CompraExitosa.js";
 import DetalleProducto from "./pages/DetalleDelProducto/DetalleDelProducto.js";
-import CarritoCompras from "./pages/CarritoDeCompras/CarritoCompras.js";
+import DetalleCompras from "./pages/CarritoDeCompras/DetalleCompras.js";
 import DetalleProductoUsado from "./pages/DetalleDelProductoUsado/DetalleDelProducto.js";
 import Header from './common/header/header.js';
 import MaybeShowHeader from './common/MaybeShowHeader/MaybeShowHeader.js';
@@ -33,7 +33,7 @@ function App() {
         <Route path="/detalle-producto/:juego_id" element={<DetalleProducto />} />
         <Route path="/juegos-por-categoria/:categoria_id" element={<JuegosPorCategoria />} />
         <Route path="/configuraciones" element={<SaveImage />} />
-        <Route path="/carrito-compras" element={<CarritoCompras />} />
+        <Route path="/carrito-compras" element={<DetalleCompras />} />
         <Route path="/detalle-producto-usado" element={<DetalleProductoUsado />} />
         <Route path="/detalle-producto" element={<DetalleProducto />} />
         <Route path="/compra-exitosa" element={<CompraExitosa />} />

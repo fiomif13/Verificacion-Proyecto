@@ -4,7 +4,7 @@ import './style.css';
 import { Link } from 'react-router-dom';
 import Header from '../../common/header/header.js';
 import axios from 'axios';
-import CarritoCompras from '../CarritoCompras';
+import CarritoCompras from '../CarritoCompras.js';
 
 const VentaUsados = () => {
   const [juegos, setJuegos] = useState([]);

@@ -6,7 +6,7 @@ const useCarrito = () => {
   const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [mostrarCarrito, setMostrarCarrito] = useState(false);
-  const [carritoKey, setCarritoKey] = useState(0);
+  const [carritoKey, setCarritoKey] = useState(1);
 
   useEffect(() => {
     axios.get('http://localhost:3001/juegos-seleccionados')

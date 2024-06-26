@@ -3,12 +3,33 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './globals.css';
 import './style.css';
+import Header from '../../common/header/header.js';
+import useCarrito from '../auxiliar.js';
+import CarritoCompras from '../CarritoCompras.js';
+
 
 // Importa las imágenes desde imagenes.js
-import imagenes from './imagenes';
+import imagenes from './imagenes.js';
 
-const CarritoCompras = () => {
+const DetalleCompras = () => {
+
+  const {
+    juegosSeleccionados,
+    isDropdownVisible,
+    setIsDropdownVisible,
+    handleRemoverJuego,
+    mostrarCarrito,
+    carritoKey
+  } = useCarrito();
+
   return (
+    <div>
+      <Header 
+        juegosSeleccionados={juegosSeleccionados}
+        onRemoverJuego={handleRemoverJuego}
+        isComprasDropdownVisible={isDropdownVisible}
+        setIsComprasDropdownVisible={setIsDropdownVisible}
+      />
     <div className="carrito-de-compras">
       <div className="div">
         <img className="line" src={imagenes.line4} />
@@ -115,7 +136,18 @@ const CarritoCompras = () => {
         
       </div>
     </div>
+    {mostrarCarrito && (
+          <CarritoCompras
+            key={carritoKey}
+            juegosSeleccionados={juegosSeleccionados}
+            handleRemoverJuego={handleRemoverJuego}
+            isDropdownVisible={isDropdownVisible}
+            setIsComprasDropdownVisible={setIsDropdownVisible}
+          />
+        )}
+    </div>
+
   );
 };
 
-export default CarritoCompras;
+export default DetalleCompras;
