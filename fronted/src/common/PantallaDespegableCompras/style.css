@@ -18,6 +18,15 @@
   /* Otros estilos de tu elección */
 }
 
+.button-remover{
+  background-color: white;
+  border: none;
+}
+
+.scroll-container {
+  max-height: 400px; /* Ajusta esta altura según sea necesario */
+  overflow-y: auto;
+}
 
 .pantalla-despegable .div2 {
   background-color: #ffffff;
@@ -223,7 +232,9 @@
   gap: 11px;
   position: absolute;
   top: 100px;
-  left: 18px;
+  left: 10px;
+  width: 350px;
+  height: 280px;
 }
 
 .pantalla-despegable .frame-4-2 {
