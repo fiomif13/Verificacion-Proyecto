@@ -4,12 +4,15 @@ import './style.css';
 import { Link } from 'react-router-dom';
 import Header from '../../common/header/header.js';
 import axios from 'axios';
+import CarritoCompras from '../CarritoCompras';
 
 const VentaUsados = () => {
   const [juegos, setJuegos] = useState([]);
   const [error, setError] = useState(null);
   const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const [mostrarCarrito, setMostrarCarrito] = useState(false);
+  const [carritoKey, setCarritoKey] = useState(0); // Añadido estado para clave de CarritoCompras
 
   useEffect(() => {
     fetch('http://localhost:3001/venta-usados')
@@ -24,23 +27,25 @@ const VentaUsados = () => {
       .catch(error => console.error('Error fetching selected games:', error));
   }, []);
 
-  
   const handleComprarClick = (juegoId) => {
     const juegoSeleccionado = juegos.find(juego => juego.juego_id === juegoId); 
     if (juegoSeleccionado) {
       eliminarJuegos();
       const juegoExistente = juegosSeleccionados.find(juego => juego.juego_id === juegoId);
-      let nuevosJuegosSeleccionados;
       if (juegoExistente) {
-        nuevosJuegosSeleccionados = juegosSeleccionados.map(juego =>
-          juego.juego_id === juegoId ? { ...juego, cantidad: juego.cantidad + 1 } : juego
-        );
+        juegosSeleccionados.forEach(juego => {
+          if (juego.juego_id === juegoId) {
+            juego.cantidad += 1;
+          }
+        });
       } else {
-        nuevosJuegosSeleccionados = [...juegosSeleccionados, { ...juegoSeleccionado, cantidad: 1 }];
+        juegosSeleccionados.push({ ...juegoSeleccionado, cantidad: 1 });
       }
-      setJuegosSeleccionados(nuevosJuegosSeleccionados);
-      setIsDropdownVisible(false);
-      actualizarJuegosSeleccionados(nuevosJuegosSeleccionados);
+      setJuegosSeleccionados([...juegosSeleccionados]);
+      setIsDropdownVisible(true);
+      actualizarJuegosSeleccionados([...juegosSeleccionados]);
+      setMostrarCarrito(true);  // Actualiza el estado para mostrar el carrito
+      setCarritoKey(prevKey => prevKey + 1); // Incrementa la clave del carrito para forzar re-render
     }
   };
 
@@ -50,8 +55,6 @@ const VentaUsados = () => {
       .catch(error => console.error('Error deleting selected games:', error));
     setJuegosSeleccionados([]);
   };
-
-
 
   const handleRemoverJuego = (juegoId) => {
     const juegoExistente = juegosSeleccionados.find(juego => juego.juego_id === juegoId);
@@ -67,7 +70,9 @@ const VentaUsados = () => {
     }
     setJuegosSeleccionados(nuevosJuegosSeleccionados);
     actualizarJuegosSeleccionados(nuevosJuegosSeleccionados);
-    setIsDropdownVisible(false);
+    setIsDropdownVisible(true);
+    setMostrarCarrito(true);  // Actualiza el estado para mostrar el carrito
+    setCarritoKey(prevKey => prevKey + 1); // Incrementa la clave del carrito para forzar re-render
   };
 
   const actualizarJuegosSeleccionados = (juegosSeleccionados) => {
@@ -76,38 +81,49 @@ const VentaUsados = () => {
       .catch(error => console.error('Error updating selected games:', error));
   };
 
+  console.log(carritoKey);
+
   return (
     <div>
       <Header
-                    juegosSeleccionados={juegosSeleccionados}
-                    onRemoverJuego={handleRemoverJuego}
-                    isComprasDropdownVisible={isDropdownVisible}
-                    setIsComprasDropdownVisible={setIsDropdownVisible}
-                  />
-    <div className='venta-usados'>
-    <div className='div'>
-      <div className='frame'>
-        <h1>Nuevos Juegos</h1>
-        {error && <p>{error}</p>}
-        <ul className="juegos-grid">
-          {juegos.map(juego => (
-            <li key={juego.juego_id} className="juego-item">
-              <div className="videojuego">
-                <div className="text-wrapper">{juego.titulo}</div>
-                <Link to={`/detalle-producto/${juego.juego_id}`} className="frame-3">
-                    <img className="rectangle" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
-                </Link>
-                <div className="div-wrapper">Precio: {juego.precio}</div>
-                <div> 
-                <button className="text-wrapper-3" onClick={() => handleComprarClick(juego.juego_id)}>Comprar</button>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+        juegosSeleccionados={juegosSeleccionados}
+        onRemoverJuego={handleRemoverJuego}
+        isComprasDropdownVisible={isDropdownVisible}
+        setIsComprasDropdownVisible={setIsDropdownVisible}
+      />
+      <div className='venta-usados'>
+        <div className='div'>
+          <div className='frame'>
+            <h1>Nuevos Juegos</h1>
+            {error && <p>{error}</p>}
+            <ul className="juegos-grid">
+              {juegos.map(juego => (
+                <li key={juego.juego_id} className="juego-item">
+                  <div className="videojuego">
+                    <div className="text-wrapper">{juego.titulo}</div>
+                    <Link to={`/detalle-producto/${juego.juego_id}`} className="frame-3">
+                      <img className="rectangle" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
+                    </Link>
+                    <div className="div-wrapper">Precio: {juego.precio}</div>
+                    <div> 
+                      <button className="text-wrapper-3" onClick={() => handleComprarClick(juego.juego_id)}>Comprar</button>
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+      {mostrarCarrito && (
+        <CarritoCompras
+          key={carritoKey} // Clave dinámica para forzar re-render
+          juegosSeleccionados={juegosSeleccionados}
+          handleRemoverJuego={handleRemoverJuego}
+          isDropdownVisible={isDropdownVisible}
+          setIsComprasDropdownVisible={setIsDropdownVisible}
+        />
+      )}
     </div>
   );
 };
