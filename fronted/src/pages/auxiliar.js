@@ -2,11 +2,10 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const useCarrito = () => {
-    
   const [juegosSeleccionados, setJuegosSeleccionados] = useState([]);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [mostrarCarrito, setMostrarCarrito] = useState(false);
-  const [carritoKey, setCarritoKey] = useState(1);
+  const [carritoKey, setCarritoKey] = useState(0);
 
   useEffect(() => {
     axios.get('http://localhost:3001/juegos-seleccionados')
@@ -30,7 +29,18 @@ const useCarrito = () => {
     actualizarJuegosSeleccionados(nuevosJuegosSeleccionados);
     setMostrarCarrito(true);
     setCarritoKey(prevKey => prevKey + 1);
-  }
+  };
+
+  const handleAgregarJuego = (juegoId) => {
+    eliminarJuegos();
+    const nuevosJuegosSeleccionados = juegosSeleccionados.map(juego =>
+      juego.juego_id === juegoId ? { ...juego, cantidad: juego.cantidad + 1 } : juego
+    );
+
+    setJuegosSeleccionados(nuevosJuegosSeleccionados);
+    actualizarJuegosSeleccionados(nuevosJuegosSeleccionados);
+    setCarritoKey(prevKey => prevKey + 1);
+  };
 
   const actualizarJuegosSeleccionados = (juegosSeleccionados) => {
     axios.post('http://localhost:3001/juegos-seleccionados', juegosSeleccionados)
@@ -52,6 +62,7 @@ const useCarrito = () => {
     mostrarCarrito,
     carritoKey,
     handleRemoverJuego,
+    handleAgregarJuego,
   };
 };
 
