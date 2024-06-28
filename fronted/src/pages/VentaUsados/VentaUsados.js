@@ -92,7 +92,6 @@ const VentaUsados = () => {
       <div className='venta-usados'>
         <div className='div'>
           <div className='frame'>
-            <h1>Nuevos Juegos</h1>
             {error && <p>{error}</p>}
             <ul className="juegos-grid">
               {juegos.map(juego => (
