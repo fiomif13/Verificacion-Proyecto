@@ -64,8 +64,11 @@
   left: 51px;
   border-radius: 20px;
   overflow: hidden;
+  height: 500px;
+  overflow-y: auto;
   border: 1px solid;
   border-color: #0000001a;
+  overflow-x: hidden; /* Change to 'auto' if horizontal scroll is required */
 }
 
 .carrito-de-compras .frame-2 {
