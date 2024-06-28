@@ -7,6 +7,7 @@ import lockSvg from './img/lock.svg';
 import frame444Svg from './img/frame-444.svg';
 import bienvenidoASvg from './img/bienvenido-a-gamecycle-com.png';
 import vectorSvg from './img/vector.svg';
+import GuardarUsuario from './UsuarioGuardado';
 
 const IniciarSesion = () => {
   const [nombre_usuario, setNombre_usuario] = useState('');
@@ -22,17 +23,18 @@ const IniciarSesion = () => {
         body: JSON.stringify({ nombre_usuario, contrasena }),
       });
       const data = await response.json();
-      if (data.message === 'Inicio de sesión exitoso') {
+      if (data.usuario_id) {
+        GuardarUsuario(data.usuario_id); // Guarda el usuario_id en localStorage
         navigate('/inicio'); // Redirige a la página de inicio
       } else {
-        alert(data.message);
+        alert('Nombre de usuario o contraseña incorrectos');
       }
     } catch (error) {
       console.error(error);
       alert('Error en la solicitud');
     }
   };
-
+  
   return (
     <div className="iniciar-sesin">
       <div className="group-wrapper">

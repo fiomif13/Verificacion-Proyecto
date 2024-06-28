@@ -19,16 +19,12 @@ const DetalleCompras = () => {
     carritoKey
   } = useCarrito();
 
-  const [juegos, setJuegos] = useState(juegosSeleccionados);
-
-  useEffect(() => {
-    setJuegos(juegosSeleccionados);
-  }, [juegosSeleccionados]);
+  const precioTotal = juegosSeleccionados.reduce((total, juego) => total + juego.precio * juego.cantidad, 0);
 
   return (
     <div>
       <Header 
-        juegosSeleccionados={juegos}
+        juegosSeleccionados={juegosSeleccionados}
         onRemoverJuego={handleRemoverJuego}
         isComprasDropdownVisible={isDropdownVisible}
         setIsComprasDropdownVisible={setIsDropdownVisible}
@@ -38,7 +34,7 @@ const DetalleCompras = () => {
           <img className="line" src={imagenes.line4} alt="line" />
           <div className="text-wrapper">Tu carrito</div>
           <div className="frame">
-            {juegos.map((juego, index) => (
+            {juegosSeleccionados.map((juego, index) => (
               <div key={index} className="frame-2">
                 <img className="rectangle" src={`http://localhost:3001/uploads/${juego.titulo}`} alt={juego.titulo} />
                 <div className="frame-3">
@@ -70,11 +66,11 @@ const DetalleCompras = () => {
             <div className="frame-11">
               <div className="frame-12">
                 <div className="text-wrapper-7">Subtotal</div>
-                <div className="text-wrapper-8">S/ {juegos.reduce((total, juego) => total + juego.precio * juego.cantidad, 0)}</div>
+                <div className="text-wrapper-8">S/ {precioTotal}</div>
               </div>
               <div className="frame-12">
                 <div className="text-wrapper-7">Descuento (-20%)</div>
-                <div className="text-wrapper-9">-S/ {juegos.reduce((total, juego) => total + juego.precio * juego.cantidad, 0) * 0.2}</div>
+                <div className="text-wrapper-9">-S/ {precioTotal * 0.2}</div>
               </div>
               <div className="frame-12">
                 <div className="text-wrapper-7">Delivery</div>
@@ -83,7 +79,7 @@ const DetalleCompras = () => {
               <img className="line-2" src={imagenes.line61} alt="line61" />
               <div className="frame-12">
                 <div className="text-wrapper-10">Total</div>
-                <div className="text-wrapper-11">S/ {juegos.reduce((total, juego) => total + juego.precio * juego.cantidad, 0) * 0.8 + 20}</div>
+                <div className="text-wrapper-11">S/ {precioTotal * 0.8 + 20}</div>
               </div>
             </div>
             <div className="frame-13">
@@ -105,7 +101,7 @@ const DetalleCompras = () => {
       {mostrarCarrito && (
         <CarritoCompras
           key={carritoKey}
-          juegosSeleccionados={juegos}
+          juegosSeleccionados={juegosSeleccionados}
           handleRemoverJuego={handleRemoverJuego}
           isDropdownVisible={isDropdownVisible}
           setIsComprasDropdownVisible={setIsDropdownVisible}
