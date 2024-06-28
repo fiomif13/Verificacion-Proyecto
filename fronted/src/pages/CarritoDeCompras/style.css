@@ -14,6 +14,10 @@
   position: relative;
 }
 
+.carrito-de-compras .button-remover{
+  background-color: #efefef;
+}
+
 .carrito-de-compras .buscar-producto{
   position: absolute;
   height: 16px;
@@ -32,7 +36,7 @@
 .carrito-de-compras .line {
   width: 1240px;
   height: 1px;
-  top: 158px;
+  top: 50px;
   left: 62px;
   position: absolute;
   object-fit: cover;
@@ -41,7 +45,7 @@
 .carrito-de-compras .text-wrapper {
   position: absolute;
   height: 48px;
-  top: 168px;
+  top: 80px;
   left: 51px;
   font-family: "Actor", Helvetica;
   font-weight: 400;
@@ -60,12 +64,15 @@
   gap: 24px;
   padding: 20px 24px;
   position: absolute;
-  top: 241px;
+  top: 160px;
   left: 51px;
   border-radius: 20px;
   overflow: hidden;
+  height: 500px;
+  overflow-y: auto;
   border: 1px solid;
   border-color: #0000001a;
+  overflow-x: hidden; /* Change to 'auto' if horizontal scroll is required */
 }
 
 .carrito-de-compras .frame-2 {
@@ -221,7 +228,7 @@
   gap: 24px;
   padding: 20px 24px;
   position: absolute;
-  top: 276px;
+  top: 160px;
   left: 835px;
   border-radius: 20px;
   overflow: hidden;
