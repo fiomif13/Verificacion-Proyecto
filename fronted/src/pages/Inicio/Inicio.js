@@ -8,8 +8,10 @@ import imagenes from "./imagenes";
 import Header from '../../common/header/header.js';
 import CarritoCompras from '../CarritoCompras.js';
 import useCarrito from '../auxiliar.js';
+import GuardarUsuario from '../IniciarSesion/UsuarioGuardado.js';
 
 const Inicio = () => {
+  
   const {
     juegosSeleccionados,
     isDropdownVisible,
@@ -18,6 +20,9 @@ const Inicio = () => {
     carritoKey,
     handleRemoverJuego
   } = useCarrito();
+
+let usuario = GuardarUsuario();
+console.log(usuario);
 
   console.log(carritoKey);
   return (

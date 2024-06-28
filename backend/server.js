@@ -57,7 +57,7 @@ app.post('/iniciar-sesion', (req, res) => {
   const { nombre_usuario, contrasena } = req.body;
   console.log('Datos recibidos:', req.body);
 
-  const SQL = 'SELECT nombre_usuario, contrasena FROM usuarios WHERE nombre_usuario = ? AND contrasena = ?';
+  const SQL = 'SELECT usuario_id FROM usuarios WHERE nombre_usuario = ? AND contrasena = ?';
   const values = [nombre_usuario, contrasena];
 
   DB.query(SQL, values, (err, result) => {
@@ -67,9 +67,10 @@ app.post('/iniciar-sesion', (req, res) => {
       return;
     }
     if (result.length > 0) {
-      res.json({ message: 'Inicio de sesión exitoso' });
+      const usuario_id = result[0].usuario_id; // Obtener el usuario_id si existe
+      res.json({ usuario_id }); // Devolver el usuario_id
     } else {
-      res.json({ message: 'Nombre de usuario o contraseña incorrectos' });
+      res.json({ usuario_id: false }); // Devolver false si no se encontró coincidencia
     }
   });
 });
@@ -283,6 +284,37 @@ app.delete('/juegos-seleccionados', (req, res) => {
       res.send('Juegos seleccionados eliminados');
   });
 });
+
+
+// Endpoint para guardar la compra
+app.post('/guardar-compra', (req, res) => {
+  const { usuario_id, juegosSeleccionados, precioTotal } = req.body;
+
+  const SQLPedido = 'INSERT INTO Pedido (usuario_id) VALUES (?)';
+  DB.query(SQLPedido, [usuario_id], (err, resultPedido) => {
+    if (err) {
+      console.error('Error al insertar pedido:', err);
+      res.status(500).json({ error: 'Error al guardar la compra' });
+      return;
+    }
+
+    const pedido_id = resultPedido.insertId;
+
+    const detalles = juegosSeleccionados.map(juego => [pedido_id, juego.juego_id, juego.cantidad]);
+
+    const SQLDetalle = 'INSERT INTO Detalle (pedido_id, juego_id, cantidad) VALUES ?';
+    DB.query(SQLDetalle, [detalles], (err, resultDetalle) => {
+      if (err) {
+        console.error('Error al insertar detalle:', err);
+        res.status(500).json({ error: 'Error al guardar la compra' });
+        return;
+      }
+
+      res.json({ message: 'Compra guardada correctamente' });
+    });
+  });
+});
+
 
 
 app.listen(port, () => {

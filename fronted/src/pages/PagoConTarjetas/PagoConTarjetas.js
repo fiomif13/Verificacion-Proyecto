@@ -4,9 +4,45 @@ import { Link } from 'react-router-dom';
 import imagenes from './imagenes';
 import './globals.css';
 import './style.css';
+import Header from '../../common/header/header.js';
+import GuardarUsuario from '../IniciarSesion/UsuarioGuardado.js';
+import useCarrito from '../auxiliar.js';
+import CarritoCompras from '../CarritoCompras.js';
+import axios from 'axios';
 
 
 const PagoConTarjetas = () => {
+  const {
+    juegosSeleccionados,
+    isDropdownVisible,
+    setIsDropdownVisible,
+    mostrarCarrito,
+    carritoKey,
+    handleRemoverJuego
+  } = useCarrito();
+
+  console.log(juegosSeleccionados);
+
+  const precioTotal = juegosSeleccionados.reduce((total, juego) => total + juego.precio * juego.cantidad, 0);
+
+  const handleCompraExitosa = async () => {
+    try {
+      const usuario_id = GuardarUsuario(); // Obtener usuario_id del localStorage o donde lo tengas almacenado
+      console.log(usuario_id);
+      const response = await axios.post('http://localhost:3001/guardar-compra', {
+        usuario_id,
+        juegosSeleccionados,
+        precioTotal
+      });
+
+      console.log(response.data); // Mensaje de éxito desde el backend
+      // Redirigir o hacer otras acciones después de guardar la compra
+    } catch (error) {
+      console.error('Error al guardar la compra:', error);
+      // Manejar el error, mostrar mensaje al usuario, etc.
+    }
+  };
+  
   return (
     <div class="pago-con-tarjeta">
       <div class="div">
@@ -30,11 +66,11 @@ const PagoConTarjetas = () => {
                   <div class="frame-6">
                     <div class="frame-7">
                       <div class="text-wrapper-3">Subtotal</div>
-                      <div class="text-wrapper-4">S/ 230</div>
+                      <div class="text-wrapper-4">{precioTotal}</div>
                     </div>
                     <div class="frame-7">
                       <div class="text-wrapper-5">Descuento</div>
-                      <div class="text-wrapper-4">- S/ 46</div>
+                      <div class="text-wrapper-4">{precioTotal*0.2}</div>
                     </div>
                     <div class="frame-7">
                       <div class="text-wrapper-5">Delivery</div>
@@ -50,7 +86,7 @@ const PagoConTarjetas = () => {
                       <div class="text-wrapper-6">Total</div>
                       <div class="text-wrapper-7">Cantidad a pagar:</div>
                     </div>
-                    <div class="text-wrapper-8">S/ 204</div>
+                    <div class="text-wrapper-8">{precioTotal *0.8 + 20}</div>
                   </div>
                 </div>
               </div>
@@ -98,7 +134,7 @@ const PagoConTarjetas = () => {
               </div>
             </div>
             <div class="frame-18">
-              <Link to="/compra-exitosa" class="pay"><div class="pay-usd">Pagar S/ 230</div></Link>
+              <Link to="/compra-exitosa" class="pay" onClick={handleCompraExitosa}><div class="pay-usd">S/ {precioTotal *0.8 + 20}</div></Link>
               <img class="vector" src={imagenes.vector1} />
               <p class="p">
                 Sus datos personales se utilizarán para procesar su pedido, respaldar su experiencia en este sitio web y
