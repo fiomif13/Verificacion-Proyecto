@@ -1,5 +1,5 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
@@ -20,7 +20,7 @@ const port = 3001;
 const DB = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '',
+  password: 'Patito13loro',
   database: 'ux',
 });
 
@@ -29,8 +29,7 @@ DB.connect((err) => {
   if (err) {
     console.error('Error connecting to database:', err);
     return;
-    console.error('Error connecting to database:', err);
-    return;
+    
   }
   console.log('Connected to database');
 });

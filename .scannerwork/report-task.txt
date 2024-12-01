@@ -1,0 +1,6 @@
+projectKey=test-ux-prediccion
+serverUrl=http://localhost:9000
+serverVersion=10.7.0.96327
+dashboardUrl=http://localhost:9000/dashboard?id=test-ux-prediccion
+ceTaskId=84885a3d-7d2f-429a-b518-37887196dc65
+ceTaskUrl=http://localhost:9000/api/ce/task?id=84885a3d-7d2f-429a-b518-37887196dc65
