@@ -1,0 +1,115 @@
+pipeline {
+    agent any
+    tools {
+        nodejs 'NodeJS'
+    }
+    environment {
+        SCANNER_HOME = tool 'sonar-scanner' // Configurar SonarQube si necesitas análisis estático
+        CI = 'false'  // Desactivar advertencias de ESLint
+    }
+    stages {
+   stage("Git Checkout") {
+            steps {
+                git branch: 'main', 
+                    changelog: false, 
+                    poll: false, 
+                    url: 'https://github.com/fiomif13/Verificacion-Proyecto.git'
+            }
+        }
+        stage("Install Dependencies") {
+            parallel {
+                stage("Install Frontend Dependencies") {
+                    steps {
+                        dir('fronted') {
+                            bat "npm install"
+                        }
+                    }
+                }
+                stage("Install Backend Dependencies") {
+                    steps {
+                        dir('backend') {
+                            bat "npm install"
+                        }
+                    }
+                }
+            }
+        }
+        stage("Build Frontend") {
+            steps {
+                dir('fronted') {
+                    bat "npm run build"
+                }
+            }
+        }
+        stage("Run Jest Tests") {
+            steps {
+                dir('backend') { // Cambia al directorio donde estén tus pruebas
+                    bat "npm test -- --forceExit" // Forzar cierre con Jest
+                }
+            }
+        }
+        
+
+        stage("SonarQube Analysis") {
+            steps {
+
+                    bat """
+                        $SCANNER_HOME/bin/sonar-scanner \
+                        -Dsonar.sources=. \
+                        -Dsonar.login=squ_f9336dc2dd4c464a6d097205eb16d804d0fa04c6 \
+                        -Dsonar.projectKey=WebPrueba \
+                        -Dsonar.projectName=WebPrueba \
+                        -Dsonar.host.url=http://localhost:9000
+                    """
+
+            }
+        }
+ 
+        stage("Start Applications") {
+            parallel {
+                stage("Start Frontend") {
+                    steps {
+                        dir('fronted') {
+                            bat "start cmd /k \"npm start\"" // Inicia en una nueva terminal
+                        }
+                    }
+                }
+                stage("Start Backend") {
+                    steps {
+                        dir('backend') {
+                            bat "start cmd /k \"npm start\"" // Inicia en una nueva terminal
+                        }
+                    }
+                }
+            }
+        }
+       stage("Run JMeter Tests") {
+            steps {
+                dir('tests_jmeter') {
+                    bat """
+                    C:\\Users\\hotdo\\Downloads\\apache-jmeter-5.6.3\\bin\\jmeter.bat -n -t TestPlan_ProyectoFinal.jmx -l TestResults.txt
+                    """
+                }
+            }
+        }
+      
+        stage("Run Selenium Tests") {
+            steps {
+                dir('backend') { // Cambia al directorio donde estén tus pruebas
+                    bat "pip install -r requirements.txt && python -m pytest test_selenium.py --html=report.html" // Forzar cierre con Jest
+                }
+            }
+        }
+    }
+    post {
+        always {
+            echo 'Pipeline finalizado.'
+        }
+        success {
+            echo 'Éxito: Todas las etapas se completaron correctamente.'
+        }
+        failure {
+            echo 'Error: Algo salió mal.'
+        }
+    }
+}
