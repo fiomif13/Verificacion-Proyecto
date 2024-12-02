@@ -33,7 +33,7 @@ Desarrollar una plataforma interactiva que permita:
 ## Pruebas Unitarias
 - **Herramienta**: Jest
 - **Evidencia**: ![](imagenes/imagen10.jpg)
-- **Integración con Jenkins**: ![](imagenes/imagen9.jpg)
+- **Integración con Jenkins**: ![](imagenes/imagen11.jpg)
 ## Pruebas Funcionales
 - **Herramienta**: Selenium
 - **Evidencia**:
