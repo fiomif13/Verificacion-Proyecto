@@ -1,0 +1,1001 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1733113316361,26,Registrarse,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 26 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,26,0,2
+1733113316392,4,Login,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113316397,3,VerDetalleProducto,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113316400,6,VerEstados,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,6,0,0
+1733113316406,6,VerVentaNuevos,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,6,0,0
+1733113316412,11,VerVentaUsados,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 11 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,11,0,0
+1733113316423,2,VerJuegoDetalle,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113316426,2,VerJuegosSeleccionados,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113316428,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-1,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113316432,1,VerCategorias,200,OK,Thread Group 1-1,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113316464,8,Registrarse,200,OK,Thread Group 1-2,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,1
+1733113316472,4,Login,200,OK,Thread Group 1-2,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113316477,2,VerDetalleProducto,200,OK,Thread Group 1-2,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113316480,2,VerEstados,200,OK,Thread Group 1-2,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113316482,2,VerVentaNuevos,200,OK,Thread Group 1-2,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113316485,2,VerVentaUsados,200,OK,Thread Group 1-2,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113316487,2,VerJuegoDetalle,200,OK,Thread Group 1-2,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113316489,2,VerJuegosSeleccionados,200,OK,Thread Group 1-2,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113316491,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-2,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113316493,3,VerCategorias,200,OK,Thread Group 1-2,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,3,0,0
+1733113316570,8,Registrarse,200,OK,Thread Group 1-3,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,0
+1733113316578,2,Login,200,OK,Thread Group 1-3,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113316581,1,VerDetalleProducto,200,OK,Thread Group 1-3,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113316582,1,VerEstados,200,OK,Thread Group 1-3,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113316583,1,VerVentaNuevos,200,OK,Thread Group 1-3,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113316585,2,VerVentaUsados,200,OK,Thread Group 1-3,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113316587,2,VerJuegoDetalle,200,OK,Thread Group 1-3,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113316589,2,VerJuegosSeleccionados,200,OK,Thread Group 1-3,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113316591,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-3,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113316593,2,VerCategorias,200,OK,Thread Group 1-3,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113316664,8,Registrarse,200,OK,Thread Group 1-4,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,0
+1733113316672,2,Login,200,OK,Thread Group 1-4,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113316675,1,VerDetalleProducto,200,OK,Thread Group 1-4,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113316676,1,VerEstados,200,OK,Thread Group 1-4,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113316677,2,VerVentaNuevos,200,OK,Thread Group 1-4,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113316679,3,VerVentaUsados,200,OK,Thread Group 1-4,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113316682,2,VerJuegoDetalle,200,OK,Thread Group 1-4,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113316684,2,VerJuegosSeleccionados,200,OK,Thread Group 1-4,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113316686,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-4,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113316688,1,VerCategorias,200,OK,Thread Group 1-4,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113316770,7,Registrarse,200,OK,Thread Group 1-5,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113316777,4,Login,200,OK,Thread Group 1-5,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113316781,2,VerDetalleProducto,200,OK,Thread Group 1-5,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113316784,2,VerEstados,200,OK,Thread Group 1-5,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113316787,2,VerVentaNuevos,200,OK,Thread Group 1-5,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113316790,2,VerVentaUsados,200,OK,Thread Group 1-5,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113316792,3,VerJuegoDetalle,200,OK,Thread Group 1-5,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,3,0,0
+1733113316795,1,VerJuegosSeleccionados,200,OK,Thread Group 1-5,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113316797,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-5,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113316799,1,VerCategorias,200,OK,Thread Group 1-5,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113316878,4,Registrarse,200,OK,Thread Group 1-6,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,4,0,0
+1733113316883,2,Login,200,OK,Thread Group 1-6,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113316885,1,VerDetalleProducto,200,OK,Thread Group 1-6,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113316886,1,VerEstados,200,OK,Thread Group 1-6,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113316887,2,VerVentaNuevos,200,OK,Thread Group 1-6,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113316889,1,VerVentaUsados,200,OK,Thread Group 1-6,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113316890,1,VerJuegoDetalle,200,OK,Thread Group 1-6,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113316891,1,VerJuegosSeleccionados,200,OK,Thread Group 1-6,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113316892,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-6,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113316894,1,VerCategorias,200,OK,Thread Group 1-6,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113316970,13,Registrarse,200,OK,Thread Group 1-7,text,false,"The operation lasted too long: It took 13 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,13,0,2
+1733113316984,7,Login,200,OK,Thread Group 1-7,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,7,0,0
+1733113316992,5,VerDetalleProducto,200,OK,Thread Group 1-7,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,4,0,0
+1733113316998,3,VerEstados,200,OK,Thread Group 1-7,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,3,0,0
+1733113317002,6,VerVentaNuevos,200,OK,Thread Group 1-7,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,6,0,0
+1733113317009,6,VerVentaUsados,200,OK,Thread Group 1-7,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,6,0,0
+1733113317016,7,VerJuegoDetalle,200,OK,Thread Group 1-7,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,7,0,0
+1733113317024,2,VerJuegosSeleccionados,200,OK,Thread Group 1-7,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113317027,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-7,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113317031,2,VerCategorias,200,OK,Thread Group 1-7,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113317065,7,Registrarse,200,OK,Thread Group 1-8,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113317072,3,Login,200,OK,Thread Group 1-8,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113317075,1,VerDetalleProducto,200,OK,Thread Group 1-8,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113317077,1,VerEstados,200,OK,Thread Group 1-8,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113317079,2,VerVentaNuevos,200,OK,Thread Group 1-8,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113317081,2,VerVentaUsados,200,OK,Thread Group 1-8,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113317083,2,VerJuegoDetalle,200,OK,Thread Group 1-8,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113317085,2,VerJuegosSeleccionados,200,OK,Thread Group 1-8,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113317087,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-8,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113317089,1,VerCategorias,200,OK,Thread Group 1-8,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113317167,5,Registrarse,200,OK,Thread Group 1-9,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,0
+1733113317173,2,Login,200,OK,Thread Group 1-9,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113317176,1,VerDetalleProducto,200,OK,Thread Group 1-9,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113317178,1,VerEstados,200,OK,Thread Group 1-9,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113317179,2,VerVentaNuevos,200,OK,Thread Group 1-9,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113317181,2,VerVentaUsados,200,OK,Thread Group 1-9,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113317183,2,VerJuegoDetalle,200,OK,Thread Group 1-9,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113317185,2,VerJuegosSeleccionados,200,OK,Thread Group 1-9,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113317187,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-9,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113317189,2,VerCategorias,200,OK,Thread Group 1-9,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113317267,8,Registrarse,200,OK,Thread Group 1-10,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,1
+1733113317275,3,Login,200,OK,Thread Group 1-10,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113317279,2,VerDetalleProducto,200,OK,Thread Group 1-10,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113317281,2,VerEstados,200,OK,Thread Group 1-10,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113317283,3,VerVentaNuevos,200,OK,Thread Group 1-10,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113317287,2,VerVentaUsados,200,OK,Thread Group 1-10,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113317289,1,VerJuegoDetalle,200,OK,Thread Group 1-10,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113317291,1,VerJuegosSeleccionados,200,OK,Thread Group 1-10,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113317292,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-10,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113317294,3,VerCategorias,200,OK,Thread Group 1-10,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,3,0,0
+1733113317368,10,Registrarse,200,OK,Thread Group 1-11,text,false,"The operation lasted too long: It took 10 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,10,0,1
+1733113317378,5,Login,200,OK,Thread Group 1-11,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,5,0,0
+1733113317384,3,VerDetalleProducto,200,OK,Thread Group 1-11,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113317387,3,VerEstados,200,OK,Thread Group 1-11,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,3,0,0
+1733113317391,3,VerVentaNuevos,200,OK,Thread Group 1-11,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113317395,4,VerVentaUsados,200,OK,Thread Group 1-11,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,4,0,0
+1733113317400,3,VerJuegoDetalle,200,OK,Thread Group 1-11,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,3,0,0
+1733113317403,3,VerJuegosSeleccionados,200,OK,Thread Group 1-11,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113317407,4,EliminarJuegosSeleccionados,200,OK,Thread Group 1-11,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,4,0,0
+1733113317411,2,VerCategorias,200,OK,Thread Group 1-11,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113317468,7,Registrarse,200,OK,Thread Group 1-12,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113317476,4,Login,200,OK,Thread Group 1-12,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113317481,1,VerDetalleProducto,200,OK,Thread Group 1-12,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113317483,2,VerEstados,200,OK,Thread Group 1-12,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113317485,2,VerVentaNuevos,200,OK,Thread Group 1-12,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113317487,3,VerVentaUsados,200,OK,Thread Group 1-12,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113317490,2,VerJuegoDetalle,200,OK,Thread Group 1-12,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113317492,2,VerJuegosSeleccionados,200,OK,Thread Group 1-12,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113317494,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-12,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113317497,2,VerCategorias,200,OK,Thread Group 1-12,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113317568,6,Registrarse,200,OK,Thread Group 1-13,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113317574,3,Login,200,OK,Thread Group 1-13,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113317577,1,VerDetalleProducto,200,OK,Thread Group 1-13,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113317578,2,VerEstados,200,OK,Thread Group 1-13,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113317580,1,VerVentaNuevos,200,OK,Thread Group 1-13,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113317581,2,VerVentaUsados,200,OK,Thread Group 1-13,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113317584,1,VerJuegoDetalle,200,OK,Thread Group 1-13,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113317585,1,VerJuegosSeleccionados,200,OK,Thread Group 1-13,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113317587,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-13,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113317588,1,VerCategorias,200,OK,Thread Group 1-13,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113317669,4,Registrarse,200,OK,Thread Group 1-14,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,4,0,1
+1733113317673,2,Login,200,OK,Thread Group 1-14,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113317675,1,VerDetalleProducto,200,OK,Thread Group 1-14,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113317676,1,VerEstados,200,OK,Thread Group 1-14,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113317677,1,VerVentaNuevos,200,OK,Thread Group 1-14,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113317679,1,VerVentaUsados,200,OK,Thread Group 1-14,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113317680,1,VerJuegoDetalle,200,OK,Thread Group 1-14,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113317681,1,VerJuegosSeleccionados,200,OK,Thread Group 1-14,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113317682,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-14,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113317683,1,VerCategorias,200,OK,Thread Group 1-14,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113317769,7,Registrarse,200,OK,Thread Group 1-15,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113317776,4,Login,200,OK,Thread Group 1-15,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113317780,1,VerDetalleProducto,200,OK,Thread Group 1-15,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113317782,1,VerEstados,200,OK,Thread Group 1-15,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113317783,3,VerVentaNuevos,200,OK,Thread Group 1-15,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113317786,2,VerVentaUsados,200,OK,Thread Group 1-15,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113317788,2,VerJuegoDetalle,200,OK,Thread Group 1-15,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113317790,2,VerJuegosSeleccionados,200,OK,Thread Group 1-15,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113317792,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-15,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113317795,1,VerCategorias,200,OK,Thread Group 1-15,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113317885,5,Registrarse,200,OK,Thread Group 1-16,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113317891,3,Login,200,OK,Thread Group 1-16,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113317894,2,VerDetalleProducto,200,OK,Thread Group 1-16,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113317896,2,VerEstados,200,OK,Thread Group 1-16,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113317898,2,VerVentaNuevos,200,OK,Thread Group 1-16,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113317901,1,VerVentaUsados,200,OK,Thread Group 1-16,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113317903,1,VerJuegoDetalle,200,OK,Thread Group 1-16,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113317904,1,VerJuegosSeleccionados,200,OK,Thread Group 1-16,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113317905,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-16,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113317907,1,VerCategorias,200,OK,Thread Group 1-16,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113317992,7,Registrarse,200,OK,Thread Group 1-17,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113317999,2,Login,200,OK,Thread Group 1-17,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113318001,1,VerDetalleProducto,200,OK,Thread Group 1-17,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113318002,1,VerEstados,200,OK,Thread Group 1-17,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113318003,2,VerVentaNuevos,200,OK,Thread Group 1-17,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113318005,2,VerVentaUsados,200,OK,Thread Group 1-17,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113318007,1,VerJuegoDetalle,200,OK,Thread Group 1-17,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113318008,2,VerJuegosSeleccionados,200,OK,Thread Group 1-17,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113318010,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-17,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318011,1,VerCategorias,200,OK,Thread Group 1-17,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113318076,6,Registrarse,200,OK,Thread Group 1-18,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113318082,3,Login,200,OK,Thread Group 1-18,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113318085,2,VerDetalleProducto,200,OK,Thread Group 1-18,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113318087,1,VerEstados,200,OK,Thread Group 1-18,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113318088,1,VerVentaNuevos,200,OK,Thread Group 1-18,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113318089,2,VerVentaUsados,200,OK,Thread Group 1-18,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113318091,2,VerJuegoDetalle,200,OK,Thread Group 1-18,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113318093,1,VerJuegosSeleccionados,200,OK,Thread Group 1-18,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318095,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-18,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318097,1,VerCategorias,200,OK,Thread Group 1-18,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113318183,6,Registrarse,200,OK,Thread Group 1-19,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113318189,2,Login,200,OK,Thread Group 1-19,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113318191,2,VerDetalleProducto,200,OK,Thread Group 1-19,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113318193,2,VerEstados,200,OK,Thread Group 1-19,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113318195,2,VerVentaNuevos,200,OK,Thread Group 1-19,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113318197,2,VerVentaUsados,200,OK,Thread Group 1-19,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113318199,2,VerJuegoDetalle,200,OK,Thread Group 1-19,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113318201,1,VerJuegosSeleccionados,200,OK,Thread Group 1-19,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318202,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-19,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113318204,1,VerCategorias,200,OK,Thread Group 1-19,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113318292,7,Registrarse,200,OK,Thread Group 1-20,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113318299,2,Login,200,OK,Thread Group 1-20,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113318302,1,VerDetalleProducto,200,OK,Thread Group 1-20,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113318304,1,VerEstados,200,OK,Thread Group 1-20,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113318305,2,VerVentaNuevos,200,OK,Thread Group 1-20,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113318307,2,VerVentaUsados,200,OK,Thread Group 1-20,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113318309,2,VerJuegoDetalle,200,OK,Thread Group 1-20,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113318311,1,VerJuegosSeleccionados,200,OK,Thread Group 1-20,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318312,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-20,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113318314,1,VerCategorias,200,OK,Thread Group 1-20,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113318393,11,Registrarse,200,OK,Thread Group 1-21,text,false,"The operation lasted too long: It took 11 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,11,0,2
+1733113318405,4,Login,200,OK,Thread Group 1-21,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113318409,2,VerDetalleProducto,200,OK,Thread Group 1-21,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113318412,1,VerEstados,200,OK,Thread Group 1-21,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113318414,2,VerVentaNuevos,200,OK,Thread Group 1-21,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113318416,2,VerVentaUsados,200,OK,Thread Group 1-21,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113318419,1,VerJuegoDetalle,200,OK,Thread Group 1-21,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113318420,2,VerJuegosSeleccionados,200,OK,Thread Group 1-21,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113318422,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-21,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113318424,1,VerCategorias,200,OK,Thread Group 1-21,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113318485,5,Registrarse,200,OK,Thread Group 1-22,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,0
+1733113318491,3,Login,200,OK,Thread Group 1-22,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113318494,2,VerDetalleProducto,200,OK,Thread Group 1-22,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113318496,2,VerEstados,200,OK,Thread Group 1-22,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113318498,2,VerVentaNuevos,200,OK,Thread Group 1-22,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113318500,2,VerVentaUsados,200,OK,Thread Group 1-22,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113318502,2,VerJuegoDetalle,200,OK,Thread Group 1-22,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113318504,2,VerJuegosSeleccionados,200,OK,Thread Group 1-22,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113318506,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-22,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318507,1,VerCategorias,200,OK,Thread Group 1-22,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113318584,6,Registrarse,200,OK,Thread Group 1-23,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113318590,3,Login,200,OK,Thread Group 1-23,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113318593,2,VerDetalleProducto,200,OK,Thread Group 1-23,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113318595,2,VerEstados,200,OK,Thread Group 1-23,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113318597,2,VerVentaNuevos,200,OK,Thread Group 1-23,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113318627,3,VerVentaUsados,200,OK,Thread Group 1-23,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113318630,2,VerJuegoDetalle,200,OK,Thread Group 1-23,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113318632,2,VerJuegosSeleccionados,200,OK,Thread Group 1-23,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113318634,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-23,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113318636,1,VerCategorias,200,OK,Thread Group 1-23,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113318693,5,Registrarse,200,OK,Thread Group 1-24,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113318699,1,Login,200,OK,Thread Group 1-24,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,1,0,0
+1733113318700,2,VerDetalleProducto,200,OK,Thread Group 1-24,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113318702,1,VerEstados,200,OK,Thread Group 1-24,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113318703,2,VerVentaNuevos,200,OK,Thread Group 1-24,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113318705,2,VerVentaUsados,200,OK,Thread Group 1-24,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113318707,1,VerJuegoDetalle,200,OK,Thread Group 1-24,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113318708,1,VerJuegosSeleccionados,200,OK,Thread Group 1-24,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318710,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-24,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318711,1,VerCategorias,200,OK,Thread Group 1-24,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113318792,5,Registrarse,200,OK,Thread Group 1-25,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113318798,2,Login,200,OK,Thread Group 1-25,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113318800,1,VerDetalleProducto,200,OK,Thread Group 1-25,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113318801,1,VerEstados,200,OK,Thread Group 1-25,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113318802,1,VerVentaNuevos,200,OK,Thread Group 1-25,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113318804,1,VerVentaUsados,200,OK,Thread Group 1-25,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113318805,1,VerJuegoDetalle,200,OK,Thread Group 1-25,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113318806,1,VerJuegosSeleccionados,200,OK,Thread Group 1-25,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318807,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-25,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318808,2,VerCategorias,200,OK,Thread Group 1-25,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113318886,9,Registrarse,200,OK,Thread Group 1-26,text,false,"The operation lasted too long: It took 9 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,9,0,1
+1733113318895,5,Login,200,OK,Thread Group 1-26,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,5,0,0
+1733113318900,3,VerDetalleProducto,200,OK,Thread Group 1-26,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113318903,2,VerEstados,200,OK,Thread Group 1-26,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113318905,4,VerVentaNuevos,200,OK,Thread Group 1-26,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,4,0,0
+1733113318909,4,VerVentaUsados,200,OK,Thread Group 1-26,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,4,0,0
+1733113318913,2,VerJuegoDetalle,200,OK,Thread Group 1-26,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113318916,1,VerJuegosSeleccionados,200,OK,Thread Group 1-26,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113318918,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-26,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113318920,1,VerCategorias,200,OK,Thread Group 1-26,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113318989,6,Registrarse,200,OK,Thread Group 1-27,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113318995,2,Login,200,OK,Thread Group 1-27,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113318997,2,VerDetalleProducto,200,OK,Thread Group 1-27,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113318999,1,VerEstados,200,OK,Thread Group 1-27,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113319001,2,VerVentaNuevos,200,OK,Thread Group 1-27,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113319003,2,VerVentaUsados,200,OK,Thread Group 1-27,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113319005,1,VerJuegoDetalle,200,OK,Thread Group 1-27,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113319007,1,VerJuegosSeleccionados,200,OK,Thread Group 1-27,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113319008,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-27,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113319010,1,VerCategorias,200,OK,Thread Group 1-27,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113319094,6,Registrarse,200,OK,Thread Group 1-28,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113319123,3,Login,200,OK,Thread Group 1-28,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113319126,1,VerDetalleProducto,200,OK,Thread Group 1-28,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113319128,2,VerEstados,200,OK,Thread Group 1-28,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113319130,2,VerVentaNuevos,200,OK,Thread Group 1-28,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113319133,2,VerVentaUsados,200,OK,Thread Group 1-28,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113319135,2,VerJuegoDetalle,200,OK,Thread Group 1-28,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113319137,1,VerJuegosSeleccionados,200,OK,Thread Group 1-28,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113319139,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-28,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113319142,2,VerCategorias,200,OK,Thread Group 1-28,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113319193,6,Registrarse,200,OK,Thread Group 1-29,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113319199,3,Login,200,OK,Thread Group 1-29,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113319202,2,VerDetalleProducto,200,OK,Thread Group 1-29,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113319204,2,VerEstados,200,OK,Thread Group 1-29,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113319206,2,VerVentaNuevos,200,OK,Thread Group 1-29,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113319208,2,VerVentaUsados,200,OK,Thread Group 1-29,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113319211,1,VerJuegoDetalle,200,OK,Thread Group 1-29,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113319212,1,VerJuegosSeleccionados,200,OK,Thread Group 1-29,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113319214,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-29,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113319216,1,VerCategorias,200,OK,Thread Group 1-29,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113319291,10,Registrarse,200,OK,Thread Group 1-30,text,false,"The operation lasted too long: It took 10 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,10,0,1
+1733113319301,5,Login,200,OK,Thread Group 1-30,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,5,0,0
+1733113319306,2,VerDetalleProducto,200,OK,Thread Group 1-30,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113319309,1,VerEstados,200,OK,Thread Group 1-30,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113319311,2,VerVentaNuevos,200,OK,Thread Group 1-30,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113319314,2,VerVentaUsados,200,OK,Thread Group 1-30,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113319316,1,VerJuegoDetalle,200,OK,Thread Group 1-30,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113319317,1,VerJuegosSeleccionados,200,OK,Thread Group 1-30,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113319319,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-30,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113319320,1,VerCategorias,200,OK,Thread Group 1-30,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113319393,7,Registrarse,200,OK,Thread Group 1-31,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113319400,3,Login,200,OK,Thread Group 1-31,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113319403,2,VerDetalleProducto,200,OK,Thread Group 1-31,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113319406,1,VerEstados,200,OK,Thread Group 1-31,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113319408,3,VerVentaNuevos,200,OK,Thread Group 1-31,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113319411,2,VerVentaUsados,200,OK,Thread Group 1-31,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113319414,1,VerJuegoDetalle,200,OK,Thread Group 1-31,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113319416,1,VerJuegosSeleccionados,200,OK,Thread Group 1-31,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113319417,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-31,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113319420,2,VerCategorias,200,OK,Thread Group 1-31,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113319494,5,Registrarse,200,OK,Thread Group 1-32,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113319499,3,Login,200,OK,Thread Group 1-32,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113319502,1,VerDetalleProducto,200,OK,Thread Group 1-32,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113319503,1,VerEstados,200,OK,Thread Group 1-32,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113319504,2,VerVentaNuevos,200,OK,Thread Group 1-32,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113319506,1,VerVentaUsados,200,OK,Thread Group 1-32,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113319507,1,VerJuegoDetalle,200,OK,Thread Group 1-32,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113319508,2,VerJuegosSeleccionados,200,OK,Thread Group 1-32,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113319510,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-32,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113319511,2,VerCategorias,200,OK,Thread Group 1-32,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113319623,7,Registrarse,200,OK,Thread Group 1-33,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113319647,2,Login,200,OK,Thread Group 1-33,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113319650,1,VerDetalleProducto,200,OK,Thread Group 1-33,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113319651,1,VerEstados,200,OK,Thread Group 1-33,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113319652,2,VerVentaNuevos,200,OK,Thread Group 1-33,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113319654,3,VerVentaUsados,200,OK,Thread Group 1-33,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113319657,2,VerJuegoDetalle,200,OK,Thread Group 1-33,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113319659,2,VerJuegosSeleccionados,200,OK,Thread Group 1-33,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113319661,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-33,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113319663,2,VerCategorias,200,OK,Thread Group 1-33,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113319690,6,Registrarse,200,OK,Thread Group 1-34,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,0
+1733113319696,2,Login,200,OK,Thread Group 1-34,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113319698,2,VerDetalleProducto,200,OK,Thread Group 1-34,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113319700,1,VerEstados,200,OK,Thread Group 1-34,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113319701,3,VerVentaNuevos,200,OK,Thread Group 1-34,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113319705,2,VerVentaUsados,200,OK,Thread Group 1-34,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113319708,1,VerJuegoDetalle,200,OK,Thread Group 1-34,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113319709,2,VerJuegosSeleccionados,200,OK,Thread Group 1-34,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113319711,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-34,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113319714,3,VerCategorias,200,OK,Thread Group 1-34,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,3,0,0
+1733113319793,6,Registrarse,200,OK,Thread Group 1-35,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113319800,3,Login,200,OK,Thread Group 1-35,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113319803,3,VerDetalleProducto,200,OK,Thread Group 1-35,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113319806,2,VerEstados,200,OK,Thread Group 1-35,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113319808,3,VerVentaNuevos,200,OK,Thread Group 1-35,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113319812,2,VerVentaUsados,200,OK,Thread Group 1-35,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113319815,2,VerJuegoDetalle,200,OK,Thread Group 1-35,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113319817,2,VerJuegosSeleccionados,200,OK,Thread Group 1-35,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113319819,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-35,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113319821,1,VerCategorias,200,OK,Thread Group 1-35,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113319897,13,Registrarse,200,OK,Thread Group 1-36,text,false,"The operation lasted too long: It took 13 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,13,0,2
+1733113319910,7,Login,200,OK,Thread Group 1-36,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,7,0,0
+1733113319917,4,VerDetalleProducto,200,OK,Thread Group 1-36,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,4,0,0
+1733113319922,4,VerEstados,200,OK,Thread Group 1-36,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,4,0,0
+1733113319926,4,VerVentaNuevos,200,OK,Thread Group 1-36,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,4,0,0
+1733113319930,3,VerVentaUsados,200,OK,Thread Group 1-36,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113319934,2,VerJuegoDetalle,200,OK,Thread Group 1-36,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113319937,2,VerJuegosSeleccionados,200,OK,Thread Group 1-36,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113319940,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-36,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113319942,2,VerCategorias,200,OK,Thread Group 1-36,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113319997,7,Registrarse,200,OK,Thread Group 1-37,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113320005,3,Login,200,OK,Thread Group 1-37,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113320008,3,VerDetalleProducto,200,OK,Thread Group 1-37,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113320012,2,VerEstados,200,OK,Thread Group 1-37,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113320015,4,VerVentaNuevos,200,OK,Thread Group 1-37,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,4,0,0
+1733113320019,3,VerVentaUsados,200,OK,Thread Group 1-37,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113320022,2,VerJuegoDetalle,200,OK,Thread Group 1-37,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113320025,2,VerJuegosSeleccionados,200,OK,Thread Group 1-37,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113320027,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-37,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113320030,2,VerCategorias,200,OK,Thread Group 1-37,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113320096,5,Registrarse,200,OK,Thread Group 1-38,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113320129,2,Login,200,OK,Thread Group 1-38,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113320131,1,VerDetalleProducto,200,OK,Thread Group 1-38,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113320133,1,VerEstados,200,OK,Thread Group 1-38,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113320135,2,VerVentaNuevos,200,OK,Thread Group 1-38,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113320137,2,VerVentaUsados,200,OK,Thread Group 1-38,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113320139,1,VerJuegoDetalle,200,OK,Thread Group 1-38,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113320140,1,VerJuegosSeleccionados,200,OK,Thread Group 1-38,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113320142,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-38,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113320144,1,VerCategorias,200,OK,Thread Group 1-38,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113320196,4,Registrarse,200,OK,Thread Group 1-39,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,4,0,0
+1733113320200,2,Login,200,OK,Thread Group 1-39,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113320202,1,VerDetalleProducto,200,OK,Thread Group 1-39,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113320203,1,VerEstados,200,OK,Thread Group 1-39,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113320205,1,VerVentaNuevos,200,OK,Thread Group 1-39,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113320206,1,VerVentaUsados,200,OK,Thread Group 1-39,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113320207,1,VerJuegoDetalle,200,OK,Thread Group 1-39,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113320208,2,VerJuegosSeleccionados,200,OK,Thread Group 1-39,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113320210,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-39,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113320213,2,VerCategorias,200,OK,Thread Group 1-39,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113320299,4,Registrarse,200,OK,Thread Group 1-40,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,4,0,0
+1733113320304,2,Login,200,OK,Thread Group 1-40,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113320306,2,VerDetalleProducto,200,OK,Thread Group 1-40,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113320308,2,VerEstados,200,OK,Thread Group 1-40,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113320310,2,VerVentaNuevos,200,OK,Thread Group 1-40,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113320312,2,VerVentaUsados,200,OK,Thread Group 1-40,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113320315,1,VerJuegoDetalle,200,OK,Thread Group 1-40,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113320316,1,VerJuegosSeleccionados,200,OK,Thread Group 1-40,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113320317,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-40,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113320319,2,VerCategorias,200,OK,Thread Group 1-40,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113320396,5,Registrarse,200,OK,Thread Group 1-41,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,0
+1733113320401,2,Login,200,OK,Thread Group 1-41,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113320403,2,VerDetalleProducto,200,OK,Thread Group 1-41,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113320405,1,VerEstados,200,OK,Thread Group 1-41,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113320406,2,VerVentaNuevos,200,OK,Thread Group 1-41,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113320408,2,VerVentaUsados,200,OK,Thread Group 1-41,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113320410,1,VerJuegoDetalle,200,OK,Thread Group 1-41,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113320411,1,VerJuegosSeleccionados,200,OK,Thread Group 1-41,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113320412,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-41,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113320414,1,VerCategorias,200,OK,Thread Group 1-41,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113320497,6,Registrarse,200,OK,Thread Group 1-42,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113320503,2,Login,200,OK,Thread Group 1-42,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113320505,2,VerDetalleProducto,200,OK,Thread Group 1-42,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113320507,1,VerEstados,200,OK,Thread Group 1-42,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113320508,1,VerVentaNuevos,200,OK,Thread Group 1-42,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113320510,1,VerVentaUsados,200,OK,Thread Group 1-42,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113320511,1,VerJuegoDetalle,200,OK,Thread Group 1-42,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113320512,1,VerJuegosSeleccionados,200,OK,Thread Group 1-42,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113320514,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-42,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113320515,2,VerCategorias,200,OK,Thread Group 1-42,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113320598,4,Registrarse,200,OK,Thread Group 1-43,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,4,0,0
+1733113320625,2,Login,200,OK,Thread Group 1-43,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113320628,1,VerDetalleProducto,200,OK,Thread Group 1-43,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113320629,1,VerEstados,200,OK,Thread Group 1-43,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113320630,1,VerVentaNuevos,200,OK,Thread Group 1-43,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113320631,3,VerVentaUsados,200,OK,Thread Group 1-43,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113320634,1,VerJuegoDetalle,200,OK,Thread Group 1-43,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113320635,1,VerJuegosSeleccionados,200,OK,Thread Group 1-43,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113320637,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-43,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113320638,1,VerCategorias,200,OK,Thread Group 1-43,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113320696,11,Registrarse,200,OK,Thread Group 1-44,text,false,"The operation lasted too long: It took 11 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,11,0,2
+1733113320707,4,Login,200,OK,Thread Group 1-44,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113320711,3,VerDetalleProducto,200,OK,Thread Group 1-44,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113320714,3,VerEstados,200,OK,Thread Group 1-44,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,3,0,0
+1733113320717,3,VerVentaNuevos,200,OK,Thread Group 1-44,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113320721,4,VerVentaUsados,200,OK,Thread Group 1-44,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,4,0,0
+1733113320726,2,VerJuegoDetalle,200,OK,Thread Group 1-44,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113320728,3,VerJuegosSeleccionados,200,OK,Thread Group 1-44,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113320732,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-44,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113320734,3,VerCategorias,200,OK,Thread Group 1-44,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,3,0,0
+1733113320796,8,Registrarse,200,OK,Thread Group 1-45,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,1
+1733113320804,4,Login,200,OK,Thread Group 1-45,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113320808,3,VerDetalleProducto,200,OK,Thread Group 1-45,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113320812,2,VerEstados,200,OK,Thread Group 1-45,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113320814,3,VerVentaNuevos,200,OK,Thread Group 1-45,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113320817,3,VerVentaUsados,200,OK,Thread Group 1-45,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113320820,2,VerJuegoDetalle,200,OK,Thread Group 1-45,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113320822,2,VerJuegosSeleccionados,200,OK,Thread Group 1-45,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113320824,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-45,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113320826,2,VerCategorias,200,OK,Thread Group 1-45,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113320896,6,Registrarse,200,OK,Thread Group 1-46,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113320902,3,Login,200,OK,Thread Group 1-46,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113320905,2,VerDetalleProducto,200,OK,Thread Group 1-46,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113320908,2,VerEstados,200,OK,Thread Group 1-46,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113320911,3,VerVentaNuevos,200,OK,Thread Group 1-46,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113320914,3,VerVentaUsados,200,OK,Thread Group 1-46,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113320917,2,VerJuegoDetalle,200,OK,Thread Group 1-46,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113320919,2,VerJuegosSeleccionados,200,OK,Thread Group 1-46,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113320922,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-46,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113320925,2,VerCategorias,200,OK,Thread Group 1-46,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113320995,5,Registrarse,200,OK,Thread Group 1-47,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113321000,3,Login,200,OK,Thread Group 1-47,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113321004,1,VerDetalleProducto,200,OK,Thread Group 1-47,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113321005,2,VerEstados,200,OK,Thread Group 1-47,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113321007,2,VerVentaNuevos,200,OK,Thread Group 1-47,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113321009,2,VerVentaUsados,200,OK,Thread Group 1-47,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113321011,2,VerJuegoDetalle,200,OK,Thread Group 1-47,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113321013,1,VerJuegosSeleccionados,200,OK,Thread Group 1-47,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321014,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-47,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113321016,1,VerCategorias,200,OK,Thread Group 1-47,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113321095,5,Registrarse,200,OK,Thread Group 1-48,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,0
+1733113321101,2,Login,200,OK,Thread Group 1-48,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113321139,2,VerDetalleProducto,200,OK,Thread Group 1-48,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113321141,2,VerEstados,200,OK,Thread Group 1-48,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113321143,2,VerVentaNuevos,200,OK,Thread Group 1-48,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113321146,1,VerVentaUsados,200,OK,Thread Group 1-48,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113321148,1,VerJuegoDetalle,200,OK,Thread Group 1-48,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113321149,1,VerJuegosSeleccionados,200,OK,Thread Group 1-48,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321150,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-48,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321152,1,VerCategorias,200,OK,Thread Group 1-48,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113321195,5,Registrarse,200,OK,Thread Group 1-49,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113321200,2,Login,200,OK,Thread Group 1-49,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113321202,1,VerDetalleProducto,200,OK,Thread Group 1-49,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113321204,1,VerEstados,200,OK,Thread Group 1-49,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113321205,1,VerVentaNuevos,200,OK,Thread Group 1-49,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113321206,1,VerVentaUsados,200,OK,Thread Group 1-49,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113321207,2,VerJuegoDetalle,200,OK,Thread Group 1-49,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113321209,1,VerJuegosSeleccionados,200,OK,Thread Group 1-49,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321210,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-49,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321211,1,VerCategorias,200,OK,Thread Group 1-49,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113321297,5,Registrarse,200,OK,Thread Group 1-50,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,0
+1733113321303,2,Login,200,OK,Thread Group 1-50,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113321305,1,VerDetalleProducto,200,OK,Thread Group 1-50,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113321306,1,VerEstados,200,OK,Thread Group 1-50,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113321308,2,VerVentaNuevos,200,OK,Thread Group 1-50,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113321310,2,VerVentaUsados,200,OK,Thread Group 1-50,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113321312,2,VerJuegoDetalle,200,OK,Thread Group 1-50,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113321314,1,VerJuegosSeleccionados,200,OK,Thread Group 1-50,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321315,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-50,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113321317,1,VerCategorias,200,OK,Thread Group 1-50,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113321396,5,Registrarse,200,OK,Thread Group 1-51,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113321401,3,Login,200,OK,Thread Group 1-51,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113321404,1,VerDetalleProducto,200,OK,Thread Group 1-51,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113321405,1,VerEstados,200,OK,Thread Group 1-51,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113321406,2,VerVentaNuevos,200,OK,Thread Group 1-51,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113321408,2,VerVentaUsados,200,OK,Thread Group 1-51,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113321411,1,VerJuegoDetalle,200,OK,Thread Group 1-51,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113321412,2,VerJuegosSeleccionados,200,OK,Thread Group 1-51,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113321414,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-51,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113321417,1,VerCategorias,200,OK,Thread Group 1-51,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113321497,10,Registrarse,200,OK,Thread Group 1-52,text,false,"The operation lasted too long: It took 10 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,10,0,1
+1733113321507,4,Login,200,OK,Thread Group 1-52,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113321511,2,VerDetalleProducto,200,OK,Thread Group 1-52,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113321513,1,VerEstados,200,OK,Thread Group 1-52,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113321515,2,VerVentaNuevos,200,OK,Thread Group 1-52,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113321517,2,VerVentaUsados,200,OK,Thread Group 1-52,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113321520,1,VerJuegoDetalle,200,OK,Thread Group 1-52,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113321521,2,VerJuegosSeleccionados,200,OK,Thread Group 1-52,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113321523,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-52,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113321525,1,VerCategorias,200,OK,Thread Group 1-52,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113321598,8,Registrarse,200,OK,Thread Group 1-53,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,2
+1733113321635,2,Login,200,OK,Thread Group 1-53,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113321637,1,VerDetalleProducto,200,OK,Thread Group 1-53,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113321639,1,VerEstados,200,OK,Thread Group 1-53,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113321640,1,VerVentaNuevos,200,OK,Thread Group 1-53,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113321642,3,VerVentaUsados,200,OK,Thread Group 1-53,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113321645,3,VerJuegoDetalle,200,OK,Thread Group 1-53,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,3,0,0
+1733113321648,1,VerJuegosSeleccionados,200,OK,Thread Group 1-53,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321649,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-53,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113321651,1,VerCategorias,200,OK,Thread Group 1-53,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113321704,5,Registrarse,200,OK,Thread Group 1-54,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,0
+1733113321710,2,Login,200,OK,Thread Group 1-54,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113321712,1,VerDetalleProducto,200,OK,Thread Group 1-54,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113321713,1,VerEstados,200,OK,Thread Group 1-54,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113321715,1,VerVentaNuevos,200,OK,Thread Group 1-54,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113321716,1,VerVentaUsados,200,OK,Thread Group 1-54,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113321718,1,VerJuegoDetalle,200,OK,Thread Group 1-54,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113321719,1,VerJuegosSeleccionados,200,OK,Thread Group 1-54,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321720,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-54,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321722,1,VerCategorias,200,OK,Thread Group 1-54,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113321802,11,Registrarse,200,OK,Thread Group 1-55,text,false,"The operation lasted too long: It took 11 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,11,0,2
+1733113321813,5,Login,200,OK,Thread Group 1-55,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,5,0,0
+1733113321818,2,VerDetalleProducto,200,OK,Thread Group 1-55,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113321820,2,VerEstados,200,OK,Thread Group 1-55,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113321822,2,VerVentaNuevos,200,OK,Thread Group 1-55,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113321825,2,VerVentaUsados,200,OK,Thread Group 1-55,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113321827,2,VerJuegoDetalle,200,OK,Thread Group 1-55,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113321829,2,VerJuegosSeleccionados,200,OK,Thread Group 1-55,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113321831,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-55,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113321834,2,VerCategorias,200,OK,Thread Group 1-55,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113321901,5,Registrarse,200,OK,Thread Group 1-56,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113321906,2,Login,200,OK,Thread Group 1-56,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113321909,1,VerDetalleProducto,200,OK,Thread Group 1-56,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113321910,1,VerEstados,200,OK,Thread Group 1-56,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113321911,2,VerVentaNuevos,200,OK,Thread Group 1-56,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113321913,1,VerVentaUsados,200,OK,Thread Group 1-56,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113321914,1,VerJuegoDetalle,200,OK,Thread Group 1-56,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113321915,1,VerJuegosSeleccionados,200,OK,Thread Group 1-56,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321916,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-56,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113321917,1,VerCategorias,200,OK,Thread Group 1-56,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113322001,9,Registrarse,200,OK,Thread Group 1-57,text,false,"The operation lasted too long: It took 9 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,9,0,1
+1733113322011,4,Login,200,OK,Thread Group 1-57,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113322015,3,VerDetalleProducto,200,OK,Thread Group 1-57,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113322018,2,VerEstados,200,OK,Thread Group 1-57,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113322021,3,VerVentaNuevos,200,OK,Thread Group 1-57,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113322025,3,VerVentaUsados,200,OK,Thread Group 1-57,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113322028,3,VerJuegoDetalle,200,OK,Thread Group 1-57,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113322031,2,VerJuegosSeleccionados,200,OK,Thread Group 1-57,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113322033,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-57,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113322035,2,VerCategorias,200,OK,Thread Group 1-57,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113322100,8,Registrarse,200,OK,Thread Group 1-58,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,1
+1733113322140,2,Login,200,OK,Thread Group 1-58,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113322142,1,VerDetalleProducto,200,OK,Thread Group 1-58,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113322144,1,VerEstados,200,OK,Thread Group 1-58,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113322145,1,VerVentaNuevos,200,OK,Thread Group 1-58,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113322146,1,VerVentaUsados,200,OK,Thread Group 1-58,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113322147,1,VerJuegoDetalle,200,OK,Thread Group 1-58,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113322148,1,VerJuegosSeleccionados,200,OK,Thread Group 1-58,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322149,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-58,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322150,1,VerCategorias,200,OK,Thread Group 1-58,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113322197,5,Registrarse,200,OK,Thread Group 1-59,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113322202,3,Login,200,OK,Thread Group 1-59,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113322205,3,VerDetalleProducto,200,OK,Thread Group 1-59,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113322208,2,VerEstados,200,OK,Thread Group 1-59,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113322210,2,VerVentaNuevos,200,OK,Thread Group 1-59,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113322213,2,VerVentaUsados,200,OK,Thread Group 1-59,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113322215,2,VerJuegoDetalle,200,OK,Thread Group 1-59,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113322217,2,VerJuegosSeleccionados,200,OK,Thread Group 1-59,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113322219,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-59,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113322221,1,VerCategorias,200,OK,Thread Group 1-59,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113322296,6,Registrarse,200,OK,Thread Group 1-60,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113322302,2,Login,200,OK,Thread Group 1-60,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113322305,1,VerDetalleProducto,200,OK,Thread Group 1-60,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113322306,2,VerEstados,200,OK,Thread Group 1-60,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113322308,2,VerVentaNuevos,200,OK,Thread Group 1-60,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113322310,2,VerVentaUsados,200,OK,Thread Group 1-60,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113322312,2,VerJuegoDetalle,200,OK,Thread Group 1-60,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113322314,1,VerJuegosSeleccionados,200,OK,Thread Group 1-60,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322315,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-60,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322317,1,VerCategorias,200,OK,Thread Group 1-60,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113322396,6,Registrarse,200,OK,Thread Group 1-61,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113322402,2,Login,200,OK,Thread Group 1-61,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113322405,1,VerDetalleProducto,200,OK,Thread Group 1-61,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113322406,2,VerEstados,200,OK,Thread Group 1-61,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113322408,2,VerVentaNuevos,200,OK,Thread Group 1-61,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113322410,2,VerVentaUsados,200,OK,Thread Group 1-61,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113322412,3,VerJuegoDetalle,200,OK,Thread Group 1-61,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,3,0,0
+1733113322415,1,VerJuegosSeleccionados,200,OK,Thread Group 1-61,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322416,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-61,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113322419,1,VerCategorias,200,OK,Thread Group 1-61,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113322493,6,Registrarse,200,OK,Thread Group 1-62,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113322499,3,Login,200,OK,Thread Group 1-62,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113322502,2,VerDetalleProducto,200,OK,Thread Group 1-62,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113322504,2,VerEstados,200,OK,Thread Group 1-62,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113322506,1,VerVentaNuevos,200,OK,Thread Group 1-62,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113322507,3,VerVentaUsados,200,OK,Thread Group 1-62,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113322510,1,VerJuegoDetalle,200,OK,Thread Group 1-62,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113322511,1,VerJuegosSeleccionados,200,OK,Thread Group 1-62,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322513,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-62,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322514,1,VerCategorias,200,OK,Thread Group 1-62,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113322591,5,Registrarse,200,OK,Thread Group 1-63,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113322596,2,Login,200,OK,Thread Group 1-63,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113322598,1,VerDetalleProducto,200,OK,Thread Group 1-63,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113322599,1,VerEstados,200,OK,Thread Group 1-63,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113322600,1,VerVentaNuevos,200,OK,Thread Group 1-63,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113322601,1,VerVentaUsados,200,OK,Thread Group 1-63,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113322602,1,VerJuegoDetalle,200,OK,Thread Group 1-63,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113322603,1,VerJuegosSeleccionados,200,OK,Thread Group 1-63,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322604,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-63,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322632,1,VerCategorias,200,OK,Thread Group 1-63,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113322692,6,Registrarse,200,OK,Thread Group 1-64,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113322698,2,Login,200,OK,Thread Group 1-64,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113322700,1,VerDetalleProducto,200,OK,Thread Group 1-64,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113322701,1,VerEstados,200,OK,Thread Group 1-64,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113322702,2,VerVentaNuevos,200,OK,Thread Group 1-64,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113322705,2,VerVentaUsados,200,OK,Thread Group 1-64,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113322707,1,VerJuegoDetalle,200,OK,Thread Group 1-64,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113322708,1,VerJuegosSeleccionados,200,OK,Thread Group 1-64,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322709,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-64,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113322711,1,VerCategorias,200,OK,Thread Group 1-64,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113322791,5,Registrarse,200,OK,Thread Group 1-65,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,0
+1733113322797,2,Login,200,OK,Thread Group 1-65,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113322799,1,VerDetalleProducto,200,OK,Thread Group 1-65,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113322800,1,VerEstados,200,OK,Thread Group 1-65,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113322801,2,VerVentaNuevos,200,OK,Thread Group 1-65,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113322803,2,VerVentaUsados,200,OK,Thread Group 1-65,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113322805,1,VerJuegoDetalle,200,OK,Thread Group 1-65,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113322806,1,VerJuegosSeleccionados,200,OK,Thread Group 1-65,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113322807,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-65,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113322809,1,VerCategorias,200,OK,Thread Group 1-65,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113322891,6,Registrarse,200,OK,Thread Group 1-66,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113322897,2,Login,200,OK,Thread Group 1-66,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113322900,1,VerDetalleProducto,200,OK,Thread Group 1-66,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113322901,1,VerEstados,200,OK,Thread Group 1-66,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113322902,2,VerVentaNuevos,200,OK,Thread Group 1-66,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113322905,2,VerVentaUsados,200,OK,Thread Group 1-66,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113322907,2,VerJuegoDetalle,200,OK,Thread Group 1-66,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113322909,2,VerJuegosSeleccionados,200,OK,Thread Group 1-66,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113322911,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-66,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113322913,1,VerCategorias,200,OK,Thread Group 1-66,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113322991,9,Registrarse,200,OK,Thread Group 1-67,text,false,"The operation lasted too long: It took 9 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,9,0,1
+1733113323001,5,Login,200,OK,Thread Group 1-67,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,5,0,0
+1733113323006,3,VerDetalleProducto,200,OK,Thread Group 1-67,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113323009,3,VerEstados,200,OK,Thread Group 1-67,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,3,0,0
+1733113323012,5,VerVentaNuevos,200,OK,Thread Group 1-67,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,5,0,0
+1733113323018,5,VerVentaUsados,200,OK,Thread Group 1-67,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,5,0,0
+1733113323023,5,VerJuegoDetalle,200,OK,Thread Group 1-67,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,5,0,0
+1733113323029,3,VerJuegosSeleccionados,200,OK,Thread Group 1-67,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113323032,4,EliminarJuegosSeleccionados,200,OK,Thread Group 1-67,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,4,0,0
+1733113323036,2,VerCategorias,200,OK,Thread Group 1-67,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113323091,7,Registrarse,200,OK,Thread Group 1-68,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113323098,3,Login,200,OK,Thread Group 1-68,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113323101,1,VerDetalleProducto,200,OK,Thread Group 1-68,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113323103,1,VerEstados,200,OK,Thread Group 1-68,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113323104,2,VerVentaNuevos,200,OK,Thread Group 1-68,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113323132,1,VerVentaUsados,200,OK,Thread Group 1-68,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113323133,2,VerJuegoDetalle,200,OK,Thread Group 1-68,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113323135,1,VerJuegosSeleccionados,200,OK,Thread Group 1-68,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323136,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-68,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113323139,2,VerCategorias,200,OK,Thread Group 1-68,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113323191,6,Registrarse,200,OK,Thread Group 1-69,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113323197,3,Login,200,OK,Thread Group 1-69,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113323201,1,VerDetalleProducto,200,OK,Thread Group 1-69,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113323202,1,VerEstados,200,OK,Thread Group 1-69,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113323203,2,VerVentaNuevos,200,OK,Thread Group 1-69,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113323205,2,VerVentaUsados,200,OK,Thread Group 1-69,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113323207,1,VerJuegoDetalle,200,OK,Thread Group 1-69,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113323208,2,VerJuegosSeleccionados,200,OK,Thread Group 1-69,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113323210,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-69,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323211,2,VerCategorias,200,OK,Thread Group 1-69,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113323290,5,Registrarse,200,OK,Thread Group 1-70,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113323295,2,Login,200,OK,Thread Group 1-70,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113323297,1,VerDetalleProducto,200,OK,Thread Group 1-70,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113323298,1,VerEstados,200,OK,Thread Group 1-70,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113323300,1,VerVentaNuevos,200,OK,Thread Group 1-70,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113323301,2,VerVentaUsados,200,OK,Thread Group 1-70,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113323303,1,VerJuegoDetalle,200,OK,Thread Group 1-70,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113323304,1,VerJuegosSeleccionados,200,OK,Thread Group 1-70,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323305,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-70,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323306,1,VerCategorias,200,OK,Thread Group 1-70,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113323391,7,Registrarse,200,OK,Thread Group 1-71,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113323398,3,Login,200,OK,Thread Group 1-71,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113323401,1,VerDetalleProducto,200,OK,Thread Group 1-71,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113323402,2,VerEstados,200,OK,Thread Group 1-71,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113323404,3,VerVentaNuevos,200,OK,Thread Group 1-71,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113323407,3,VerVentaUsados,200,OK,Thread Group 1-71,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113323410,2,VerJuegoDetalle,200,OK,Thread Group 1-71,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113323412,2,VerJuegosSeleccionados,200,OK,Thread Group 1-71,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113323414,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-71,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113323417,2,VerCategorias,200,OK,Thread Group 1-71,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113323491,6,Registrarse,200,OK,Thread Group 1-72,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113323497,2,Login,200,OK,Thread Group 1-72,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113323499,2,VerDetalleProducto,200,OK,Thread Group 1-72,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113323501,2,VerEstados,200,OK,Thread Group 1-72,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113323503,2,VerVentaNuevos,200,OK,Thread Group 1-72,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113323505,1,VerVentaUsados,200,OK,Thread Group 1-72,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113323507,1,VerJuegoDetalle,200,OK,Thread Group 1-72,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113323508,1,VerJuegosSeleccionados,200,OK,Thread Group 1-72,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323510,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-72,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323511,1,VerCategorias,200,OK,Thread Group 1-72,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113323590,8,Registrarse,200,OK,Thread Group 1-73,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,1
+1733113323598,3,Login,200,OK,Thread Group 1-73,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113323601,2,VerDetalleProducto,200,OK,Thread Group 1-73,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113323604,2,VerEstados,200,OK,Thread Group 1-73,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113323606,3,VerVentaNuevos,200,OK,Thread Group 1-73,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113323641,3,VerVentaUsados,200,OK,Thread Group 1-73,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113323645,1,VerJuegoDetalle,200,OK,Thread Group 1-73,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113323647,1,VerJuegosSeleccionados,200,OK,Thread Group 1-73,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323648,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-73,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323649,1,VerCategorias,200,OK,Thread Group 1-73,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113323691,6,Registrarse,200,OK,Thread Group 1-74,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,0
+1733113323697,2,Login,200,OK,Thread Group 1-74,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113323700,1,VerDetalleProducto,200,OK,Thread Group 1-74,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113323701,1,VerEstados,200,OK,Thread Group 1-74,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113323702,2,VerVentaNuevos,200,OK,Thread Group 1-74,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113323704,2,VerVentaUsados,200,OK,Thread Group 1-74,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113323706,1,VerJuegoDetalle,200,OK,Thread Group 1-74,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113323708,1,VerJuegosSeleccionados,200,OK,Thread Group 1-74,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323709,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-74,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323711,1,VerCategorias,200,OK,Thread Group 1-74,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113323792,8,Registrarse,200,OK,Thread Group 1-75,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,1
+1733113323800,3,Login,200,OK,Thread Group 1-75,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113323804,2,VerDetalleProducto,200,OK,Thread Group 1-75,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113323806,2,VerEstados,200,OK,Thread Group 1-75,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113323808,3,VerVentaNuevos,200,OK,Thread Group 1-75,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113323811,2,VerVentaUsados,200,OK,Thread Group 1-75,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113323813,2,VerJuegoDetalle,200,OK,Thread Group 1-75,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113323815,1,VerJuegosSeleccionados,200,OK,Thread Group 1-75,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323817,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-75,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323819,1,VerCategorias,200,OK,Thread Group 1-75,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113323890,7,Registrarse,200,OK,Thread Group 1-76,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113323897,3,Login,200,OK,Thread Group 1-76,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113323900,2,VerDetalleProducto,200,OK,Thread Group 1-76,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113323902,2,VerEstados,200,OK,Thread Group 1-76,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113323904,2,VerVentaNuevos,200,OK,Thread Group 1-76,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113323906,2,VerVentaUsados,200,OK,Thread Group 1-76,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113323908,2,VerJuegoDetalle,200,OK,Thread Group 1-76,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113323910,1,VerJuegosSeleccionados,200,OK,Thread Group 1-76,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323912,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-76,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113323913,2,VerCategorias,200,OK,Thread Group 1-76,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113323990,6,Registrarse,200,OK,Thread Group 1-77,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113323996,2,Login,200,OK,Thread Group 1-77,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113323998,1,VerDetalleProducto,200,OK,Thread Group 1-77,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113323999,1,VerEstados,200,OK,Thread Group 1-77,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113324000,2,VerVentaNuevos,200,OK,Thread Group 1-77,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113324002,2,VerVentaUsados,200,OK,Thread Group 1-77,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113324004,1,VerJuegoDetalle,200,OK,Thread Group 1-77,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113324005,2,VerJuegosSeleccionados,200,OK,Thread Group 1-77,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324007,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-77,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113324008,2,VerCategorias,200,OK,Thread Group 1-77,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113324091,7,Registrarse,200,OK,Thread Group 1-78,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113324098,2,Login,200,OK,Thread Group 1-78,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113324100,2,VerDetalleProducto,200,OK,Thread Group 1-78,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113324102,2,VerEstados,200,OK,Thread Group 1-78,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113324104,2,VerVentaNuevos,200,OK,Thread Group 1-78,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113324149,5,VerVentaUsados,200,OK,Thread Group 1-78,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,5,0,0
+1733113324154,3,VerJuegoDetalle,200,OK,Thread Group 1-78,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,3,0,0
+1733113324157,3,VerJuegosSeleccionados,200,OK,Thread Group 1-78,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113324161,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-78,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324163,2,VerCategorias,200,OK,Thread Group 1-78,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113324190,70,Registrarse,200,OK,Thread Group 1-79,text,false,"The operation lasted too long: It took 70 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,70,0,0
+1733113324261,3,Login,200,OK,Thread Group 1-79,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113324265,2,VerDetalleProducto,200,OK,Thread Group 1-79,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113324267,2,VerEstados,200,OK,Thread Group 1-79,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113324269,2,VerVentaNuevos,200,OK,Thread Group 1-79,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113324272,2,VerVentaUsados,200,OK,Thread Group 1-79,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113324275,1,VerJuegoDetalle,200,OK,Thread Group 1-79,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113324277,1,VerJuegosSeleccionados,200,OK,Thread Group 1-79,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113324278,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-79,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324281,2,VerCategorias,200,OK,Thread Group 1-79,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113324289,9,Registrarse,200,OK,Thread Group 1-80,text,false,"The operation lasted too long: It took 9 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,9,0,2
+1733113324298,4,Login,200,OK,Thread Group 1-80,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113324302,3,VerDetalleProducto,200,OK,Thread Group 1-80,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,3,0,0
+1733113324305,2,VerEstados,200,OK,Thread Group 1-80,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113324307,4,VerVentaNuevos,200,OK,Thread Group 1-80,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,4,0,0
+1733113324311,3,VerVentaUsados,200,OK,Thread Group 1-80,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113324315,1,VerJuegoDetalle,200,OK,Thread Group 1-80,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113324316,1,VerJuegosSeleccionados,200,OK,Thread Group 1-80,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113324318,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-80,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324320,2,VerCategorias,200,OK,Thread Group 1-80,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113324390,6,Registrarse,200,OK,Thread Group 1-81,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113324397,2,Login,200,OK,Thread Group 1-81,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113324399,2,VerDetalleProducto,200,OK,Thread Group 1-81,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113324401,2,VerEstados,200,OK,Thread Group 1-81,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113324403,2,VerVentaNuevos,200,OK,Thread Group 1-81,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113324405,2,VerVentaUsados,200,OK,Thread Group 1-81,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113324407,1,VerJuegoDetalle,200,OK,Thread Group 1-81,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113324408,2,VerJuegosSeleccionados,200,OK,Thread Group 1-81,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324410,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-81,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113324412,1,VerCategorias,200,OK,Thread Group 1-81,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113324489,5,Registrarse,200,OK,Thread Group 1-82,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113324495,3,Login,200,OK,Thread Group 1-82,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113324498,1,VerDetalleProducto,200,OK,Thread Group 1-82,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113324500,1,VerEstados,200,OK,Thread Group 1-82,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113324501,2,VerVentaNuevos,200,OK,Thread Group 1-82,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113324503,2,VerVentaUsados,200,OK,Thread Group 1-82,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113324505,2,VerJuegoDetalle,200,OK,Thread Group 1-82,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113324507,1,VerJuegosSeleccionados,200,OK,Thread Group 1-82,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113324508,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-82,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324510,1,VerCategorias,200,OK,Thread Group 1-82,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113324589,8,Registrarse,200,OK,Thread Group 1-83,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,2
+1733113324597,3,Login,200,OK,Thread Group 1-83,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113324600,1,VerDetalleProducto,200,OK,Thread Group 1-83,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113324601,1,VerEstados,200,OK,Thread Group 1-83,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113324602,2,VerVentaNuevos,200,OK,Thread Group 1-83,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113324605,3,VerVentaUsados,200,OK,Thread Group 1-83,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113324647,2,VerJuegoDetalle,200,OK,Thread Group 1-83,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113324649,1,VerJuegosSeleccionados,200,OK,Thread Group 1-83,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113324650,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-83,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324652,1,VerCategorias,200,OK,Thread Group 1-83,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113324688,6,Registrarse,200,OK,Thread Group 1-84,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113324695,3,Login,200,OK,Thread Group 1-84,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113324698,2,VerDetalleProducto,200,OK,Thread Group 1-84,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113324700,1,VerEstados,200,OK,Thread Group 1-84,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113324702,2,VerVentaNuevos,200,OK,Thread Group 1-84,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113324704,2,VerVentaUsados,200,OK,Thread Group 1-84,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113324706,2,VerJuegoDetalle,200,OK,Thread Group 1-84,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113324708,2,VerJuegosSeleccionados,200,OK,Thread Group 1-84,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324710,3,EliminarJuegosSeleccionados,200,OK,Thread Group 1-84,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 2 milliseconds.",291,191,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113324713,2,VerCategorias,200,OK,Thread Group 1-84,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113324787,8,Registrarse,200,OK,Thread Group 1-85,text,false,"The operation lasted too long: It took 8 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,8,0,1
+1733113324795,2,Login,200,OK,Thread Group 1-85,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113324797,2,VerDetalleProducto,200,OK,Thread Group 1-85,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113324799,1,VerEstados,200,OK,Thread Group 1-85,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113324800,2,VerVentaNuevos,200,OK,Thread Group 1-85,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113324802,3,VerVentaUsados,200,OK,Thread Group 1-85,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113324805,2,VerJuegoDetalle,200,OK,Thread Group 1-85,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113324807,2,VerJuegosSeleccionados,200,OK,Thread Group 1-85,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324809,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-85,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324812,1,VerCategorias,200,OK,Thread Group 1-85,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113324887,7,Registrarse,200,OK,Thread Group 1-86,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113324894,3,Login,200,OK,Thread Group 1-86,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113324897,2,VerDetalleProducto,200,OK,Thread Group 1-86,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113324899,1,VerEstados,200,OK,Thread Group 1-86,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113324900,2,VerVentaNuevos,200,OK,Thread Group 1-86,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113324902,2,VerVentaUsados,200,OK,Thread Group 1-86,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113324904,1,VerJuegoDetalle,200,OK,Thread Group 1-86,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113324905,2,VerJuegosSeleccionados,200,OK,Thread Group 1-86,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113324907,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-86,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113324908,2,VerCategorias,200,OK,Thread Group 1-86,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113324988,6,Registrarse,200,OK,Thread Group 1-87,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113324994,3,Login,200,OK,Thread Group 1-87,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113324997,1,VerDetalleProducto,200,OK,Thread Group 1-87,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113324998,1,VerEstados,200,OK,Thread Group 1-87,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113324999,2,VerVentaNuevos,200,OK,Thread Group 1-87,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113325001,1,VerVentaUsados,200,OK,Thread Group 1-87,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113325002,1,VerJuegoDetalle,200,OK,Thread Group 1-87,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113325004,1,VerJuegosSeleccionados,200,OK,Thread Group 1-87,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325005,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-87,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325006,1,VerCategorias,200,OK,Thread Group 1-87,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113325087,6,Registrarse,200,OK,Thread Group 1-88,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113325093,2,Login,200,OK,Thread Group 1-88,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113325095,1,VerDetalleProducto,200,OK,Thread Group 1-88,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113325097,0,VerEstados,200,OK,Thread Group 1-88,text,true,,334,156,1,1,http://localhost:3001/estados,0,0,0
+1733113325098,1,VerVentaNuevos,200,OK,Thread Group 1-88,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113325100,1,VerVentaUsados,200,OK,Thread Group 1-88,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113325102,1,VerJuegoDetalle,200,OK,Thread Group 1-88,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113325103,1,VerJuegosSeleccionados,200,OK,Thread Group 1-88,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325104,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-88,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325106,1,VerCategorias,200,OK,Thread Group 1-88,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113325187,7,Registrarse,200,OK,Thread Group 1-89,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113325194,3,Login,200,OK,Thread Group 1-89,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113325197,1,VerDetalleProducto,200,OK,Thread Group 1-89,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113325198,1,VerEstados,200,OK,Thread Group 1-89,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113325200,1,VerVentaNuevos,200,OK,Thread Group 1-89,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113325202,2,VerVentaUsados,200,OK,Thread Group 1-89,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113325204,2,VerJuegoDetalle,200,OK,Thread Group 1-89,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113325206,1,VerJuegosSeleccionados,200,OK,Thread Group 1-89,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325207,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-89,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113325209,2,VerCategorias,200,OK,Thread Group 1-89,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113325257,9,Registrarse,200,OK,Thread Group 1-90,text,false,"The operation lasted too long: It took 9 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,9,0,1
+1733113325267,3,Login,200,OK,Thread Group 1-90,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113325271,2,VerDetalleProducto,200,OK,Thread Group 1-90,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113325273,2,VerEstados,200,OK,Thread Group 1-90,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113325275,3,VerVentaNuevos,200,OK,Thread Group 1-90,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113325278,3,VerVentaUsados,200,OK,Thread Group 1-90,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113325281,2,VerJuegoDetalle,200,OK,Thread Group 1-90,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113325283,2,VerJuegosSeleccionados,200,OK,Thread Group 1-90,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113325285,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-90,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325287,1,VerCategorias,200,OK,Thread Group 1-90,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113325386,5,Registrarse,200,OK,Thread Group 1-91,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113325391,3,Login,200,OK,Thread Group 1-91,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113325394,1,VerDetalleProducto,200,OK,Thread Group 1-91,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113325395,1,VerEstados,200,OK,Thread Group 1-91,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113325396,2,VerVentaNuevos,200,OK,Thread Group 1-91,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113325398,1,VerVentaUsados,200,OK,Thread Group 1-91,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113325399,1,VerJuegoDetalle,200,OK,Thread Group 1-91,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113325401,0,VerJuegosSeleccionados,200,OK,Thread Group 1-91,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,0,0,0
+1733113325402,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-91,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325403,2,VerCategorias,200,OK,Thread Group 1-91,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113325485,5,Registrarse,200,OK,Thread Group 1-92,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113325491,4,Login,200,OK,Thread Group 1-92,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113325496,1,VerDetalleProducto,200,OK,Thread Group 1-92,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113325497,2,VerEstados,200,OK,Thread Group 1-92,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113325499,3,VerVentaNuevos,200,OK,Thread Group 1-92,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113325502,3,VerVentaUsados,200,OK,Thread Group 1-92,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113325505,2,VerJuegoDetalle,200,OK,Thread Group 1-92,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113325508,1,VerJuegosSeleccionados,200,OK,Thread Group 1-92,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325510,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-92,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113325512,2,VerCategorias,200,OK,Thread Group 1-92,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113325585,6,Registrarse,200,OK,Thread Group 1-93,text,false,"The operation lasted too long: It took 6 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,6,0,1
+1733113325591,5,Login,200,OK,Thread Group 1-93,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,5,0,0
+1733113325596,2,VerDetalleProducto,200,OK,Thread Group 1-93,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113325598,2,VerEstados,200,OK,Thread Group 1-93,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113325600,2,VerVentaNuevos,200,OK,Thread Group 1-93,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113325602,3,VerVentaUsados,200,OK,Thread Group 1-93,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113325605,2,VerJuegoDetalle,200,OK,Thread Group 1-93,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113325607,2,VerJuegosSeleccionados,200,OK,Thread Group 1-93,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113325609,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-93,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325611,2,VerCategorias,200,OK,Thread Group 1-93,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113325686,5,Registrarse,200,OK,Thread Group 1-94,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,0
+1733113325691,3,Login,200,OK,Thread Group 1-94,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,3,0,0
+1733113325694,1,VerDetalleProducto,200,OK,Thread Group 1-94,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113325695,2,VerEstados,200,OK,Thread Group 1-94,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113325697,1,VerVentaNuevos,200,OK,Thread Group 1-94,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113325698,3,VerVentaUsados,200,OK,Thread Group 1-94,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,3,0,0
+1733113325701,1,VerJuegoDetalle,200,OK,Thread Group 1-94,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113325702,1,VerJuegosSeleccionados,200,OK,Thread Group 1-94,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325703,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-94,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325704,1,VerCategorias,200,OK,Thread Group 1-94,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113325784,12,Registrarse,200,OK,Thread Group 1-95,text,false,"The operation lasted too long: It took 12 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,12,0,2
+1733113325797,7,Login,200,OK,Thread Group 1-95,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,7,0,0
+1733113325804,4,VerDetalleProducto,200,OK,Thread Group 1-95,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,4,0,0
+1733113325808,3,VerEstados,200,OK,Thread Group 1-95,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,3,0,0
+1733113325811,4,VerVentaNuevos,200,OK,Thread Group 1-95,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,4,0,0
+1733113325815,4,VerVentaUsados,200,OK,Thread Group 1-95,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,4,0,0
+1733113325819,2,VerJuegoDetalle,200,OK,Thread Group 1-95,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113325821,3,VerJuegosSeleccionados,200,OK,Thread Group 1-95,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,3,0,0
+1733113325824,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-95,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113325827,2,VerCategorias,200,OK,Thread Group 1-95,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113325883,5,Registrarse,200,OK,Thread Group 1-96,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113325889,2,Login,200,OK,Thread Group 1-96,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113325891,1,VerDetalleProducto,200,OK,Thread Group 1-96,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113325893,1,VerEstados,200,OK,Thread Group 1-96,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113325894,2,VerVentaNuevos,200,OK,Thread Group 1-96,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113325897,2,VerVentaUsados,200,OK,Thread Group 1-96,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113325899,1,VerJuegoDetalle,200,OK,Thread Group 1-96,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113325901,1,VerJuegosSeleccionados,200,OK,Thread Group 1-96,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325902,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-96,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113325904,1,VerCategorias,200,OK,Thread Group 1-96,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113325981,5,Registrarse,200,OK,Thread Group 1-97,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113325986,2,Login,200,OK,Thread Group 1-97,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113325988,2,VerDetalleProducto,200,OK,Thread Group 1-97,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113325990,1,VerEstados,200,OK,Thread Group 1-97,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113325991,1,VerVentaNuevos,200,OK,Thread Group 1-97,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113325993,2,VerVentaUsados,200,OK,Thread Group 1-97,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113325995,1,VerJuegoDetalle,200,OK,Thread Group 1-97,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113325996,1,VerJuegosSeleccionados,200,OK,Thread Group 1-97,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325997,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-97,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113325998,1,VerCategorias,200,OK,Thread Group 1-97,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113326079,5,Registrarse,200,OK,Thread Group 1-98,text,false,"The operation lasted too long: It took 5 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,5,0,1
+1733113326085,2,Login,200,OK,Thread Group 1-98,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113326087,1,VerDetalleProducto,200,OK,Thread Group 1-98,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113326088,2,VerEstados,200,OK,Thread Group 1-98,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113326090,2,VerVentaNuevos,200,OK,Thread Group 1-98,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,2,0,0
+1733113326092,2,VerVentaUsados,200,OK,Thread Group 1-98,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113326094,2,VerJuegoDetalle,200,OK,Thread Group 1-98,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",312,164,1,1,http://localhost:3001/juego-detalle/1,2,0,0
+1733113326096,1,VerJuegosSeleccionados,200,OK,Thread Group 1-98,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113326097,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-98,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113326099,1,VerCategorias,200,OK,Thread Group 1-98,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0
+1733113326179,4,Registrarse,200,OK,Thread Group 1-99,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,4,0,0
+1733113326183,2,Login,200,OK,Thread Group 1-99,text,true,,287,235,1,1,http://localhost:3001/iniciar-sesion,2,0,0
+1733113326186,1,VerDetalleProducto,200,OK,Thread Group 1-99,text,true,,588,167,1,1,http://localhost:3001/detalle-producto/1,1,0,0
+1733113326187,1,VerEstados,200,OK,Thread Group 1-99,text,true,,334,156,1,1,http://localhost:3001/estados,1,0,0
+1733113326188,1,VerVentaNuevos,200,OK,Thread Group 1-99,text,true,,4450,161,1,1,http://localhost:3001/venta-nuevos,1,0,0
+1733113326190,1,VerVentaUsados,200,OK,Thread Group 1-99,text,true,,4737,161,1,1,http://localhost:3001/venta-usados,1,0,0
+1733113326191,1,VerJuegoDetalle,200,OK,Thread Group 1-99,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113326192,2,VerJuegosSeleccionados,200,OK,Thread Group 1-99,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",267,169,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113326194,2,EliminarJuegosSeleccionados,200,OK,Thread Group 1-99,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,2,0,0
+1733113326196,2,VerCategorias,200,OK,Thread Group 1-99,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",539,159,1,1,http://localhost:3001/categorias,2,0,0
+1733113326291,7,Registrarse,200,OK,Thread Group 1-100,text,false,"The operation lasted too long: It took 7 milliseconds, but should not have lasted longer than 1 milliseconds.",313,310,1,1,http://localhost:3001/registrarse,7,0,1
+1733113326298,4,Login,200,OK,Thread Group 1-100,text,false,"The operation lasted too long: It took 4 milliseconds, but should not have lasted longer than 3 milliseconds.",287,235,1,1,http://localhost:3001/iniciar-sesion,4,0,0
+1733113326302,2,VerDetalleProducto,200,OK,Thread Group 1-100,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",588,167,1,1,http://localhost:3001/detalle-producto/1,2,0,0
+1733113326304,2,VerEstados,200,OK,Thread Group 1-100,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",334,156,1,1,http://localhost:3001/estados,2,0,0
+1733113326306,3,VerVentaNuevos,200,OK,Thread Group 1-100,text,false,"The operation lasted too long: It took 3 milliseconds, but should not have lasted longer than 1 milliseconds.",4450,161,1,1,http://localhost:3001/venta-nuevos,3,0,0
+1733113326309,2,VerVentaUsados,200,OK,Thread Group 1-100,text,false,"The operation lasted too long: It took 2 milliseconds, but should not have lasted longer than 1 milliseconds.",4737,161,1,1,http://localhost:3001/venta-usados,2,0,0
+1733113326312,1,VerJuegoDetalle,200,OK,Thread Group 1-100,text,true,,312,164,1,1,http://localhost:3001/juego-detalle/1,1,0,0
+1733113326313,1,VerJuegosSeleccionados,200,OK,Thread Group 1-100,text,true,,267,169,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113326314,1,EliminarJuegosSeleccionados,200,OK,Thread Group 1-100,text,true,,291,191,1,1,http://localhost:3001/juegos-seleccionados,1,0,0
+1733113326316,1,VerCategorias,200,OK,Thread Group 1-100,text,true,,539,159,1,1,http://localhost:3001/categorias,1,0,0

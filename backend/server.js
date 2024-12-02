@@ -34,6 +34,7 @@ DB.connect((err) => {
   console.log('Connected to database');
 });
 
+//1
 app.post('/registrarse', (req, res) => {
   const { nombre_usuario, correo, contrasena, apellido } = req.body;
   console.log('Datos recibidos:', req.body);
@@ -52,6 +53,8 @@ app.post('/registrarse', (req, res) => {
   });
 });
 
+
+//2
 app.post('/iniciar-sesion', (req, res) => {
   const { nombre_usuario, contrasena } = req.body;
   console.log('Datos recibidos:', req.body);
@@ -124,6 +127,7 @@ app.post('/configuraciones', upload.single('image'), (req, res) => {
 });
 
 
+//3
 // Ruta para obtener las categorías
 app.get('/categorias', (req, res) => {
   const SQL = 'SELECT categoria_id, nombre FROM categorias';
@@ -137,6 +141,8 @@ app.get('/categorias', (req, res) => {
   });
 });
 
+
+//4
 app.get('/estados', (req, res) => {
   const SQL = 'SELECT estado_id, nombre FROM estado';
   DB.query(SQL, (err, results) => {
@@ -150,6 +156,8 @@ app.get('/estados', (req, res) => {
 });
 
 
+
+//5
 // Ruta para obtener los datos de los juegos y enviarlos a la ruta /venta-nuevos 
 app.get('/venta-nuevos', (req, res) => {
   const SQL = 'SELECT * FROM juegos WHERE estado_id = 1';
@@ -163,6 +171,8 @@ app.get('/venta-nuevos', (req, res) => {
   });
 });
 
+
+//6
 app.get('/venta-usados', (req, res) => {
   const SQL = 'SELECT * FROM juegos WHERE estado_id = 2';
   DB.query(SQL, (err, rows) => {
@@ -176,6 +186,8 @@ app.get('/venta-usados', (req, res) => {
   });
 });
  
+
+//7
 app.get('/juegos-por-categoria', (req, res) => {
   const categoriaId = req.query.categoria_id;
 
@@ -195,6 +207,9 @@ app.get('/juegos-por-categoria', (req, res) => {
   });
 });
 
+
+//8
+
 app.get('/detalle-producto/:juego_id', (req, res) => {
   const { juego_id } = req.params;
 
@@ -212,6 +227,9 @@ app.get('/detalle-producto/:juego_id', (req, res) => {
     res.json(result[0]);
   });
 });
+
+
+//9
 
 // Ruta para obtener el título y el precio de un juego específico por su ID
 app.get('/juego-detalle/:juego_id', (req, res) => {
@@ -235,6 +253,8 @@ app.get('/juego-detalle/:juego_id', (req, res) => {
 
 const filePath = path.join(__dirname, 'juegos-seleccionados.json');
 
+
+//10
 app.get('/juegos-seleccionados', (req, res) => {
   fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
@@ -249,6 +269,8 @@ app.get('/juegos-seleccionados', (req, res) => {
   });
 });
 
+
+//11
 // Endpoint para actualizar los juegos seleccionados
 app.post('/juegos-seleccionados', (req, res) => {
 
@@ -274,6 +296,8 @@ app.post('/juegos-seleccionados', (req, res) => {
   });
 });
 
+
+//12
 // Endpoint para eliminar todos los datos del archivo JSON
 app.delete('/juegos-seleccionados', (req, res) => {
   fs.writeFile(filePath, '', (err) => {
@@ -285,6 +309,8 @@ app.delete('/juegos-seleccionados', (req, res) => {
 });
 
 
+
+//13
 // Endpoint para guardar la compra
 app.post('/guardar-compra', (req, res) => {
   const { usuario_id, juegosSeleccionados, precioTotal } = req.body;
@@ -314,6 +340,8 @@ app.post('/guardar-compra', (req, res) => {
   });
 });
 
+
+//14
 app.get('/historial/:usuario_id', (req, res) => {
   const { usuario_id } = req.params;
 
@@ -344,6 +372,8 @@ app.get('/historial/:usuario_id', (req, res) => {
   });
 });
 
+
+//15
 app.get('/buscar', async (req, res) => {
   const { titulo } = req.query;
   if (!titulo) {
