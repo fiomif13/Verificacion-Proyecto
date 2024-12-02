@@ -1,3 +1,8 @@
+# Integrantes:
+- Sanchez Wong, Jatziry
+- Quispe Cabello, Jose
+- Mirano Surquislla, Fiorella
+
 # Plataforma de Compra y Venta de Videojuegos
 
 ## Propósito del Proyecto
