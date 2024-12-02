@@ -99,6 +99,8 @@ Garantizar que el software cumpla con los requisitos funcionales y no funcionale
   
   **Resultado obtenido:** Prueba superada. El historial del usuario se devolvió correctamente.
 
+**Comandos:**
+- Pruebas JEST:npm test
 
 ### Mensajes de consola:
 Los mensajes de consola proporcionan información útil para depuración y confirmación:
@@ -143,7 +145,7 @@ Los mensajes de consola proporcionan información útil para depuración y confi
   
   **Comando:**
   
-  Pruebas Selenium: thon -m pytest test_selenium.py --html=report.html
+  Pruebas Selenium: thon -m pytest test_selenium.python --html=report.html
   ### Resultados de las Pruebas:
   - Estado: Todas las pruebas pasaron con éxito. ✅
   - Duración: Las pruebas se ejecutaron en un tiempo total de 97.52 segundos.
@@ -202,8 +204,6 @@ A continuación, se describe la configuración empleada:
 ### Exportación de Resultados:
 Los resultados se almacenaron en un archivo CSV para su posterior análisis y la generación de reportes en formato HTML.
 ### Ejecución de las Pruebas
-**Comandos:**
-- Pruebas JEST:npm test
 
 Durante la ejecución, se simuló un tráfico de 100 usuarios concurrentes distribuidos uniformemente durante 10 segundos. Las pruebas se centraron en medir:
 - Tiempos de respuesta de las solicitudes.
