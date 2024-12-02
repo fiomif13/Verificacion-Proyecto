@@ -40,6 +40,23 @@ Garantizar que el software cumpla con los requisitos funcionales y no funcionale
 ## Construcción Automática
 - **Herramienta**: Node Package Manager
   
+
+**1. Etapa: Install Dependencies**
+- Objetivo: Instalar las dependencias necesarias tanto para el frontend como para el backend del proyecto.
+- Ejecución paralela:
+    Subetapa: Install Frontend Dependencies
+  
+      Navega al directorio del frontend (fronted) y ejecuta el comando npm install para descargar e instalar todas las dependencias definidas en el archivo package.json del frontend.
+  
+    Subetapa: Install Backend Dependencies
+  
+      Navega al directorio del backend (backend) y ejecuta el comando npm install para instalar las dependencias del backend.
+**2. Etapa: Build Frontend**
+- Objetivo: Construir los archivos del frontend para producción.
+- Ejecución:
+    Cambia al directorio del frontend (fronted) y ejecuta el comando npm run build.
+Este comando generalmente compila, minimiza y optimiza los archivos del frontend para su despliegue en un entorno de producción, según lo definido en el script build del package.json.
+
 - **Evidencia**:
   
   ![](imagenes/imagen5.jpg)
