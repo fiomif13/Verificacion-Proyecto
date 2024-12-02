@@ -236,3 +236,11 @@ Durante la ejecución, se simuló un tráfico de 100 usuarios concurrentes distr
 **Integración con Jenkins**:
 
   ![](imagenes/imagen18.jpg)
+
+## Github Issues 
+
+![](imagenes/imagen12.png)
+
+## Github Project
+
+![](imagenes/imagen13.png)
