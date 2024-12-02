@@ -11,11 +11,11 @@ Desarrollar una plataforma interactiva que permita:
 
 ## Características Principales
 - Catálogo amplio con filtros por precio, género y plataforma.  
-  ![Catálogo de videojuegos](C:\Users\Fiorella\Documents\Verificacion\ProjectUX\imagenes\imagen1.png)
+  ![Catálogo de videojuegos](\imagenes\imagen1.png)
 - Vista de la sección de venta de videojuegos
-  ![Sección de venta](C:\Users\Fiorella\Documents\Verificacion\ProjectUX\imagenes\imagen2.png)
+  ![Sección de venta](\imagenes\imagen2.png)
 - Vista de la sección de pago
-  ![Sección de pago](C:\Users\Fiorella\Documents\Verificacion\ProjectUX\imagenes\imagen3.png)
+  ![Sección de pago](\imagenes\imagen3.png)
 ---
 
 # Pipeline
