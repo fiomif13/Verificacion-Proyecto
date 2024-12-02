@@ -7,6 +7,8 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 
 
+
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -20,7 +22,7 @@ const port = 3001;
 const DB = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'Patito13loro',
+  password: '1234',
   database: 'ux',
 });
 
@@ -370,3 +372,6 @@ app.get('/buscar', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+// Exportar la aplicación
+module.exports = app;
