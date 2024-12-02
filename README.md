@@ -8,15 +8,6 @@
 ## Propósito del Proyecto
 Este proyecto busca facilitar la compra y venta de videojuegos nuevos y de segunda mano mediante una plataforma en línea que sea fácil de usar, segura y accesible. La meta es conectar a gamers de todas partes para que puedan intercambiar, vender o adquirir videojuegos de manera conveniente.
 
-## Objetivo
-Desarrollar una plataforma interactiva que permita:
-- **Compradores**: Encontrar videojuegos a precios competitivos, ya sean nuevos o de segunda mano.
-- **Vendedores**: Publicar videojuegos para su venta de manera rápida y sencilla.
-- Garantizar un proceso de compra-venta **transparente y seguro** mediante opciones confiables de pago y seguimiento de envíos.
-
-## Objetivo de las Pruebas 
-Garantizar que el software cumpla con los requisitos funcionales y no funcionales definidos, detectando defectos y validando que el producto sea confiable, eficiente y de calidad antes de su implementación o entrega
-
 ## Características Principales
 
 - **Catálogo amplio con filtros por precio y género.**
@@ -34,6 +25,15 @@ Garantizar que el software cumpla con los requisitos funcionales y no funcionale
 - **Vista de la sección de pago**
   
   ![Sección de pago](imagenes/imagen3.png)
+
+
+## Objetivos de las Pruebas 
+- NPM: Automatizar tareas clave como ejecución de pruebas y despliegue, asegurando eficiencia en el flujo de desarrollo.
+- SonarQube: Garantizar la calidad del código, identificando vulnerabilidades y mejorando la mantenibilidad.
+- JMeter: Validar el rendimiento de la plataforma bajo distintas cargas de usuarios y optimizar tiempos de respuesta.
+- Jest: Comprobar la correcta funcionalidad de los componentes y asegurar el cumplimiento de los requisitos unitarios.
+- Selenium WebDriver: Verificar que el flujo principal de la plataforma (búsqueda, compra y venta) funcione correctamente en un entorno real.
+- OWASP ZAP: Identificar vulnerabilidades de seguridad y proteger los datos de los usuarios frente a ataques comunes como XSS o inyecciones SQL.
 ---
 
 # Pipeline
