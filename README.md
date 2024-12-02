@@ -108,16 +108,16 @@ Los mensajes de consola proporcionan información útil para depuración y confi
 - La conexión a la base de datos fue exitosa, y las operaciones relacionadas (INSERT, consultas) se completaron sin errores.
   
    ![](imagenes/imagen14.jpg)
-**Resumen:**
+### **Resumen:**
 - Pruebas: 7/7 completadas con éxito.
 - Estado del servidor y base de datos: Todos los endpoints y las funcionalidades básicas (registro, inicio de sesión, consultas y compras) funcionan correctamente según las pruebas unitarias.
 - Tiempo total: 2.252 segundos.
   
-- **Evidencia**:
+**Evidencia**:
 
   ![](imagenes/imagen10.jpg)
 
-- **Integración con Jenkins**:
+**Integración con Jenkins**:
 
   ![](imagenes/imagen11.jpg)
   
@@ -140,6 +140,9 @@ Los mensajes de consola proporcionan información útil para depuración y confi
   
   Luego, se verificó que la redirección a la página /compra-exitosa ocurriera correctamente.
   
+  **Comando:**
+  
+  Pruebas Selenium: thon -m pytest test_selenium.py --html=report.html
   ### Resultados de las Pruebas:
   - Estado: Todas las pruebas pasaron con éxito. ✅
   - Duración: Las pruebas se ejecutaron en un tiempo total de 97.52 segundos.
@@ -147,11 +150,11 @@ Los mensajes de consola proporcionan información útil para depuración y confi
   Las pruebas han validado todas las funcionalidades críticas del sistema, simulando el comportamiento de un usuario real desde el registro hasta la compra exitosa. Cada paso fue automatizado con Selenium,       asegurando que las funcionalidades respondieran como se esperaba en diferentes escenarios (registro, inicio de sesión, carrito, pago, etc.).
   El hecho de que todas las pruebas hayan pasado con éxito significa que la aplicación responde correctamente a las interacciones simuladas y que las funcionalidades clave están implementadas de manera adecuada.
 
-- **Evidencia**:
+**Evidencia**:
   ![](imagenes/imagen15.jpg)
 
   ![](imagenes/imagen16.jpg)
-- **Integración con Jenkins**:
+**Integración con Jenkins**:
   
 ## Pruebas de Seguridad
 - **Herramienta**: OWASP ZAP
@@ -191,6 +194,9 @@ A continuación, se describe la configuración empleada:
 ### Exportación de Resultados:
 Los resultados se almacenaron en un archivo CSV para su posterior análisis y la generación de reportes en formato HTML.
 ### Ejecución de las Pruebas
+**Comandos:**
+- Pruebas JEST:npm test
+
 Durante la ejecución, se simuló un tráfico de 100 usuarios concurrentes distribuidos uniformemente durante 10 segundos. Las pruebas se centraron en medir:
 - Tiempos de respuesta de las solicitudes.
 - Tasas de error.
@@ -198,6 +204,10 @@ Durante la ejecución, se simuló un tráfico de 100 usuarios concurrentes distr
 
 ### Resultados
 - El reporte completo de los resultados de las pruebas de rendimiento se encuentran en la carpeta results dentro de la carpeta test_jmeter. Se generó reporte HTML.
-- **Evidencia**:
-  
-- **Integración con Jenkins**:
+
+**Evidencia**:
+    ![](imagenes/imagen19.jpg)
+    
+**Integración con Jenkins**:
+
+  ![](imagenes/imagen18.jpg)
