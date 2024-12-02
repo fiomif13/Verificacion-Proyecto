@@ -31,12 +31,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/detalle-producto/:juego_id" element={<ProtectedRoute><DetalleProducto /></ProtectedRoute>} />
+        <Route path="/detalle-producto/:juego_id" element={<DetalleProducto /> }/>
         <Route path="/juegos-por-categoria/:categoria_id" element={<ProtectedRoute><JuegosPorCategoria /></ProtectedRoute>} />
         <Route path="/configuraciones" element={<SaveImage />} />
         <Route path="/carrito-compras" element={<ProtectedRoute><DetalleCompras /></ProtectedRoute>} />
         <Route path="/detalle-producto-usado" element={<ProtectedRoute><DetalleProductoUsado /></ProtectedRoute>} />
-        <Route path="/detalle-producto" element={<ProtectedRoute><DetalleProducto /></ProtectedRoute>} />
+        <Route path="/detalle-producto" element={<DetalleProducto /> } />
         <Route path="/compra-exitosa" element={<ProtectedRoute><CompraExitosa /></ProtectedRoute>} />
         <Route path="/pago-tarjetas" element={<ProtectedRoute><PagoConTarjetas /></ProtectedRoute>} />
         <Route path="/venta-codigo" element={<ProtectedRoute><VentaCodigo /></ProtectedRoute>} />
