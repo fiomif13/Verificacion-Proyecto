@@ -14,40 +14,79 @@ Desarrollar una plataforma interactiva que permita:
 - **Vendedores**: Publicar videojuegos para su venta de manera rápida y sencilla.
 - Garantizar un proceso de compra-venta **transparente y seguro** mediante opciones confiables de pago y seguimiento de envíos.
 
+## Objetivo de las Pruebas 
+Garantizar que el software cumpla con los requisitos funcionales y no funcionales definidos, detectando defectos y validando que el producto sea confiable, eficiente y de calidad antes de su implementación o entrega
+
 ## Características Principales
 
 - **Catálogo amplio con filtros por precio y género.**
+  
   ![Catálogo de videojuegos](imagenes/imagen1.png)
   
+
+  
 - **Vista de la sección de venta de videojuegos**
+  
   ![Sección de venta](imagenes/imagen2.png)
+
+  
   
 - **Vista de la sección de pago**
+  
   ![Sección de pago](imagenes/imagen3.png)
 ---
 
 # Pipeline
 ## Construcción Automática
 - **Herramienta**: Node Package Manager
-- **Evidencia**: ![](imagenes/imagen5.jpg)
-- **Integración con Jenkins**: ![](imagenes/imagen7.jpg)
+  
+- **Evidencia**:
+  
+  ![](imagenes/imagen5.jpg)
+  
+- **Integración con Jenkins**:
+
+  ![](imagenes/imagen7.jpg)
+  
 ## Análisis Estático
 - **Herramienta**: SonarQube
-- **Evidencia**: ![](imagenes/imagen6.jpg)
-- **Integración con Jenkins**: ![](imagenes/imagen7.jpg)
+  
+- **Evidencia**:
+
+![](imagenes/imagen6.jpg)
+  
+- **Integración con Jenkins**:
+
+![](imagenes/imagen7.jpg)
+  
 ## Pruebas Unitarias
 - **Herramienta**: Jest
-- **Evidencia**: ![](imagenes/imagen10.jpg)
-- **Integración con Jenkins**: ![](imagenes/imagen11.jpg)
+  
+- **Evidencia**:
+
+  ![](imagenes/imagen10.jpg)
+
+- **Integración con Jenkins**:
+
+  ![](imagenes/imagen11.jpg)
+  
 ## Pruebas Funcionales
 - **Herramienta**: Selenium
+  
 - **Evidencia**:
+  
 - **Integración con Jenkins**:
+  
 ## Pruebas de Seguridad
 - **Herramienta**: OWASP ZAP
+  
 - **Evidencia**:
+  
 - **Integración con Jenkins**:
+  
 ## Pruebas de Performance
 - **Herramienta**: JMeter
+  
 - **Evidencia**:
+  
 - **Integración con Jenkins**:
