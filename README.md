@@ -108,6 +108,7 @@ Los mensajes de consola proporcionan información útil para depuración y confi
 - La conexión a la base de datos fue exitosa, y las operaciones relacionadas (INSERT, consultas) se completaron sin errores.
   
    ![](imagenes/imagen14.jpg)
+
 ### **Resumen:**
 - Pruebas: 7/7 completadas con éxito.
 - Estado del servidor y base de datos: Todos los endpoints y las funcionalidades básicas (registro, inicio de sesión, consultas y compras) funcionan correctamente según las pruebas unitarias.
@@ -154,14 +155,21 @@ Los mensajes de consola proporcionan información útil para depuración y confi
   ![](imagenes/imagen15.jpg)
 
   ![](imagenes/imagen16.jpg)
+  
 **Integración con Jenkins**:
+
+![](imagenes/imagen22.jpg)
+
+![](imagenes/imagen23.jpg)
   
 ## Pruebas de Seguridad
 - **Herramienta**: OWASP ZAP
   
 - **Evidencia**:
   
-- **Integración con Jenkins**:
+  ![](imagenes/imagen20.png)
+
+  ![](imagenes/imagen21.png)
   
 ## Pruebas de Performance
 - **Herramienta**: Se realizaron pruebas de rendimiento utilizando Apache JMeter con el objetivo de evaluar el comportamiento del sistema bajo carga simulada. Las pruebas fueron diseñadas para medir tiempos de respuesta, estabilidad y capacidad de procesamiento del sistema frente a múltiples solicitudes concurrentes.
