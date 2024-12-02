@@ -23,17 +23,17 @@ Desarrollar una plataforma interactiva que permita:
 
 # Pipeline
 ## Construcción Automática
-- **Herramienta**:
-- **Evidencia**:
-- **Integración con Jenkins**:
+- **Herramienta**: Node Package Manager
+- **Evidencia**: ![](imagenes/imagen5.jpg)
+- **Integración con Jenkins**: ![](imagenes/imagen7.jpg)
 ## Análisis Estático
 - **Herramienta**: SonarQube
-- **Evidencia**:
-- **Integración con Jenkins**:
+- **Evidencia**: ![](imagenes/imagen6.jpg)
+- **Integración con Jenkins**: ![](imagenes/imagen7.jpg)
 ## Pruebas Unitarias
-- **Herramienta**: xUnit
-- **Evidencia**:
-- **Integración con Jenkins**:
+- **Herramienta**: Jest
+- **Evidencia**: ![](imagenes/imagen10.jpg)
+- **Integración con Jenkins**: ![](imagenes/imagen9.jpg)
 ## Pruebas Funcionales
 - **Herramienta**: Selenium
 - **Evidencia**:
