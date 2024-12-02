@@ -31,6 +31,7 @@ function App() {
   return (
     <Router>
       <Routes>
+<<<<<<< HEAD
         <Route path="/detalle-producto/:juego_id" element={<DetalleProducto /> }/>
         <Route path="/juegos-por-categoria/:categoria_id" element={<ProtectedRoute><JuegosPorCategoria /></ProtectedRoute>} />
         <Route path="/configuraciones" element={<SaveImage />} />
@@ -46,8 +47,25 @@ function App() {
         <Route path="/venta-datos" element={<ProtectedRoute><VentaDatos /></ProtectedRoute>} />
         <Route path="/venta-usados" element={<ProtectedRoute><VentaUsados /></ProtectedRoute>} />
         <Route path="/venta-nuevos" element={<ProtectedRoute><NuevosJuegos /></ProtectedRoute>} />
+=======
+        <Route path="/detalle-producto/:juego_id" element={<DetalleProducto />} />
+        <Route path="/juegos-por-categoria/:categoria_id" element={<JuegosPorCategoria />} />
+        <Route path="/configuraciones" element={<SaveImage />} />
+        <Route path="/carrito-compras" element={<DetalleCompras />} />
+        <Route path="/detalle-producto-usado" element={<DetalleProductoUsado />} />
+        <Route path="/detalle-producto" element={<DetalleProducto />} />
+        <Route path="/compra-exitosa" element={<CompraExitosa />} />
+        <Route path="/pago-tarjetas" element={<PagoConTarjetas />} />
+        <Route path="/venta-codigo" element={<VentaCodigo />} />
+        <Route path="/pantalla-venta" element={<PantallaDesplegableVenta />} />
+        <Route path="/venta-funcionalidad" element={<VentaFuncionalidadDelCodigo />} />
+        <Route path="/venta-final" element={<VentaFinal />} />
+        <Route path="/venta-datos" element={<VentaDatos />} />
+        <Route path="/venta-usados" element={<VentaUsados />} />
+        <Route path="/venta-nuevos" element={<NuevosJuegos />} />
+>>>>>>> origin/4-pruebas-funcionales-usar-framework-selenium
         <Route path="/registrarse" element={<Registrarse />} />
-        <Route path="/historial" element={<ProtectedRoute><HistorialDeCompras /></ProtectedRoute>} />
+        <Route path="/historial" element={<HistorialDeCompras />} />
         <Route path="/iniciar-sesion" element={<IniciarSesion />} />
         <Route
           path="/inicio"
