@@ -41,8 +41,8 @@ def test_registro_usuario(driver):
 def test_simulacion_inicio_sesion(driver):
     print("Iniciando prueba de inicio de sesión...")
     driver.get("http://localhost:3000/iniciar-sesion")
-    driver.find_element(By.CLASS_NAME, "correo-electrnico").send_keys("cliente_test1")
-    driver.find_element(By.CLASS_NAME, "contrasea").send_keys("12345678")
+    driver.find_element(By.CLASS_NAME, "correo-electrnico").send_keys("admin")
+    driver.find_element(By.CLASS_NAME, "contrasea").send_keys("admin")
     driver.find_element(By.CLASS_NAME, "rectangle-2").click()
     current_url = driver.current_url
     print(f"URL actual tras inicio de sesión: {current_url}")
